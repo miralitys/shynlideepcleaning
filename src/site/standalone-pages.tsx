@@ -952,7 +952,7 @@ const deepCitySituationIntentSeeds: DeepCityIntentSeed[] = [
   {
     slug: "deep-cleaning-before-recurring-cleaning",
     label: "Deep cleaning before recurring cleaning",
-    titleLabel: "Pre-recurring deep cleaning",
+    titleLabel: "First-clean reset",
     property: "first recurring-cleaning visits",
     situation: "resetting the home before weekly, biweekly, or monthly service starts so future visits maintain a cleaner baseline",
     fit: "homes that are about to start weekly, biweekly, or monthly cleaning and need a stronger first visit to set the baseline",
