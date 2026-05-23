@@ -82,6 +82,16 @@ input {
   background: var(--primary);
 }
 
+@media (min-width: 768px) {
+  @supports (content-visibility: auto) {
+    main > section:nth-of-type(n + 3),
+    main > footer {
+      content-visibility: auto;
+      contain-intrinsic-size: auto 760px;
+    }
+  }
+}
+
 @keyframes rise {
   from {
     transform: translateY(18px);
