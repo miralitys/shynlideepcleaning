@@ -31,9 +31,6 @@ const loader = `    <script data-deferred-app-loader>
         interactionEvents.forEach((eventName) => {
           window.addEventListener(eventName, load, { once: true, passive: true });
         });
-        window.addEventListener("pageshow", () => {
-          window.setTimeout(load, 4500);
-        }, { once: true });
       })();
     </script>`
 
@@ -41,4 +38,4 @@ const deferredHtml = withoutPreloads.replace(appScriptMatch[0], loader)
 
 writeFileSync(indexFile, deferredHtml)
 
-console.log(`Deferred ${appScriptSrc} until interaction or idle timeout.`)
+console.log(`Deferred ${appScriptSrc} until interaction.`)
