@@ -1182,10 +1182,10 @@ function ShynliDeepFooter({ city }: { city?: (typeof cityPages)[number] }) {
             </span>
             <span className="text-xl font-black">Shynli Deep Cleaning</span>
           </a>
-          <p className="mt-5 max-w-sm text-sm font-bold leading-6 text-white/58">
+          <p className="mt-5 max-w-sm text-sm font-bold leading-6 text-white/78">
             Deep cleaning for kitchens, bathrooms, buildup, baseboards, add-ons, and homes that need more than a maintenance visit.
           </p>
-          <div className="mt-4 grid gap-1 text-sm font-bold text-white/50">
+          <div className="mt-4 grid gap-1 text-sm font-bold text-white/82">
             <a className="transition-colors hover:text-white" href={businessPhoneHref}>{businessPhoneDisplay}</a>
             <a className="transition-colors hover:text-white" href={`mailto:${businessEmail}`}>{businessEmail}</a>
           </div>
@@ -1209,7 +1209,7 @@ function ShynliDeepFooter({ city }: { city?: (typeof cityPages)[number] }) {
               <h3 className="text-sm font-black uppercase text-[#d7ff4f]">{title as string}</h3>
               <div className="mt-4 grid gap-2">
                 {(links as [string, string][]).map(([label, slug]) => (
-                  <a key={label} href={slug.startsWith("http") || slug.startsWith("tel:") ? slug : getShynliDeepPath(slug)} className="flex min-h-10 items-center text-sm font-black text-white/62 transition-colors hover:text-white">
+                  <a key={label} href={slug.startsWith("http") || slug.startsWith("tel:") ? slug : getShynliDeepPath(slug)} className="flex min-h-10 items-center text-sm font-black text-white/80 transition-colors hover:text-white">
                     {label}
                   </a>
                 ))}
@@ -1218,7 +1218,7 @@ function ShynliDeepFooter({ city }: { city?: (typeof cityPages)[number] }) {
           ))}
         </div>
       </div>
-      <div className="mx-auto mt-10 flex max-w-7xl flex-col gap-3 border-t border-white/10 pt-6 text-sm font-bold text-white/42 md:flex-row md:items-center md:justify-between">
+      <div className="mx-auto mt-10 flex max-w-7xl flex-col gap-3 border-t border-white/10 pt-6 text-sm font-bold text-white/76 md:flex-row md:items-center md:justify-between">
         <p>ShynliDeepCleaning.com</p>
         <div className="flex flex-wrap gap-x-4 gap-y-2">
           <span>Quote first. Checklist visible. Add-ons named before the visit.</span>
@@ -1351,7 +1351,7 @@ export function ShynliDeepCleaningPage({ city }: { city?: (typeof cityPages)[num
       <section id="quote" className="px-4 py-14 md:px-8 md:py-20">
         <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.72fr_1.28fr] lg:items-start">
           <div>
-            <p className="mb-4 text-sm font-black uppercase text-[#b54437]">Quote first</p>
+            <p className="mb-4 text-sm font-black uppercase text-[#8f2f27]">Quote first</p>
             <h2 className="text-4xl font-black leading-[0.94] md:text-6xl">
               {cityName ? `Get the ${cityName} deep-clean scope clear first.` : "Get the scope clear before the visit."}
             </h2>
@@ -1399,7 +1399,7 @@ export function ShynliDeepCleaningPage({ city }: { city?: (typeof cityPages)[num
                       type="button"
                       aria-pressed={selectedCondition === item}
                       onClick={() => setSelectedCondition(item)}
-                      className={`min-h-12 rounded-md border px-3 text-sm font-black transition-all hover:-translate-y-0.5 hover:border-[#b54437] focus-visible:outline-none focus-visible:ring-3 focus-visible:ring-[#d7ff4f]/70 ${
+                      className={`min-h-12 rounded-md border px-3 text-sm font-black transition-all hover:-translate-y-0.5 hover:border-[#8f2f27] focus-visible:outline-none focus-visible:ring-3 focus-visible:ring-[#d7ff4f]/70 ${
                         selectedCondition === item
                           ? "border-[#1b1725] bg-[#1b1725] text-white shadow-[0_12px_30px_rgba(27,23,37,0.18)]"
                           : "border-[#d8cbb7] bg-white text-[#1b1725]"
@@ -1415,7 +1415,7 @@ export function ShynliDeepCleaningPage({ city }: { city?: (typeof cityPages)[num
                     return (
                     <label
                       key={item}
-                      className={`flex min-h-12 cursor-pointer items-center gap-2 rounded-md border px-3 text-sm font-black transition-all hover:-translate-y-0.5 hover:border-[#b54437] ${
+                      className={`flex min-h-12 cursor-pointer items-center gap-2 rounded-md border px-3 text-sm font-black transition-all hover:-translate-y-0.5 hover:border-[#8f2f27] ${
                         isSelected ? "border-[#1b1725] bg-[#1b1725] text-white shadow-[0_12px_30px_rgba(27,23,37,0.16)]" : "border-[#d8cbb7] bg-white text-[#1b1725]"
                       }`}
                     >
@@ -1439,7 +1439,7 @@ export function ShynliDeepCleaningPage({ city }: { city?: (typeof cityPages)[num
                 <p className="rounded-md bg-[#f7f2e8] px-3 py-2 text-xs font-black uppercase tracking-normal text-[#6c655d]" aria-live="polite">
                   Selected: {selectedCondition}{selectedAddOns.length ? ` + ${selectedAddOns.join(", ")}` : " + no extras yet"}
                 </p>
-                <Button type="submit" className="h-13 rounded-full bg-[#b54437] text-base font-black text-white hover:bg-[#9f3c31]">
+                <Button type="submit" className="h-13 rounded-full bg-[#8f2f27] text-base font-black text-white hover:bg-[#9f3c31]">
                   Price this deep clean
                   <ArrowRight />
                 </Button>
@@ -1455,7 +1455,7 @@ export function ShynliDeepCleaningPage({ city }: { city?: (typeof cityPages)[num
       <section className="bg-[#fffaf0] px-4 py-14 md:px-8 md:py-20">
         <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[0.78fr_1.22fr]">
           <div>
-            <p className="mb-4 text-sm font-black uppercase text-[#b54437]">When deep cleaning is the right fit</p>
+            <p className="mb-4 text-sm font-black uppercase text-[#8f2f27]">When deep cleaning is the right fit</p>
             <h2 className="text-4xl font-black leading-[0.94] md:text-6xl">
               Use it when the home needs recovery, not just upkeep.
             </h2>
@@ -1485,7 +1485,7 @@ export function ShynliDeepCleaningPage({ city }: { city?: (typeof cityPages)[num
         <section className="bg-[#f7f2e8] px-4 py-14 md:px-8 md:py-20">
           <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[0.74fr_1.26fr]">
             <div>
-              <p className="mb-4 text-sm font-black uppercase text-[#b54437]">{cityName} plan</p>
+              <p className="mb-4 text-sm font-black uppercase text-[#8f2f27]">{cityName} plan</p>
               <h2 className="text-4xl font-black leading-[0.94] md:text-6xl">
                 Deep cleaning shaped around local homes.
               </h2>
@@ -1516,7 +1516,7 @@ export function ShynliDeepCleaningPage({ city }: { city?: (typeof cityPages)[num
         <section className="bg-[#fffaf0] px-4 py-14 md:px-8 md:py-20">
           <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[0.78fr_1.22fr]">
             <div>
-              <p className="mb-4 text-sm font-black uppercase text-[#b54437]">{cityProfile.localSignal}</p>
+              <p className="mb-4 text-sm font-black uppercase text-[#8f2f27]">{cityProfile.localSignal}</p>
               <h2 className="text-4xl font-black leading-[0.94] md:text-6xl">
                 {cityProfile.heading}
               </h2>
@@ -1527,7 +1527,7 @@ export function ShynliDeepCleaningPage({ city }: { city?: (typeof cityPages)[num
             <div className="grid gap-px overflow-hidden rounded-lg bg-[#d8cbb7] md:grid-cols-2">
               {cityProfile.cards.map(([heading, copy]) => (
                 <div key={heading} className="bg-white p-6">
-                  <p className="text-sm font-black uppercase text-[#b54437]">{heading}</p>
+                  <p className="text-sm font-black uppercase text-[#8f2f27]">{heading}</p>
                   <p className="mt-4 text-base font-black leading-7 text-[#2d2933]">{copy}</p>
                 </div>
               ))}
@@ -1540,7 +1540,7 @@ export function ShynliDeepCleaningPage({ city }: { city?: (typeof cityPages)[num
         <section className="bg-[#efe4d5] px-4 py-14 md:px-8 md:py-20">
           <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[0.74fr_1.26fr]">
             <div>
-              <p className="mb-4 text-sm font-black uppercase text-[#b54437]">{city.name} deep-cleaning pages</p>
+              <p className="mb-4 text-sm font-black uppercase text-[#8f2f27]">{city.name} deep-cleaning pages</p>
               <h2 className="text-4xl font-black leading-[0.94] md:text-6xl">
                 Price, checklist, and home-type pages for {city.name}.
               </h2>
@@ -1552,7 +1552,7 @@ export function ShynliDeepCleaningPage({ city }: { city?: (typeof cityPages)[num
               {cityIntentLinks.map(([label, slug]) => (
                 <a key={slug} href={getShynliDeepPath(slug)} className="group flex min-h-16 items-center justify-between gap-4 bg-white p-5 text-sm font-black transition-colors hover:bg-[#f7f2e8]">
                   {label}
-                  <ArrowRight className="size-4 shrink-0 text-[#b54437] transition-transform group-hover:translate-x-1" />
+                  <ArrowRight className="size-4 shrink-0 text-[#8f2f27] transition-transform group-hover:translate-x-1" />
                 </a>
               ))}
             </div>
@@ -1574,7 +1574,7 @@ export function ShynliDeepCleaningPage({ city }: { city?: (typeof cityPages)[num
                 <TabsTrigger
                   key={tab.value}
                   value={tab.value}
-                  className="h-12 min-h-0 items-center rounded-md px-2 py-0 text-center text-xs font-black leading-none text-white/58 after:hidden data-[state=active]:bg-[#d7ff4f] data-[state=active]:text-[#1b1725] data-[state=active]:shadow-none focus-visible:ring-[#12a8ff] sm:text-sm"
+                  className="h-12 min-h-0 items-center rounded-md px-2 py-0 text-center text-xs font-black leading-none text-white/78 after:hidden data-[state=active]:bg-[#d7ff4f] data-[state=active]:text-[#1b1725] data-[state=active]:shadow-none focus-visible:ring-[#12a8ff] sm:text-sm"
                 >
                   {tab.label}
                 </TabsTrigger>
@@ -1606,7 +1606,7 @@ export function ShynliDeepCleaningPage({ city }: { city?: (typeof cityPages)[num
         <div className="mx-auto max-w-7xl">
           <div className="grid gap-8 md:grid-cols-[0.9fr_1.1fr] md:items-end">
             <div>
-              <p className="mb-4 text-sm font-black uppercase text-[#b54437]">Checklist proof</p>
+              <p className="mb-4 text-sm font-black uppercase text-[#8f2f27]">Checklist proof</p>
               <h2 className="max-w-3xl text-4xl font-black leading-[0.94] md:text-6xl">
                 Make the price feel easy to understand.
               </h2>
@@ -1632,7 +1632,7 @@ export function ShynliDeepCleaningPage({ city }: { city?: (typeof cityPages)[num
       <section id="references" className="bg-[#efe4d5] px-4 py-16 md:px-8 md:py-24">
         <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.74fr_1fr]">
           <div>
-            <p className="mb-4 text-sm font-black uppercase text-[#b54437]">Why it feels clear</p>
+            <p className="mb-4 text-sm font-black uppercase text-[#8f2f27]">Why it feels clear</p>
             <h2 className="text-4xl font-black leading-[0.94] md:text-6xl">
               Less mystery before anyone enters the home.
             </h2>
@@ -1640,7 +1640,7 @@ export function ShynliDeepCleaningPage({ city }: { city?: (typeof cityPages)[num
           <div className="grid gap-px overflow-hidden rounded-lg bg-[#cfc1ad] md:grid-cols-2">
             {deepSiteCompetitorMoves.map(([name, move]) => (
               <div key={name} className="bg-[#fdfaf4] p-6">
-                <p className="text-sm font-black uppercase text-[#b54437]">{name}</p>
+                <p className="text-sm font-black uppercase text-[#8f2f27]">{name}</p>
                 <p className="mt-5 text-xl font-black leading-tight">{move}</p>
               </div>
             ))}
@@ -1652,7 +1652,7 @@ export function ShynliDeepCleaningPage({ city }: { city?: (typeof cityPages)[num
         <div className="mx-auto max-w-7xl">
           <div className="grid gap-8 lg:grid-cols-[0.72fr_1.28fr] lg:items-end">
             <div>
-              <p className="mb-4 text-sm font-black uppercase text-[#b54437]">Service areas</p>
+              <p className="mb-4 text-sm font-black uppercase text-[#8f2f27]">Service areas</p>
               <h2 className="text-4xl font-black leading-[0.94] md:text-6xl">
                 Deep cleaning across the western suburbs.
               </h2>
@@ -1664,7 +1664,7 @@ export function ShynliDeepCleaningPage({ city }: { city?: (typeof cityPages)[num
           <div className="mt-9 grid gap-px overflow-hidden rounded-lg bg-[#d8cbb7] md:grid-cols-4">
             {serviceAreaGroups.map((group) => (
               <div key={group.label} className="bg-white p-5">
-                <h3 className="text-sm font-black uppercase text-[#b54437]">{group.label}</h3>
+                <h3 className="text-sm font-black uppercase text-[#8f2f27]">{group.label}</h3>
                 <div className="mt-4 grid gap-1.5">
                   {group.cities.map((name) => (
                     <a
@@ -1673,7 +1673,7 @@ export function ShynliDeepCleaningPage({ city }: { city?: (typeof cityPages)[num
                       className="flex min-h-9 items-center justify-between gap-3 rounded-md px-2 text-sm font-black text-[#1b1725] transition-colors hover:bg-[#f7f2e8]"
                     >
                       {name}
-                      <ArrowRight className="size-4 shrink-0 text-[#b54437]" />
+                      <ArrowRight className="size-4 shrink-0 text-[#8f2f27]" />
                     </a>
                   ))}
                 </div>
@@ -1687,7 +1687,7 @@ export function ShynliDeepCleaningPage({ city }: { city?: (typeof cityPages)[num
         <div className="mx-auto max-w-7xl">
           <div className="grid gap-8 lg:grid-cols-[0.72fr_1.28fr] lg:items-end">
             <div>
-              <p className="mb-4 text-sm font-black uppercase text-[#b54437]">Deep cleaning guides</p>
+              <p className="mb-4 text-sm font-black uppercase text-[#8f2f27]">Deep cleaning guides</p>
               <h2 className="text-4xl font-black leading-[0.94] md:text-6xl">
                 Answer the questions people ask before they book.
               </h2>
@@ -1704,7 +1704,7 @@ export function ShynliDeepCleaningPage({ city }: { city?: (typeof cityPages)[num
                 className="group flex min-h-20 items-center justify-between gap-4 bg-[#fdfaf4] p-5 text-base font-black transition-colors hover:bg-white"
               >
                 {label}
-                <ArrowRight className="size-5 shrink-0 text-[#b54437] transition-transform group-hover:translate-x-1" />
+                <ArrowRight className="size-5 shrink-0 text-[#8f2f27] transition-transform group-hover:translate-x-1" />
               </a>
             ))}
           </div>
@@ -1715,7 +1715,7 @@ export function ShynliDeepCleaningPage({ city }: { city?: (typeof cityPages)[num
         <div className="mx-auto max-w-7xl">
           <div className="grid gap-8 lg:grid-cols-[0.72fr_1.28fr] lg:items-end">
             <div>
-              <p className="mb-4 text-sm font-black uppercase text-[#b54437]">More deep-cleaning help</p>
+              <p className="mb-4 text-sm font-black uppercase text-[#8f2f27]">More deep-cleaning help</p>
               <h2 className="text-4xl font-black leading-[0.94] md:text-6xl">
                 Room, add-on, and situation pages.
               </h2>
@@ -1732,7 +1732,7 @@ export function ShynliDeepCleaningPage({ city }: { city?: (typeof cityPages)[num
                 className="group flex min-h-20 items-center justify-between gap-4 bg-white p-4 text-sm font-black transition-colors hover:bg-[#f7f2e8]"
               >
                 {guide.label}
-                <ArrowRight className="size-4 shrink-0 text-[#b54437] transition-transform group-hover:translate-x-1" />
+                <ArrowRight className="size-4 shrink-0 text-[#8f2f27] transition-transform group-hover:translate-x-1" />
               </a>
             ))}
           </div>
@@ -1743,7 +1743,7 @@ export function ShynliDeepCleaningPage({ city }: { city?: (typeof cityPages)[num
         <div className="mx-auto max-w-7xl">
           <div className="grid gap-8 lg:grid-cols-[0.72fr_1.28fr] lg:items-end">
             <div>
-              <p className="mb-4 text-sm font-black uppercase text-[#b54437]">Customer reviews</p>
+              <p className="mb-4 text-sm font-black uppercase text-[#8f2f27]">Customer reviews</p>
               <h2 className="text-4xl font-black leading-[0.94] md:text-6xl">
                 Deep cleans that feel worth it afterward.
               </h2>
@@ -1923,13 +1923,13 @@ export function ShynliDeepSeoPage({ page }: { page: ShynliDeepSeoPageData }) {
         <div className="mx-auto grid max-w-7xl gap-5 lg:grid-cols-3">
           {page.sections.map((section, index) => (
             <article key={section.title} className="rounded-lg border border-[#e1d5c4] bg-white p-6 shadow-sm">
-              <span className="text-sm font-black text-[#b54437]">{String(index + 1).padStart(2, "0")}</span>
+              <span className="text-sm font-black text-[#8f2f27]">{String(index + 1).padStart(2, "0")}</span>
               <h2 className="mt-3 text-3xl font-black leading-tight">{section.title}</h2>
               <p className="mt-4 text-sm font-bold leading-6 text-[#665f57]">{section.copy}</p>
               <div className="mt-6 grid gap-2">
                 {section.bullets.map((bullet) => (
                   <div key={bullet} className="flex items-start gap-2 text-sm font-black">
-                    <Check className="mt-0.5 size-4 shrink-0 text-[#b54437]" />
+                    <Check className="mt-0.5 size-4 shrink-0 text-[#8f2f27]" />
                     {bullet}
                   </div>
                 ))}
@@ -1942,7 +1942,7 @@ export function ShynliDeepSeoPage({ page }: { page: ShynliDeepSeoPageData }) {
       <section className="bg-[#fffaf0] px-4 py-14 md:px-8 md:py-20">
         <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[0.74fr_1.26fr]">
           <div>
-            <p className="mb-4 text-sm font-black uppercase text-[#b54437]">Related deep-cleaning pages</p>
+            <p className="mb-4 text-sm font-black uppercase text-[#8f2f27]">Related deep-cleaning pages</p>
             <h2 className="text-4xl font-black leading-[0.94] md:text-6xl">
               Keep comparing before you book.
             </h2>
@@ -1954,7 +1954,7 @@ export function ShynliDeepSeoPage({ page }: { page: ShynliDeepSeoPageData }) {
             {deepSeoPageLinks.filter(([, slug]) => slug !== page.slug).slice(0, 8).map(([label, slug]) => (
               <a key={slug} href={getShynliDeepPath(slug)} className="group flex min-h-16 items-center justify-between gap-4 bg-white p-5 text-sm font-black transition-colors hover:bg-[#f7f2e8]">
                 {label}
-                <ArrowRight className="size-4 shrink-0 text-[#b54437] transition-transform group-hover:translate-x-1" />
+                <ArrowRight className="size-4 shrink-0 text-[#8f2f27] transition-transform group-hover:translate-x-1" />
               </a>
             ))}
           </div>
@@ -1964,7 +1964,7 @@ export function ShynliDeepSeoPage({ page }: { page: ShynliDeepSeoPageData }) {
       <section className="px-4 py-14 md:px-8 md:py-20">
         <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[0.76fr_1.24fr]">
           <div>
-            <p className="mb-4 text-sm font-black uppercase text-[#b54437]">How this helps the quote</p>
+            <p className="mb-4 text-sm font-black uppercase text-[#8f2f27]">How this helps the quote</p>
             <h2 className="text-4xl font-black leading-[0.94] md:text-6xl">
               Turn the search into a better appointment.
             </h2>
@@ -1983,7 +1983,7 @@ export function ShynliDeepSeoPage({ page }: { page: ShynliDeepSeoPageData }) {
               ["Access notes", "Parking, gate codes, lockbox details, pets, delicate surfaces, and rooms to skip help protect the schedule."],
             ].map(([heading, copy]) => (
               <div key={heading} className="bg-white p-6">
-                <p className="text-sm font-black uppercase text-[#b54437]">{heading}</p>
+                <p className="text-sm font-black uppercase text-[#8f2f27]">{heading}</p>
                 <p className="mt-4 text-base font-black leading-7 text-[#2d2933]">{copy}</p>
               </div>
             ))}
@@ -1994,7 +1994,7 @@ export function ShynliDeepSeoPage({ page }: { page: ShynliDeepSeoPageData }) {
       <section className="bg-[#fffaf0] px-4 py-14 md:px-8 md:py-20">
         <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[0.72fr_1.28fr]">
           <div>
-            <p className="mb-4 text-sm font-black uppercase text-[#b54437]">Western suburbs route</p>
+            <p className="mb-4 text-sm font-black uppercase text-[#8f2f27]">Western suburbs route</p>
             <h2 className="text-4xl font-black leading-[0.94] md:text-6xl">
               Local deep cleaning still starts with the ZIP.
             </h2>
@@ -2009,7 +2009,7 @@ export function ShynliDeepSeoPage({ page }: { page: ShynliDeepSeoPageData }) {
             {["Naperville", "Aurora", "Plainfield", "Wheaton"].map((cityName) => (
               <a key={cityName} href={getShynliDeepPath(slugifyCity(cityName))} className="group flex min-h-20 items-center justify-between gap-4 bg-white p-5 text-base font-black transition-colors hover:bg-[#f7f2e8]">
                 {cityName} deep cleaning
-                <ArrowRight className="size-5 shrink-0 text-[#b54437] transition-transform group-hover:translate-x-1" />
+                <ArrowRight className="size-5 shrink-0 text-[#8f2f27] transition-transform group-hover:translate-x-1" />
               </a>
             ))}
           </div>
@@ -2020,7 +2020,7 @@ export function ShynliDeepSeoPage({ page }: { page: ShynliDeepSeoPageData }) {
         <div className="mx-auto max-w-7xl">
           <div className="grid gap-8 lg:grid-cols-[0.72fr_1.28fr] lg:items-end">
             <div>
-              <p className="mb-4 text-sm font-black uppercase text-[#b54437]">Practical answers</p>
+              <p className="mb-4 text-sm font-black uppercase text-[#8f2f27]">Practical answers</p>
               <h2 className="text-4xl font-black leading-[0.94] md:text-6xl">
                 The details people usually ask next.
               </h2>
@@ -2043,7 +2043,7 @@ export function ShynliDeepSeoPage({ page }: { page: ShynliDeepSeoPageData }) {
       <section className="bg-[#f7f2e8] px-4 py-14 md:px-8 md:py-20">
         <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[0.72fr_1.28fr]">
           <div>
-            <p className="mb-4 text-sm font-black uppercase text-[#b54437]">Before you decide</p>
+            <p className="mb-4 text-sm font-black uppercase text-[#8f2f27]">Before you decide</p>
             <h2 className="text-4xl font-black leading-[0.94] md:text-6xl">
               A good deep clean starts with a clear tradeoff.
             </h2>
@@ -2065,7 +2065,7 @@ export function ShynliDeepSeoPage({ page }: { page: ShynliDeepSeoPageData }) {
       <section className="bg-[#fffaf0] px-4 py-14 md:px-8 md:py-20">
         <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[0.74fr_1.26fr]">
           <div>
-            <p className="mb-4 text-sm font-black uppercase text-[#b54437]">Turn the guide into a quote</p>
+            <p className="mb-4 text-sm font-black uppercase text-[#8f2f27]">Turn the guide into a quote</p>
             <h2 className="text-4xl font-black leading-[0.94] md:text-6xl">
               The better the notes, the cleaner the visit.
             </h2>
@@ -2081,7 +2081,7 @@ export function ShynliDeepSeoPage({ page }: { page: ShynliDeepSeoPageData }) {
               ["Share access notes", "Parking, gate codes, lockbox details, pets, delicate surfaces, supplies, and rooms to skip help protect the schedule."],
             ].map(([heading, copy]) => (
               <div key={heading} className="bg-white p-6">
-                <p className="text-sm font-black uppercase text-[#b54437]">{heading}</p>
+                <p className="text-sm font-black uppercase text-[#8f2f27]">{heading}</p>
                 <p className="mt-4 text-base font-black leading-7 text-[#2d2933]">{copy}</p>
               </div>
             ))}
@@ -2218,13 +2218,13 @@ export function ShynliDeepCityIntentPage({ page }: { page: ShynliDeepCityIntentP
         <div className="mx-auto grid max-w-7xl gap-5 lg:grid-cols-3">
           {page.sections.map((section, index) => (
             <article key={section.title} className="rounded-lg border border-[#e1d5c4] bg-white p-6 shadow-sm">
-              <span className="text-sm font-black text-[#b54437]">{String(index + 1).padStart(2, "0")}</span>
+              <span className="text-sm font-black text-[#8f2f27]">{String(index + 1).padStart(2, "0")}</span>
               <h2 className="mt-3 text-3xl font-black leading-tight">{section.title}</h2>
               <p className="mt-4 text-sm font-bold leading-6 text-[#665f57]">{section.copy}</p>
               <div className="mt-6 grid gap-2">
                 {section.bullets.map((bullet) => (
                   <div key={bullet} className="flex items-start gap-2 text-sm font-black">
-                    <Check className="mt-0.5 size-4 shrink-0 text-[#b54437]" />
+                    <Check className="mt-0.5 size-4 shrink-0 text-[#8f2f27]" />
                     {bullet}
                   </div>
                 ))}
@@ -2238,7 +2238,7 @@ export function ShynliDeepCityIntentPage({ page }: { page: ShynliDeepCityIntentP
         <section className="bg-[#f3eadc] px-4 py-14 md:px-8 md:py-20">
           <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[0.72fr_1.28fr]">
             <div>
-              <p className="mb-4 text-sm font-black uppercase text-[#b54437]">{page.intentDetails.eyebrow}</p>
+              <p className="mb-4 text-sm font-black uppercase text-[#8f2f27]">{page.intentDetails.eyebrow}</p>
               <h2 className="text-4xl font-black leading-[0.94] md:text-6xl">
                 {page.intentDetails.title}
               </h2>
@@ -2247,7 +2247,7 @@ export function ShynliDeepCityIntentPage({ page }: { page: ShynliDeepCityIntentP
             <div className="grid gap-px overflow-hidden rounded-lg bg-[#d8cbb7] md:grid-cols-2">
               {page.intentDetails.cards.map(([heading, copy]) => (
                 <div key={heading} className="bg-white p-6">
-                  <p className="text-sm font-black uppercase text-[#b54437]">{heading}</p>
+                  <p className="text-sm font-black uppercase text-[#8f2f27]">{heading}</p>
                   <p className="mt-4 text-base font-black leading-7 text-[#2d2933]">{copy}</p>
                 </div>
               ))}
@@ -2259,7 +2259,7 @@ export function ShynliDeepCityIntentPage({ page }: { page: ShynliDeepCityIntentP
       <section className="bg-[#fffaf0] px-4 py-14 md:px-8 md:py-20">
         <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[0.72fr_1.28fr]">
           <div>
-            <p className="mb-4 text-sm font-black uppercase text-[#b54437]">{profile.localSignal}</p>
+            <p className="mb-4 text-sm font-black uppercase text-[#8f2f27]">{profile.localSignal}</p>
             <h2 className="text-4xl font-black leading-[0.94] md:text-6xl">
               Local relevance for {page.city.name}.
             </h2>
@@ -2270,7 +2270,7 @@ export function ShynliDeepCityIntentPage({ page }: { page: ShynliDeepCityIntentP
           <div className="grid gap-px overflow-hidden rounded-lg bg-[#d8cbb7] md:grid-cols-2">
             {profile.cards.map(([heading, copy]) => (
               <div key={heading} className="bg-white p-6">
-                <p className="text-sm font-black uppercase text-[#b54437]">{heading}</p>
+                <p className="text-sm font-black uppercase text-[#8f2f27]">{heading}</p>
                 <p className="mt-4 text-base font-black leading-7 text-[#2d2933]">{copy}</p>
               </div>
             ))}
@@ -2281,7 +2281,7 @@ export function ShynliDeepCityIntentPage({ page }: { page: ShynliDeepCityIntentP
       <section className="bg-[#efe4d5] px-4 py-14 md:px-8 md:py-20">
         <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[0.74fr_1.26fr]">
           <div>
-            <p className="mb-4 text-sm font-black uppercase text-[#b54437]">Helpful nearby pages</p>
+            <p className="mb-4 text-sm font-black uppercase text-[#8f2f27]">Helpful nearby pages</p>
             <h2 className="text-4xl font-black leading-[0.94] md:text-6xl">
               Compare the nearby deep-cleaning pages.
             </h2>
@@ -2293,7 +2293,7 @@ export function ShynliDeepCityIntentPage({ page }: { page: ShynliDeepCityIntentP
             {page.relatedLinks.map(([label, slug]) => (
               <a key={slug} href={getShynliDeepPath(slug)} className="group flex min-h-16 items-center justify-between gap-4 bg-white p-5 text-sm font-black transition-colors hover:bg-[#f7f2e8]">
                 {label}
-                <ArrowRight className="size-4 shrink-0 text-[#b54437] transition-transform group-hover:translate-x-1" />
+                <ArrowRight className="size-4 shrink-0 text-[#8f2f27] transition-transform group-hover:translate-x-1" />
               </a>
             ))}
           </div>
@@ -2303,7 +2303,7 @@ export function ShynliDeepCityIntentPage({ page }: { page: ShynliDeepCityIntentP
       <section className="px-4 py-14 md:px-8 md:py-20">
         <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[0.78fr_1.22fr]">
           <div>
-            <p className="mb-4 text-sm font-black uppercase text-[#b54437]">Quote logic</p>
+            <p className="mb-4 text-sm font-black uppercase text-[#8f2f27]">Quote logic</p>
             <h2 className="text-4xl font-black leading-[0.94] md:text-6xl">
               The quote should match the situation.
             </h2>
@@ -2313,7 +2313,7 @@ export function ShynliDeepCityIntentPage({ page }: { page: ShynliDeepCityIntentP
             <div className="grid gap-2">
               {(page.quoteDetails?.bullets ?? ["Room count and bathrooms", "Condition level", "Selected add-ons", "Access notes", "Nearby cities"]).map((item) => (
                 <div key={item} className="flex items-start gap-2 text-base font-black text-[#2d2933]">
-                  <Check className="mt-1 size-4 shrink-0 text-[#b54437]" />
+                  <Check className="mt-1 size-4 shrink-0 text-[#8f2f27]" />
                   {item}
                 </div>
               ))}
@@ -2328,7 +2328,7 @@ export function ShynliDeepCityIntentPage({ page }: { page: ShynliDeepCityIntentP
       <section className="bg-[#fffaf0] px-4 py-14 md:px-8 md:py-20">
         <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[0.72fr_1.28fr]">
           <div>
-            <p className="mb-4 text-sm font-black uppercase text-[#b54437]">Before you book in {page.city.name}</p>
+            <p className="mb-4 text-sm font-black uppercase text-[#8f2f27]">Before you book in {page.city.name}</p>
             <h2 className="text-4xl font-black leading-[0.94] md:text-6xl">
               Make the request specific enough to price well.
             </h2>
@@ -2350,7 +2350,7 @@ export function ShynliDeepCityIntentPage({ page }: { page: ShynliDeepCityIntentP
               ["Access", "Share parking, door code, lockbox, pets, special surfaces, rooms to skip, and the best contact for follow-up."],
             ].map(([heading, copy]) => (
               <div key={heading} className="bg-white p-6">
-                <p className="text-sm font-black uppercase text-[#b54437]">{heading}</p>
+                <p className="text-sm font-black uppercase text-[#8f2f27]">{heading}</p>
                 <p className="mt-4 text-base font-black leading-7 text-[#2d2933]">{copy}</p>
               </div>
             ))}
@@ -2753,7 +2753,7 @@ export function ShynliApartmentPage() {
             <ShynliMark />
             <span className="text-xl font-black">Shynli Apartment Cleaning</span>
           </a>
-          <div className="flex flex-wrap gap-4 text-sm font-black text-white/62">
+          <div className="flex flex-wrap gap-4 text-sm font-black text-white/80">
             <a href="/" className="min-h-10 hover:text-white">Back to Shynli</a>
             <a href="#quote" className="min-h-10 hover:text-white">Get price</a>
           </div>

@@ -24,7 +24,7 @@ function DeepNotFoundPage() {
   return (
     <main className="grid min-h-screen place-items-center bg-[#f7f2e8] px-4 py-16 text-[#1b1725]">
       <section className="max-w-xl text-center">
-        <p className="text-sm font-black uppercase text-[#b54437]">Page not found</p>
+        <p className="text-sm font-black uppercase text-[#8f2f27]">Page not found</p>
         <h1 className="mt-4 text-5xl font-black leading-none md:text-7xl">This deep cleaning page is not available.</h1>
         <p className="mt-6 text-lg font-bold leading-8 text-[#1b1725]/70">
           Start from the main Shynli Deep Cleaning page or request a quote with the home details that matter most.
