@@ -7,13 +7,12 @@ import path from 'path'
 export default defineConfig({
   plugins: [react(), tailwindcss()],
   server: {
-    allowedHosts: ["shynli.com", "www.shynli.com", "shiny.com", "www.shiny.com", "shynlideepcleaning.com", "www.shynlideepcleaning.com", "shynlimoveoutcleaning.com", "www.shynlimoveoutcleaning.com"],
+    allowedHosts: ["shynlideepcleaning.com", "www.shynlideepcleaning.com"],
   },
   build: {
     rollupOptions: {
       output: {
         manualChunks(id) {
-          if (id.includes("src/site/shiny-move-out-seo")) return "shiny-move-out-seo"
           if (!id.includes("node_modules")) return
           if (id.includes("lucide-react")) return "vendor-icons"
           if (id.includes("react") || id.includes("react-dom")) return "vendor-react"

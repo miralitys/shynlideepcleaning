@@ -1,157 +1,70 @@
-import { cityPages, cityServicePageCities, genericSeoPages, getCityServiceSeoServices, seoServices } from "@/site/data"
-import { legalPages } from "@/site/legal-data"
-import { LegalPage } from "@/site/legal-pages"
-import { CityPage, GenericSeoPage, HomePage, NotFoundPage, ServiceAreasPage, ServicesIndexPage, ServiceSeoPage } from "@/site/pages"
-import { ShynliMoveOutCityIntentPage, ShynliMoveOutSeoPage, shinyMoveOutCityIntentPages, shinyMoveOutSeoPages } from "@/site/shiny-move-out-seo"
-import { ShynliAirbnbPage, ShynliApartmentPage, ShynliDeepCityIntentPage, ShynliDeepCleaningPage, ShynliDeepSeoPage, ShynliMoveOutLegalPage, ShynliMoveOutPage, shinyDeepCityIntentPages, shinyDeepSeoPages } from "@/site/standalone-pages"
+import { cityPages } from "@/site/data"
+import { ShynliDeepCityIntentPage, ShynliDeepCleaningPage, ShynliDeepSeoPage, shinyDeepCityIntentPages, shinyDeepSeoPages } from "@/site/deep-pages"
+import { Button } from "@/components/ui/button"
+import { buildQuoteUrl, useSeoMeta } from "@/site/shared"
+
+function DeepNotFoundPage() {
+  useSeoMeta(
+    "Page Not Found | Shynli Deep Cleaning",
+    "This Shynli Deep Cleaning page could not be found. Start from the main deep cleaning page or request a quote.",
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      name: "Page Not Found",
+      url: "https://shynlideepcleaning.com/404",
+      isPartOf: { "@type": "WebSite", name: "Shynli Deep Cleaning", url: "https://shynlideepcleaning.com" },
+    },
+    {
+      canonicalBaseUrl: "https://shynlideepcleaning.com",
+      canonicalPath: "/404",
+      robots: "noindex,follow",
+    },
+  )
+
+  return (
+    <main className="grid min-h-screen place-items-center bg-[#f7f2e8] px-4 py-16 text-[#1b1725]">
+      <section className="max-w-xl text-center">
+        <p className="text-sm font-black uppercase text-[#b54437]">Page not found</p>
+        <h1 className="mt-4 text-5xl font-black leading-none md:text-7xl">This deep cleaning page is not available.</h1>
+        <p className="mt-6 text-lg font-bold leading-8 text-[#1b1725]/70">
+          Start from the main Shynli Deep Cleaning page or request a quote with the home details that matter most.
+        </p>
+        <div className="mt-8 flex flex-wrap justify-center gap-3">
+          <Button asChild className="h-12 rounded-full bg-[#1b1725] px-6 font-black text-white hover:bg-[#2b2438]">
+            <a href="/">Home</a>
+          </Button>
+          <Button asChild variant="outline" className="h-12 rounded-full border-[#1b1725]/20 px-6 font-black text-[#1b1725] hover:bg-white">
+            <a href={buildQuoteUrl({ service: "deep-cleaning" })}>Get quote</a>
+          </Button>
+        </div>
+      </section>
+    </main>
+  )
+}
 
 function App() {
   const currentPath = window.location.pathname.replace(/\/$/, "") || "/"
-  const hostname = window.location.hostname.toLowerCase()
-  const isDeepCleaningSite = hostname === "shynlideepcleaning.com" || hostname === "www.shynlideepcleaning.com"
-  const isMoveOutCleaningSite = hostname === "shynlimoveoutcleaning.com" || hostname === "www.shynlimoveoutcleaning.com"
-  const cityMatch = cityPages.find((city) => currentPath === `/service-areas/${city.slug}`)
-  const serviceMatch = seoServices.find((service) => currentPath === `/services/${service.slug}`)
-  const genericSeoMatch = genericSeoPages.find((page) => currentPath === page.path)
-  const legalMatch = legalPages.find((page) => currentPath === page.path)
-  const shinyMoveOutLegalMatch = legalPages.find((page) => currentPath === page.path || currentPath === `/shiny-move-out-cleaning${page.path}`)
-  const shinyDeepCityMatch = cityPages.find((city) => currentPath === `/shiny-deep-cleaning/${city.slug}`)
-  const deepDomainCityMatch = cityPages.find((city) => currentPath === `/${city.slug}`)
-  const moveOutDomainCityMatch = cityPages.find((city) => currentPath === `/${city.slug}`)
-  const shinyMoveOutCityMatch = cityPages.find((city) => currentPath === `/shiny-move-out-cleaning/${city.slug}`)
-  const moveOutDomainSeoMatch = shinyMoveOutSeoPages.find((page) => currentPath === `/${page.slug}`)
-  const moveOutDomainCityIntentMatch = shinyMoveOutCityIntentPages.find((page) => currentPath === `/${page.slug}`)
-  const shinyMoveOutSeoMatch = shinyMoveOutSeoPages.find((page) => currentPath === `/shiny-move-out-cleaning/${page.slug}`)
-  const shinyMoveOutCityIntentMatch = shinyMoveOutCityIntentPages.find((page) => currentPath === `/shiny-move-out-cleaning/${page.slug}`)
-  const deepDomainSeoMatch = shinyDeepSeoPages.find((page) => currentPath === `/${page.slug}`)
-  const deepDomainCityIntentMatch = shinyDeepCityIntentPages.find((page) => currentPath === `/${page.slug}`)
-  const shinyDeepSeoMatch = shinyDeepSeoPages.find((page) => currentPath === `/shiny-deep-cleaning/${page.slug}`)
-  const shinyDeepCityIntentMatch = shinyDeepCityIntentPages.find((page) => currentPath === `/shiny-deep-cleaning/${page.slug}`)
-  const cityServiceMatch = cityServicePageCities
-    .flatMap((city) =>
-      getCityServiceSeoServices(city.name).map((service) => ({
-        city,
-        service,
-        path: `/service-areas/${city.slug}/${service.slug}`,
-      })),
-    )
-    .find((item) => currentPath === item.path)
+  const domainCityMatch = cityPages.find((city) => currentPath === `/${city.slug}`)
+  const domainSeoMatch = shinyDeepSeoPages.find((page) => currentPath === `/${page.slug}`)
+  const domainCityIntentMatch = shinyDeepCityIntentPages.find((page) => currentPath === `/${page.slug}`)
 
-  if (isDeepCleaningSite) {
-    if (currentPath === "/") {
-      return <ShynliDeepCleaningPage />
-    }
-
-    if (deepDomainCityMatch) {
-      return <ShynliDeepCleaningPage city={deepDomainCityMatch} />
-    }
-
-    if (deepDomainSeoMatch) {
-      return <ShynliDeepSeoPage page={deepDomainSeoMatch} />
-    }
-
-    if (deepDomainCityIntentMatch) {
-      return <ShynliDeepCityIntentPage page={deepDomainCityIntentMatch} />
-    }
-  }
-
-  if (isMoveOutCleaningSite && currentPath === "/") {
-    return <ShynliMoveOutPage />
-  }
-
-  if (isMoveOutCleaningSite && shinyMoveOutLegalMatch) {
-    return <ShynliMoveOutLegalPage page={shinyMoveOutLegalMatch} />
-  }
-
-  if (isMoveOutCleaningSite && moveOutDomainSeoMatch) {
-    return <ShynliMoveOutSeoPage page={moveOutDomainSeoMatch} />
-  }
-
-  if (isMoveOutCleaningSite && moveOutDomainCityIntentMatch) {
-    return <ShynliMoveOutCityIntentPage page={moveOutDomainCityIntentMatch} />
-  }
-
-  if (isMoveOutCleaningSite && moveOutDomainCityMatch) {
-    return <ShynliMoveOutPage city={moveOutDomainCityMatch} />
-  }
-
-  if (currentPath === "/shiny-apartment-cleaning") {
-    return <ShynliApartmentPage />
-  }
-
-  if (currentPath === "/shiny-deep-cleaning") {
+  if (currentPath === "/") {
     return <ShynliDeepCleaningPage />
   }
 
-  if (shinyDeepCityMatch) {
-    return <ShynliDeepCleaningPage city={shinyDeepCityMatch} />
+  if (domainCityMatch) {
+    return <ShynliDeepCleaningPage city={domainCityMatch} />
   }
 
-  if (shinyDeepSeoMatch) {
-    return <ShynliDeepSeoPage page={shinyDeepSeoMatch} />
+  if (domainSeoMatch) {
+    return <ShynliDeepSeoPage page={domainSeoMatch} />
   }
 
-  if (shinyDeepCityIntentMatch) {
-    return <ShynliDeepCityIntentPage page={shinyDeepCityIntentMatch} />
+  if (domainCityIntentMatch) {
+    return <ShynliDeepCityIntentPage page={domainCityIntentMatch} />
   }
 
-  if (currentPath === "/shiny-airbnb-cleaning") {
-    return <ShynliAirbnbPage />
-  }
-
-  if (currentPath === "/shiny-move-out-cleaning") {
-    return <ShynliMoveOutPage />
-  }
-
-  if (shinyMoveOutLegalMatch && currentPath.startsWith("/shiny-move-out-cleaning/")) {
-    return <ShynliMoveOutLegalPage page={shinyMoveOutLegalMatch} />
-  }
-
-  if (shinyMoveOutSeoMatch) {
-    return <ShynliMoveOutSeoPage page={shinyMoveOutSeoMatch} />
-  }
-
-  if (shinyMoveOutCityIntentMatch) {
-    return <ShynliMoveOutCityIntentPage page={shinyMoveOutCityIntentMatch} />
-  }
-
-  if (shinyMoveOutCityMatch) {
-    return <ShynliMoveOutPage city={shinyMoveOutCityMatch} />
-  }
-
-  if (currentPath === "/services") {
-    return <ServicesIndexPage />
-  }
-
-  if (currentPath === "/service-areas") {
-    return <ServiceAreasPage />
-  }
-
-  if (serviceMatch) {
-    return <ServiceSeoPage service={serviceMatch} />
-  }
-
-  if (cityServiceMatch) {
-    return <ServiceSeoPage service={cityServiceMatch.service} city={cityServiceMatch.city} />
-  }
-
-  if (cityMatch) {
-    return <CityPage city={cityMatch} />
-  }
-
-  if (genericSeoMatch) {
-    return <GenericSeoPage page={genericSeoMatch} />
-  }
-
-  if (legalMatch) {
-    return <LegalPage page={legalMatch} />
-  }
-
-  if (currentPath === "/") {
-    return <HomePage />
-  }
-
-  return <NotFoundPage />
+  return <DeepNotFoundPage />
 }
 
 export default App
