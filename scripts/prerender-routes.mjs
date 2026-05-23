@@ -90,6 +90,12 @@ try {
 
     mkdirSync(dirname(routeIndex), { recursive: true })
     writeFileSync(routeIndex, html)
+
+    if (routePath !== "/") {
+      const routeHtmlFile = join(distDir, `${routePath}.html`)
+      mkdirSync(dirname(routeHtmlFile), { recursive: true })
+      writeFileSync(routeHtmlFile, html)
+    }
   }
 } finally {
   await vite.close()

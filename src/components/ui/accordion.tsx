@@ -1,49 +1,105 @@
-"use client"
-
 import * as React from "react"
 import { ChevronDownIcon } from "lucide-react"
-import { Accordion as AccordionPrimitive } from "radix-ui"
 
 import { cn } from "@/lib/utils"
 
-function Accordion({
-  ...props
-}: React.ComponentProps<typeof AccordionPrimitive.Root>) {
-  return <AccordionPrimitive.Root data-slot="accordion" {...props} />
+type AccordionContextValue = {
+  openValue?: string
+  collapsible?: boolean
+  setOpenValue: (value?: string) => void
 }
 
-function AccordionItem({
+const AccordionContext = React.createContext<AccordionContextValue | null>(null)
+const AccordionItemContext = React.createContext<string | null>(null)
+
+type AccordionProps = React.HTMLAttributes<HTMLDivElement> & {
+  type?: "single"
+  collapsible?: boolean
+  defaultValue?: string
+  value?: string
+  onValueChange?: (value: string) => void
+}
+
+function Accordion({
   className,
+  collapsible,
+  defaultValue,
+  value,
+  onValueChange,
   ...props
-}: React.ComponentProps<typeof AccordionPrimitive.Item>) {
+}: AccordionProps) {
+  const [uncontrolledValue, setUncontrolledValue] = React.useState(defaultValue)
+  const openValue = value ?? uncontrolledValue
+
+  const contextValue = React.useMemo<AccordionContextValue>(
+    () => ({
+      openValue,
+      collapsible,
+      setOpenValue(nextValue) {
+        setUncontrolledValue(nextValue)
+        onValueChange?.(nextValue ?? "")
+      },
+    }),
+    [collapsible, onValueChange, openValue],
+  )
+
   return (
-    <AccordionPrimitive.Item
-      data-slot="accordion-item"
-      className={cn("border-b last:border-b-0", className)}
-      {...props}
-    />
+    <AccordionContext.Provider value={contextValue}>
+      <div data-slot="accordion" className={className} {...props} />
+    </AccordionContext.Provider>
+  )
+}
+
+type AccordionItemProps = React.HTMLAttributes<HTMLDivElement> & {
+  value: string
+}
+
+function AccordionItem({ className, value, ...props }: AccordionItemProps) {
+  return (
+    <AccordionItemContext.Provider value={value}>
+      <div
+        data-slot="accordion-item"
+        data-value={value}
+        className={cn("border-b last:border-b-0", className)}
+        {...props}
+      />
+    </AccordionItemContext.Provider>
   )
 }
 
 function AccordionTrigger({
   className,
   children,
+  onClick,
   ...props
-}: React.ComponentProps<typeof AccordionPrimitive.Trigger>) {
+}: React.ButtonHTMLAttributes<HTMLButtonElement>) {
+  const context = React.useContext(AccordionContext)
+  const itemValue = React.useContext(AccordionItemContext)
+  const isOpen = Boolean(itemValue && context?.openValue === itemValue)
+
   return (
-    <AccordionPrimitive.Header className="flex">
-      <AccordionPrimitive.Trigger
+    <h3 className="flex">
+      <button
+        type="button"
         data-slot="accordion-trigger"
+        data-state={isOpen ? "open" : "closed"}
+        aria-expanded={isOpen}
         className={cn(
           "flex flex-1 items-start justify-between gap-4 rounded-md py-4 text-left text-sm font-medium transition-all outline-none hover:underline focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:pointer-events-none disabled:opacity-50 [&[data-state=open]>svg]:rotate-180",
-          className
+          className,
         )}
+        onClick={(event) => {
+          onClick?.(event)
+          if (event.defaultPrevented || !context || !itemValue) return
+          const nextValue = isOpen && context.collapsible ? undefined : itemValue
+          context.setOpenValue(nextValue)
+        }}
         {...props}
       >
         {children}
         <ChevronDownIcon className="pointer-events-none size-4 shrink-0 translate-y-0.5 text-muted-foreground transition-transform duration-200" />
-      </AccordionPrimitive.Trigger>
-    </AccordionPrimitive.Header>
+      </button>
+    </h3>
   )
 }
 
@@ -51,15 +107,21 @@ function AccordionContent({
   className,
   children,
   ...props
-}: React.ComponentProps<typeof AccordionPrimitive.Content>) {
+}: React.HTMLAttributes<HTMLDivElement>) {
+  const context = React.useContext(AccordionContext)
+  const itemValue = React.useContext(AccordionItemContext)
+  const isOpen = Boolean(itemValue && context?.openValue === itemValue)
+
   return (
-    <AccordionPrimitive.Content
+    <div
       data-slot="accordion-content"
-      className="overflow-hidden text-sm data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down"
+      data-state={isOpen ? "open" : "closed"}
+      hidden={!isOpen}
+      className="overflow-hidden text-sm"
       {...props}
     >
       <div className={cn("pt-0 pb-4", className)}>{children}</div>
-    </AccordionPrimitive.Content>
+    </div>
   )
 }
 

@@ -52,16 +52,14 @@ type QuoteParams = {
 
 export function buildQuoteUrl(params: QuoteParams = {}) {
   const url = new URL(QUOTE_BASE_URL)
-  const sourcePage = params.sourcePage || (typeof window !== "undefined" ? window.location.pathname : "")
-  const landingPageUrl = params.landingPageUrl || (typeof window !== "undefined" ? window.location.href : "")
   const entries: Record<string, string | number | undefined> = {
     zip: params.zip,
     city: params.city,
     service: params.service,
     bedrooms: params.bedrooms,
     bathrooms: params.bathrooms,
-    landing_page_url: landingPageUrl,
-    source_page: sourcePage,
+    landing_page_url: params.landingPageUrl,
+    source_page: params.sourcePage,
     add_ons: params.addOns,
     notes: params.notes,
   }
@@ -83,9 +81,20 @@ export function resolveSiteHref(href: string, quoteParams: QuoteParams = {}) {
   return href.startsWith("#") ? `/${href}` : href
 }
 
+function currentQuoteContext() {
+  if (typeof window === "undefined") {
+    return {}
+  }
+
+  return {
+    landingPageUrl: window.location.href,
+    sourcePage: window.location.pathname,
+  }
+}
+
 export function submitQuoteRequest(event: FormEvent, params: QuoteParams = {}) {
   event.preventDefault()
-  window.location.href = buildQuoteUrl(params)
+  window.location.href = buildQuoteUrl({ ...currentQuoteContext(), ...params })
 }
 
 export function submitQuoteForm(event: FormEvent<HTMLFormElement>, defaults: QuoteParams = {}) {
@@ -106,6 +115,7 @@ export function submitQuoteForm(event: FormEvent<HTMLFormElement>, defaults: Quo
     .join(" | ")
 
   window.location.href = buildQuoteUrl({
+    ...currentQuoteContext(),
     ...defaults,
     zip: String(formData.get("zip") ?? defaults.zip ?? ""),
     city: String(formData.get("city") ?? defaults.city ?? ""),
