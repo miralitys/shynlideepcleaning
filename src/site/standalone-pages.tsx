@@ -44,7 +44,7 @@ export const moveOutFaqs = [
   ["Can you guarantee my full deposit back?", "No. We can guarantee the covered cleaning scope and a re-clean path for missed checklist items. Deposit decisions belong to the landlord or property manager."],
   ["Do I need to be there?", "Usually no. Add lockbox, door code, parking, elevator, gate, pet, and utility notes before the visit."],
   ["Should the home be empty?", "Yes, for a true move-out clean. Large items, trash, and personal belongings should be removed before the cleaner arrives."],
-  ["Are fridge, oven, cabinets, and garage included?", "Some are included only when selected or quoted. The page should show these add-ons clearly before booking."],
+  ["Are fridge, oven, cabinets, and garage included?", "Some are included only when selected or quoted. The quote should show these add-ons clearly before booking."],
 ]
 
 const shinyMoveOutCanonicalBase = "https://shynlimoveoutcleaning.com"
@@ -636,7 +636,7 @@ const deepExtraGuidePages: ShynliDeepSeoPageData[] = deepExtraGuideSeeds.map((se
     },
     {
       title: "How it connects to a full deep clean",
-      copy: "Focused pages like this should still lead back to the main deep-cleaning scope so the customer understands what is included, what costs extra, and what is outside the visit.",
+      copy: "Focused requests like this should still connect back to the main deep-cleaning scope so you understand what is included, what costs extra, and what is outside the visit.",
       bullets: ["Deep-cleaning checklist", "Cost factors", "Add-ons", "Preparation", "Follow-up path"],
     },
   ],
@@ -764,7 +764,7 @@ const deepCityBookingPatterns = [
   "The customer should know before booking that hazardous waste, pest treatment, mold remediation, heavy hauling, and exterior windows are not part of the visit.",
   "The form should capture move timing, listing timing, guest timing, or recurring-start timing because each reason changes what the cleaner should prioritize.",
   "The visit should be scoped around outcome, not only square footage, because a smaller home with heavy buildup may need more time than a larger maintained home.",
-  "The page should explain the difference between visible reset work and quoted add-ons, then let the customer ask for the rooms that matter most.",
+  "The guide should explain the difference between visible reset work and quoted add-ons, then let the customer ask for the rooms that matter most.",
   "The request should collect enough context to prevent a rushed appointment: condition, access, add-ons, surfaces, skipped rooms, and follow-up expectations.",
   "The best conversion path is simple: check the city, explain the home, name the buildup, select extras, and confirm timing with fewer surprises.",
   "The local plan should help the visitor feel that the cleaner understands nearby homes, access notes, and the rooms that usually need extra time.",
@@ -1077,7 +1077,7 @@ function makeDeepPropertyPage(city: (typeof cityPages)[number], seed: DeepCityIn
     meta: `${seed.label} in ${city.name}, IL. Start with condition, priority rooms, add-ons, access notes, timing, and a clear deep cleaning quote.`,
     eyebrow: `${city.name} ${seed.property}`,
     h1: `${seed.label} in ${city.name}, IL.`,
-    intro: `${seed.label} in ${city.name} should be scoped around the actual request, not just the word deep. This page is for ${seed.fit}. The quote should reflect ${seed.situation}, plus local access notes, selected add-ons, and the rooms that carry the most visible buildup.`,
+    intro: `${seed.label} in ${city.name} should be scoped around the actual request, not just the word deep. This request is for ${seed.fit}. The quote should reflect ${seed.situation}, plus local access notes, selected add-ons, and the rooms that carry the most visible buildup.`,
     sections: [
       {
         title: `${seed.label}: when it fits`,
@@ -1097,8 +1097,8 @@ function makeDeepPropertyPage(city: (typeof cityPages)[number], seed: DeepCityIn
     ],
     intentDetails: {
       eyebrow: `${seed.label} details`,
-      title: `What makes this ${pageTitleCase(seed.slug)} page different.`,
-      copy: `A ${city.name} ${seed.label.toLowerCase()} request should not read like every other deep-cleaning page. The customer is choosing this page because the situation changes the scope, the timing, the add-ons, or the way the cleaner should prioritize rooms.`,
+      title: `What makes this ${pageTitleCase(seed.slug)} request different.`,
+      copy: `A ${city.name} ${seed.label.toLowerCase()} request should not read like every other deep-cleaning job. You are choosing this type of clean because the situation changes the scope, the timing, the add-ons, or the way the cleaner should prioritize rooms.`,
       cards: seed.cards,
     },
     quoteDetails: {
@@ -1201,7 +1201,7 @@ function ShynliDeepFooter({ city }: { city?: (typeof cityPages)[number] }) {
         <div className="grid gap-8 sm:grid-cols-4">
           {[
             ["Deep cleaning", guideLinks],
-            ["Local pages", cityLinks],
+            ["Local help", cityLinks],
             ["Planning", [["What is included", "what-is-included-in-deep-cleaning"], ["Not included", "what-is-not-included-in-deep-cleaning"], ["How long it takes", "how-long-does-deep-cleaning-take"], ["Prepare", "prepare-for-deep-cleaning"]] as [string, string][]],
             ["Support", supportLinks],
           ].map(([title, links]) => (
@@ -1540,12 +1540,12 @@ export function ShynliDeepCleaningPage({ city }: { city?: (typeof cityPages)[num
         <section className="bg-[#efe4d5] px-4 py-14 md:px-8 md:py-20">
           <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[0.74fr_1.26fr]">
             <div>
-              <p className="mb-4 text-sm font-black uppercase text-[#8f2f27]">{city.name} deep-cleaning pages</p>
+              <p className="mb-4 text-sm font-black uppercase text-[#8f2f27]">{city.name} deep-cleaning help</p>
               <h2 className="text-4xl font-black leading-[0.94] md:text-6xl">
-                Price, checklist, and home-type pages for {city.name}.
+                Price, checklist, and home-type guidance for {city.name}.
               </h2>
               <p className="mt-5 text-lg font-bold leading-8 text-[#5e574f]">
-                These local pages split the intent instead of forcing every question onto one page: cost, checklist, apartment or house layouts, move timing, condos, and townhouses where relevant.
+                These local guides separate the questions that matter before booking: cost, checklist, apartment or house layouts, move timing, condos, and townhouses where relevant.
               </p>
             </div>
             <div className="grid gap-px overflow-hidden rounded-lg bg-[#cfc1ad] md:grid-cols-2">
@@ -1658,7 +1658,7 @@ export function ShynliDeepCleaningPage({ city }: { city?: (typeof cityPages)[num
               </h2>
             </div>
             <p className="max-w-2xl text-lg font-bold leading-8 text-[#5e574f] lg:justify-self-end">
-              Pick your city to see a deep-cleaning page built around local homes, room count, buildup level, add-ons, and route availability.
+              Pick your city to see deep-cleaning details built around local homes, room count, buildup level, add-ons, and appointment timing.
             </p>
           </div>
           <div className="mt-9 grid gap-px overflow-hidden rounded-lg bg-[#d8cbb7] md:grid-cols-4">
@@ -1693,7 +1693,7 @@ export function ShynliDeepCleaningPage({ city }: { city?: (typeof cityPages)[num
               </h2>
             </div>
             <p className="max-w-2xl text-lg font-bold leading-8 text-[#5e574f] lg:justify-self-end">
-              Cost, timing, checklist, add-ons, preparation, and service comparisons are separated into focused pages so the quote feels clear before the visit.
+              Cost, timing, checklist, add-ons, preparation, and service comparisons are separated into focused guides so the quote feels clear before the visit.
             </p>
           </div>
           <div className="mt-9 grid gap-px overflow-hidden rounded-lg bg-[#cfc1ad] md:grid-cols-3">
@@ -1717,11 +1717,11 @@ export function ShynliDeepCleaningPage({ city }: { city?: (typeof cityPages)[num
             <div>
               <p className="mb-4 text-sm font-black uppercase text-[#8f2f27]">More deep-cleaning help</p>
               <h2 className="text-4xl font-black leading-[0.94] md:text-6xl">
-                Room, add-on, and situation pages.
+                Room, add-on, and situation guides.
               </h2>
             </div>
             <p className="max-w-2xl text-lg font-bold leading-8 text-[#5e574f] lg:justify-self-end">
-              These focused pages answer the smaller searches people make before they are ready to ask for a quote: kitchen detail, bathroom buildup, appliance interiors, pets, holidays, move timing, renters, and property handoff.
+              These focused guides answer the specific questions people ask before they are ready to request a quote: kitchen detail, bathroom buildup, appliance interiors, pets, holidays, move timing, renters, and property handoff.
             </p>
           </div>
           <div className="mt-9 grid gap-px overflow-hidden rounded-lg bg-[#d8cbb7] md:grid-cols-4">
@@ -1942,12 +1942,12 @@ export function ShynliDeepSeoPage({ page }: { page: ShynliDeepSeoPageData }) {
       <section className="bg-[#fffaf0] px-4 py-14 md:px-8 md:py-20">
         <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[0.74fr_1.26fr]">
           <div>
-            <p className="mb-4 text-sm font-black uppercase text-[#8f2f27]">Related deep-cleaning pages</p>
+            <p className="mb-4 text-sm font-black uppercase text-[#8f2f27]">Related deep-cleaning help</p>
             <h2 className="text-4xl font-black leading-[0.94] md:text-6xl">
               Keep comparing before you book.
             </h2>
             <p className="mt-5 text-lg font-bold leading-8 text-[#5e574f]">
-              These pages connect the most common deep-cleaning questions: price, checklist, add-ons, timing, preparation, and whether deep cleaning is the right service.
+              These guides connect the most common deep-cleaning questions: price, checklist, add-ons, timing, preparation, and whether deep cleaning is the right service.
             </p>
           </div>
           <div className="grid gap-px overflow-hidden rounded-lg bg-[#d8cbb7] md:grid-cols-2">
@@ -1969,7 +1969,7 @@ export function ShynliDeepSeoPage({ page }: { page: ShynliDeepSeoPageData }) {
               Turn the search into a better appointment.
             </h2>
             <p className="mt-5 text-lg font-bold leading-8 text-[#5e574f]">
-              A deep-cleaning page should do more than answer one question. It should help you decide whether the home needs a true reset, which rooms deserve the most time, which extras should be selected before the visit, and what details the cleaner needs before arrival.
+              A deep-cleaning guide should do more than answer one question. It should help you decide whether the home needs a true reset, which rooms deserve the most time, which extras should be selected before the visit, and what details the cleaner needs before arrival.
             </p>
             <p className="mt-4 text-lg font-bold leading-8 text-[#5e574f]">
               Use this guide to make the request more specific. If the kitchen is the problem, name appliance fronts, cabinet handles, sink edges, backsplash, or oven/fridge interiors. If bathrooms are the problem, name shower buildup, tile edges, fixtures, toilet bases, or glass doors. If timing is tight, name the rooms that matter most first.
@@ -2026,7 +2026,7 @@ export function ShynliDeepSeoPage({ page }: { page: ShynliDeepSeoPageData }) {
               </h2>
             </div>
             <p className="max-w-2xl text-lg font-bold leading-8 text-[#5e574f] lg:justify-self-end">
-              These answers are visible on the page because deep-cleaning customers often compare scope, timing, add-ons, and boundaries before they are ready to request a quote.
+              These answers are included here because deep-cleaning customers often compare scope, timing, add-ons, and boundaries before they are ready to request a quote.
             </p>
           </div>
           <div className="mt-9 grid gap-4 md:grid-cols-2">
@@ -2056,7 +2056,7 @@ export function ShynliDeepSeoPage({ page }: { page: ShynliDeepSeoPageData }) {
               If the home has heavy buildup, move timing, many bathrooms, pets, cluttered floors, or several appliance interiors, say that before the visit. If the home is mostly maintained but one room is behind, say that too. A focused request can be better than a broad request because it turns the deep clean into a plan: what must be handled, what can wait, and what should be priced separately.
             </p>
             <p>
-              Before booking, compare this page with the cost guide, checklist, add-ons, timing guide, and preparation page. Together they help answer the medium- and low-frequency questions people usually search before they are ready to request a quote.
+              Before booking, compare this guide with the cost guide, checklist, add-ons, timing guide, and preparation guide. Together they answer the specific questions people usually ask before they are ready to request a quote.
             </p>
           </div>
         </div>
@@ -2070,7 +2070,7 @@ export function ShynliDeepSeoPage({ page }: { page: ShynliDeepSeoPageData }) {
               The better the notes, the cleaner the visit.
             </h2>
             <p className="mt-5 text-lg font-bold leading-8 text-[#5e574f]">
-              Use this page to decide what the cleaner should know before arrival. A good request names the condition of the home, the rooms that matter most, the add-ons that should be priced, and any access details that could slow the visit down.
+              Use this guide to decide what the cleaner should know before arrival. A good request names the condition of the home, the rooms that matter most, the add-ons that should be priced, and any access details that could slow the visit down.
             </p>
           </div>
           <div className="grid gap-px overflow-hidden rounded-lg bg-[#d8cbb7] md:grid-cols-2">
@@ -2281,12 +2281,12 @@ export function ShynliDeepCityIntentPage({ page }: { page: ShynliDeepCityIntentP
       <section className="bg-[#efe4d5] px-4 py-14 md:px-8 md:py-20">
         <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[0.74fr_1.26fr]">
           <div>
-            <p className="mb-4 text-sm font-black uppercase text-[#8f2f27]">Helpful nearby pages</p>
+            <p className="mb-4 text-sm font-black uppercase text-[#8f2f27]">Helpful nearby options</p>
             <h2 className="text-4xl font-black leading-[0.94] md:text-6xl">
-              Compare the nearby deep-cleaning pages.
+              Compare nearby deep-cleaning options.
             </h2>
             <p className="mt-5 text-lg font-bold leading-8 text-[#5e574f]">
-              These links keep the page connected to the city, the local cost guide, the checklist, and nearby suburbs. That helps visitors compare realistic options instead of landing on an isolated page.
+              These links keep the request connected to the city, the local cost guide, the checklist, and nearby suburbs. That helps visitors compare realistic options instead of landing on an isolated answer.
             </p>
           </div>
           <div className="grid gap-px overflow-hidden rounded-lg bg-[#cfc1ad] md:grid-cols-2">
@@ -2309,7 +2309,7 @@ export function ShynliDeepCityIntentPage({ page }: { page: ShynliDeepCityIntentP
             </h2>
           </div>
           <div className="grid gap-5 text-lg font-bold leading-8 text-[#5e574f]">
-            <p>{page.quoteDetails?.copy ?? `A useful ${page.city.name} deep-cleaning page should reduce confusion before the appointment. The visitor should understand which work is part of the core visit, which tasks are add-ons, which boundaries matter, and what details the cleaner needs before arriving.`}</p>
+            <p>{page.quoteDetails?.copy ?? `A useful ${page.city.name} deep-cleaning quote should reduce confusion before the appointment. You should understand which work is part of the core visit, which tasks are add-ons, which boundaries matter, and what details the cleaner needs before arriving.`}</p>
             <div className="grid gap-2">
               {(page.quoteDetails?.bullets ?? ["Room count and bathrooms", "Condition level", "Selected add-ons", "Access notes", "Nearby cities"]).map((item) => (
                 <div key={item} className="flex items-start gap-2 text-base font-black text-[#2d2933]">
@@ -2339,7 +2339,7 @@ export function ShynliDeepCityIntentPage({ page }: { page: ShynliDeepCityIntentP
               For {page.city.name}, the most useful quote notes usually describe the kitchen, bathrooms, entry areas, pets, stairs, parking, and any timing pressure around guests, moving, listing photos, or recurring service. Clear notes help the cleaner arrive prepared and help you compare the price before choosing a time.
             </p>
             <p className="mt-4 text-lg font-bold leading-8 text-[#5e574f]">
-              If this page is helping you compare options, use it as a simple decision filter: what must be handled during the first visit, what can wait for a future recurring clean, and what should be priced as an extra before the cleaner arrives. That makes the request easier to trust and easier to schedule.
+              If this guide is helping you compare options, use it as a simple decision filter: what must be handled during the first visit, what can wait for a future recurring clean, and what should be priced as an extra before the cleaner arrives. That makes the request easier to trust and easier to schedule.
             </p>
           </div>
           <div className="grid gap-px overflow-hidden rounded-lg bg-[#d8cbb7] md:grid-cols-2">
@@ -2723,7 +2723,7 @@ export function ShynliApartmentPage() {
           <div>
             <p className="mb-4 text-sm font-black uppercase text-[#9fe3ff]">Booking questions</p>
             <h2 className="text-4xl font-black leading-[0.96] sm:text-5xl">
-              The page should answer objections before the call.
+              The quote path should answer objections before the call.
             </h2>
           </div>
           <Accordion type="single" collapsible defaultValue="supplies" className="rounded-md bg-white px-5 text-[#092332]">
