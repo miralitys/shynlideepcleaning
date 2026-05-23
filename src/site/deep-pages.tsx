@@ -1008,20 +1008,8 @@ export const shinyDeepCityIntentPages: ShynliDeepCityIntentPageData[] = [
     .flatMap((city) => deepPropertyIntentSeeds.map((seed) => makeDeepPropertyPage(city, seed))),
 ]
 
-function isShynliDeepStandaloneHost() {
-  if (typeof window === "undefined") {
-    return false
-  }
-
-  return window.location.hostname === "shynlideepcleaning.com" || window.location.hostname === "www.shynlideepcleaning.com"
-}
-
 function getShynliDeepPath(slug?: string) {
-  if (isShynliDeepStandaloneHost()) {
-    return slug ? `/${slug}` : "/"
-  }
-
-  return slug ? `/shiny-deep-cleaning/${slug}` : "/shiny-deep-cleaning"
+  return slug ? `/${slug}` : "/"
 }
 
 function ShynliDeepFooter({ city }: { city?: (typeof cityPages)[number] }) {

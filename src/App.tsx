@@ -42,8 +42,13 @@ function DeepNotFoundPage() {
   )
 }
 
-function App() {
-  const currentPath = window.location.pathname.replace(/\/$/, "") || "/"
+type AppProps = {
+  path?: string
+}
+
+export function App({ path }: AppProps = {}) {
+  const pathname = path ?? (typeof window !== "undefined" ? window.location.pathname : "/")
+  const currentPath = pathname.replace(/\/$/, "") || "/"
   const domainCityMatch = cityPages.find((city) => currentPath === `/${city.slug}`)
   const domainSeoMatch = shinyDeepSeoPages.find((page) => currentPath === `/${page.slug}`)
   const domainCityIntentMatch = shinyDeepCityIntentPages.find((page) => currentPath === `/${page.slug}`)

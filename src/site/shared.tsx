@@ -570,6 +570,17 @@ type SeoMetaOptions = {
   robots?: "index,follow" | "noindex,follow"
 }
 
+type SsrSeoMeta = {
+  title: string
+  description: string
+  schema?: object
+  options: SeoMetaOptions
+}
+
+declare global {
+  var __SHYNLI_SSR_META__: SsrSeoMeta | undefined
+}
+
 function normalizeSeoDescription(description: string) {
   let value = description.replace(/\s+/g, " ").trim()
 
@@ -599,6 +610,16 @@ function normalizeSeoDescription(description: string) {
 }
 
 export function useSeoMeta(title: string, description: string, schema?: object, options: SeoMetaOptions = {}) {
+  if (typeof document === "undefined") {
+    // eslint-disable-next-line react-hooks/immutability
+    globalThis.__SHYNLI_SSR_META__ = {
+      title,
+      description: normalizeSeoDescription(description),
+      schema,
+      options,
+    }
+  }
+
   useEffect(() => {
     document.title = title
 
