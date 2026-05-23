@@ -34,7 +34,7 @@ function DeepNotFoundPage() {
             <a href="/">Home</a>
           </Button>
           <Button asChild variant="outline" className="h-12 rounded-full border-[#1b1725]/20 px-6 font-black text-[#1b1725] hover:bg-white">
-            <a href={buildQuoteUrl({ service: "deep-cleaning" })}>Get quote</a>
+            <a href={buildQuoteUrl({ service: "deep-cleaning" })}>Request quote</a>
           </Button>
         </div>
       </section>

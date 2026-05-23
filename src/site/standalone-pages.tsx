@@ -1191,7 +1191,7 @@ function ShynliDeepFooter({ city }: { city?: (typeof cityPages)[number] }) {
           </div>
           <div className="mt-6 flex flex-wrap gap-3">
             <Button asChild className="h-11 rounded-full bg-[#d7ff4f] px-5 font-black text-[#1b1725] hover:bg-[#c6f040]">
-              <a href={buildQuoteUrl({ service: "deep-cleaning" })}>Get quote</a>
+              <a href={buildQuoteUrl({ service: "deep-cleaning" })}>Start quote</a>
             </Button>
             <Button asChild variant="outline" className="h-11 rounded-full border-white/22 bg-white/8 px-5 font-black text-white hover:bg-white/14 hover:text-white">
               <a href={getShynliDeepPath() + "#areas"}>Service areas</a>
@@ -1273,7 +1273,7 @@ export function ShynliDeepCleaningPage({ city }: { city?: (typeof cityPages)[num
     <main className="min-h-screen overflow-hidden bg-[#f7f2e8] text-[#1b1725]">
       <header className="fixed inset-x-0 top-0 z-50 border-b border-white/14 bg-[#1b1725]/72 px-4 text-white backdrop-blur-xl md:px-8">
         <div className="mx-auto flex h-16 max-w-7xl items-center justify-between">
-          <a href={deepHomeHref} className="flex min-h-11 items-center gap-3" aria-label="Shynli Deep Cleaning home">
+          <a href={deepHomeHref} className="flex min-h-11 items-center gap-3">
             <span className="grid size-10 place-items-center rounded-full bg-[#d7ff4f] text-[#1b1725]">
               <Sparkles className="size-5" />
             </span>
@@ -1871,7 +1871,7 @@ export function ShynliDeepSeoPage({ page }: { page: ShynliDeepSeoPageData }) {
     <main className="min-h-screen overflow-hidden bg-[#f7f2e8] text-[#1b1725]">
       <header className="fixed inset-x-0 top-0 z-50 border-b border-white/14 bg-[#1b1725]/72 px-4 text-white backdrop-blur-xl md:px-8">
         <div className="mx-auto flex h-16 max-w-7xl items-center justify-between">
-          <a href={getShynliDeepPath()} className="flex min-h-11 items-center gap-3" aria-label="Shynli Deep Cleaning home">
+          <a href={getShynliDeepPath()} className="flex min-h-11 items-center gap-3">
             <span className="grid size-10 place-items-center rounded-full bg-[#d7ff4f] text-[#1b1725]">
               <Sparkles className="size-5" />
             </span>
@@ -2157,7 +2157,7 @@ export function ShynliDeepCityIntentPage({ page }: { page: ShynliDeepCityIntentP
     <main className="min-h-screen overflow-hidden bg-[#f7f2e8] text-[#1b1725]">
       <header className="fixed inset-x-0 top-0 z-50 border-b border-white/14 bg-[#1b1725]/72 px-4 text-white backdrop-blur-xl md:px-8">
         <div className="mx-auto flex h-16 max-w-7xl items-center justify-between">
-          <a href={getShynliDeepPath()} className="flex min-h-11 items-center gap-3" aria-label="Shynli Deep Cleaning home">
+          <a href={getShynliDeepPath()} className="flex min-h-11 items-center gap-3">
             <span className="grid size-10 place-items-center rounded-full bg-[#d7ff4f] text-[#1b1725]">
               <Sparkles className="size-5" />
             </span>
