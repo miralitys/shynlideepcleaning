@@ -1758,9 +1758,10 @@ export function ShynliDeepCleaningPage({ city }: { city?: (typeof cityPages)[num
                   </div>
                   <div>
                     <p className="text-3xl font-black leading-none">5.0</p>
-                    <div className="mt-2 flex gap-0.5 text-[#fbbc04]" aria-label="5 star rating">
+                    <div className="mt-2 flex gap-0.5 text-[#fbbc04]">
+                      <span className="sr-only">5 star rating</span>
                       {Array.from({ length: 5 }).map((_, index) => (
-                        <Star key={index} className="size-4 fill-current" />
+                        <Star key={index} aria-hidden="true" className="size-4 fill-current" />
                       ))}
                     </div>
                   </div>
@@ -1787,9 +1788,10 @@ export function ShynliDeepCleaningPage({ city }: { city?: (typeof cityPages)[num
                   </div>
                   <span className="rounded-full bg-[#f1f3f4] px-2.5 py-1 text-xs font-black text-[#5f6368]">Local</span>
                 </div>
-                <div className="mt-4 flex gap-0.5 text-[#fbbc04]" aria-label="5 star rating">
+                <div className="mt-4 flex gap-0.5 text-[#fbbc04]">
+                  <span className="sr-only">5 star rating</span>
                   {Array.from({ length: 5 }).map((_, index) => (
-                    <Star key={index} className="size-4 fill-current" />
+                    <Star key={index} aria-hidden="true" className="size-4 fill-current" />
                   ))}
                 </div>
                 <p className="mt-4 text-base font-bold leading-7 text-[#2d2933]">"{review.copy}"</p>
