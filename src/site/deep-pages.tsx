@@ -1,5 +1,4 @@
 import { useState } from "react"
-import { ArrowRight, Check, Sparkles, Star } from "lucide-react"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
@@ -8,6 +7,22 @@ import { Input } from "@/components/ui/input"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { businessEmail, businessPhoneDisplay, businessPhoneHref, cityHeroImages, cityList, cityPages, cityRouteNotes, serviceAreaGroups, slugifyCity } from "@/site/data"
 import { buildQuoteUrl, submitQuoteForm, useSeoMeta } from "@/site/shared"
+
+function TinySparkle({ className = "" }: { className?: string }) {
+  return <span aria-hidden="true" className={`inline-grid place-items-center text-current ${className}`}>*</span>
+}
+
+function TinyArrow({ className = "" }: { className?: string }) {
+  return <span aria-hidden="true" className={`inline-grid place-items-center text-current ${className}`}>-&gt;</span>
+}
+
+function TinyCheck({ className = "" }: { className?: string }) {
+  return <span aria-hidden="true" className={`inline-grid place-items-center text-current ${className}`}>✓</span>
+}
+
+function StarRating() {
+  return <span aria-hidden="true" className="text-sm leading-none tracking-normal">★★★★★</span>
+}
 
 export const deepSiteProof = [
   ["Price before pressure", "Start with ZIP, home size, condition, and add-ons before you commit to a visit."],
@@ -1045,7 +1060,7 @@ function ShynliDeepFooter({ city }: { city?: (typeof cityPages)[number] }) {
         <div>
           <a href={getShynliDeepPath()} className="flex min-h-11 items-center gap-3">
             <span className="grid size-10 place-items-center rounded-full bg-[#d7ff4f] text-[#1b1725]">
-              <Sparkles className="size-5" />
+              <TinySparkle className="size-5" />
             </span>
             <span className="text-xl font-black">Shynli Deep Cleaning</span>
           </a>
@@ -1142,7 +1157,7 @@ export function ShynliDeepCleaningPage({ city }: { city?: (typeof cityPages)[num
         <div className="mx-auto flex h-16 max-w-7xl items-center justify-between">
           <a href={deepHomeHref} className="flex min-h-11 items-center gap-3" aria-label="Shynli Deep Cleaning home">
             <span className="grid size-10 place-items-center rounded-full bg-[#d7ff4f] text-[#1b1725]">
-              <Sparkles className="size-5" />
+              <TinySparkle className="size-5" />
             </span>
             <span className="leading-none">
               <span className="block text-lg font-black">Shynli</span>
@@ -1193,7 +1208,7 @@ export function ShynliDeepCleaningPage({ city }: { city?: (typeof cityPages)[num
               <Button asChild className="h-13 rounded-full bg-[#d7ff4f] px-7 text-base font-black text-[#1b1725] hover:bg-[#c6f040]">
                 <a href="#quote">
                   Check price
-                  <ArrowRight />
+                  <TinyArrow />
                 </a>
               </Button>
               <Button asChild variant="outline" className="h-13 rounded-full border-white/30 bg-white/8 px-7 text-base font-black text-white hover:bg-white/14 hover:text-white">
@@ -1308,7 +1323,7 @@ export function ShynliDeepCleaningPage({ city }: { city?: (typeof cityPages)[num
                 </p>
                 <Button type="submit" className="h-13 rounded-full bg-[#b54437] text-base font-black text-white hover:bg-[#9f3c31]">
                   Price this deep clean
-                  <ArrowRight />
+                  <TinyArrow />
                 </Button>
                 <p className="text-sm font-bold leading-6 text-[#6c655d]">
                   No card to check. Final quote depends on size, condition, add-ons, access, and appointment availability.
@@ -1419,7 +1434,7 @@ export function ShynliDeepCleaningPage({ city }: { city?: (typeof cityPages)[num
               {cityIntentLinks.map(([label, slug]) => (
                 <a key={slug} href={getShynliDeepPath(slug)} className="group flex min-h-16 items-center justify-between gap-4 bg-white p-5 text-sm font-black transition-colors hover:bg-[#f7f2e8]">
                   {label}
-                  <ArrowRight className="size-4 shrink-0 text-[#b54437] transition-transform group-hover:translate-x-1" />
+                  <TinyArrow className="size-4 shrink-0 text-[#b54437] transition-transform group-hover:translate-x-1" />
                 </a>
               ))}
             </div>
@@ -1457,7 +1472,7 @@ export function ShynliDeepCleaningPage({ city }: { city?: (typeof cityPages)[num
                   <div className="grid gap-2 sm:grid-cols-2">
                     {tab.items.map((item) => (
                       <div key={item} className="flex min-h-14 items-start gap-3 border-t border-white/14 py-3 text-sm font-black">
-                        <Check className="mt-0.5 size-4 shrink-0 text-[#d7ff4f]" />
+                        <TinyCheck className="mt-0.5 size-4 shrink-0 text-[#d7ff4f]" />
                         {item}
                       </div>
                     ))}
@@ -1486,7 +1501,7 @@ export function ShynliDeepCleaningPage({ city }: { city?: (typeof cityPages)[num
             {deepSiteZones.map(([title, copy]) => (
               <div key={title} className="min-h-72 bg-white p-6">
                 <span className="grid size-11 place-items-center rounded-full bg-[#1b1725] text-[#d7ff4f]">
-                  <Sparkles className="size-5" />
+                  <TinySparkle className="size-5" />
                 </span>
                 <h3 className="mt-8 text-2xl font-black leading-tight">{title}</h3>
                 <p className="mt-4 text-sm font-bold leading-6 text-[#665f57]">{copy}</p>
@@ -1540,7 +1555,7 @@ export function ShynliDeepCleaningPage({ city }: { city?: (typeof cityPages)[num
                       className="flex min-h-9 items-center justify-between gap-3 rounded-md px-2 text-sm font-black text-[#1b1725] transition-colors hover:bg-[#f7f2e8]"
                     >
                       {name}
-                      <ArrowRight className="size-4 shrink-0 text-[#b54437]" />
+                      <TinyArrow className="size-4 shrink-0 text-[#b54437]" />
                     </a>
                   ))}
                 </div>
@@ -1571,7 +1586,7 @@ export function ShynliDeepCleaningPage({ city }: { city?: (typeof cityPages)[num
                 className="group flex min-h-20 items-center justify-between gap-4 bg-[#fdfaf4] p-5 text-base font-black transition-colors hover:bg-white"
               >
                 {label}
-                <ArrowRight className="size-5 shrink-0 text-[#b54437] transition-transform group-hover:translate-x-1" />
+                <TinyArrow className="size-5 shrink-0 text-[#b54437] transition-transform group-hover:translate-x-1" />
               </a>
             ))}
           </div>
@@ -1599,7 +1614,7 @@ export function ShynliDeepCleaningPage({ city }: { city?: (typeof cityPages)[num
                 className="group flex min-h-20 items-center justify-between gap-4 bg-white p-4 text-sm font-black transition-colors hover:bg-[#f7f2e8]"
               >
                 {guide.label}
-                <ArrowRight className="size-4 shrink-0 text-[#b54437] transition-transform group-hover:translate-x-1" />
+                <TinyArrow className="size-4 shrink-0 text-[#b54437] transition-transform group-hover:translate-x-1" />
               </a>
             ))}
           </div>
@@ -1626,9 +1641,7 @@ export function ShynliDeepCleaningPage({ city }: { city?: (typeof cityPages)[num
                   <div>
                     <p className="text-3xl font-black leading-none">5.0</p>
                     <div className="mt-2 flex gap-0.5 text-[#fbbc04]" aria-label="5 star rating">
-                      {Array.from({ length: 5 }).map((_, index) => (
-                        <Star key={index} className="size-4 fill-current" />
-                      ))}
+                      <StarRating />
                     </div>
                   </div>
                 </div>
@@ -1655,9 +1668,7 @@ export function ShynliDeepCleaningPage({ city }: { city?: (typeof cityPages)[num
                   <span className="rounded-full bg-[#f1f3f4] px-2.5 py-1 text-xs font-black text-[#5f6368]">Local</span>
                 </div>
                 <div className="mt-4 flex gap-0.5 text-[#fbbc04]" aria-label="5 star rating">
-                  {Array.from({ length: 5 }).map((_, index) => (
-                    <Star key={index} className="size-4 fill-current" />
-                  ))}
+                  <StarRating />
                 </div>
                 <p className="mt-4 text-base font-bold leading-7 text-[#2d2933]">"{review.copy}"</p>
                 <p className="mt-5 border-t border-[#ece3d7] pt-4 text-sm font-black text-[#6c655d]">{review.service}</p>
@@ -1697,7 +1708,7 @@ export function ShynliDeepCleaningPage({ city }: { city?: (typeof cityPages)[num
           <Button asChild className="h-13 rounded-full bg-[#1b1725] px-7 text-base font-black text-white hover:bg-[#2b2438]">
             <a href="#quote">
               Check price
-              <ArrowRight />
+              <TinyArrow />
             </a>
           </Button>
         </div>
@@ -1738,7 +1749,7 @@ export function ShynliDeepSeoPage({ page }: { page: ShynliDeepSeoPageData }) {
         <div className="mx-auto flex h-16 max-w-7xl items-center justify-between">
           <a href={getShynliDeepPath()} className="flex min-h-11 items-center gap-3" aria-label="Shynli Deep Cleaning home">
             <span className="grid size-10 place-items-center rounded-full bg-[#d7ff4f] text-[#1b1725]">
-              <Sparkles className="size-5" />
+              <TinySparkle className="size-5" />
             </span>
             <span className="leading-none">
               <span className="block text-lg font-black">Shynli</span>
@@ -1774,7 +1785,7 @@ export function ShynliDeepSeoPage({ page }: { page: ShynliDeepSeoPageData }) {
             <Button asChild className="h-13 rounded-full bg-[#d7ff4f] px-7 text-base font-black text-[#1b1725] hover:bg-[#c6f040]">
               <a href={getShynliDeepPath() + "#quote"}>
                 Check price
-                <ArrowRight />
+                <TinyArrow />
               </a>
             </Button>
             <Button asChild variant="outline" className="h-13 rounded-full border-white/30 bg-white/8 px-7 text-base font-black text-white hover:bg-white/14 hover:text-white">
@@ -1794,7 +1805,7 @@ export function ShynliDeepSeoPage({ page }: { page: ShynliDeepSeoPageData }) {
               <div className="mt-6 grid gap-2">
                 {section.bullets.map((bullet) => (
                   <div key={bullet} className="flex items-start gap-2 text-sm font-black">
-                    <Check className="mt-0.5 size-4 shrink-0 text-[#b54437]" />
+                    <TinyCheck className="mt-0.5 size-4 shrink-0 text-[#b54437]" />
                     {bullet}
                   </div>
                 ))}
@@ -1819,7 +1830,7 @@ export function ShynliDeepSeoPage({ page }: { page: ShynliDeepSeoPageData }) {
             {deepSeoPageLinks.filter(([, slug]) => slug !== page.slug).slice(0, 8).map(([label, slug]) => (
               <a key={slug} href={getShynliDeepPath(slug)} className="group flex min-h-16 items-center justify-between gap-4 bg-white p-5 text-sm font-black transition-colors hover:bg-[#f7f2e8]">
                 {label}
-                <ArrowRight className="size-4 shrink-0 text-[#b54437] transition-transform group-hover:translate-x-1" />
+                <TinyArrow className="size-4 shrink-0 text-[#b54437] transition-transform group-hover:translate-x-1" />
               </a>
             ))}
           </div>
@@ -1874,7 +1885,7 @@ export function ShynliDeepSeoPage({ page }: { page: ShynliDeepSeoPageData }) {
             {["Naperville", "Aurora", "Plainfield", "Wheaton"].map((cityName) => (
               <a key={cityName} href={getShynliDeepPath(slugifyCity(cityName))} className="group flex min-h-20 items-center justify-between gap-4 bg-white p-5 text-base font-black transition-colors hover:bg-[#f7f2e8]">
                 {cityName} deep cleaning
-                <ArrowRight className="size-5 shrink-0 text-[#b54437] transition-transform group-hover:translate-x-1" />
+                <TinyArrow className="size-5 shrink-0 text-[#b54437] transition-transform group-hover:translate-x-1" />
               </a>
             ))}
           </div>
@@ -2024,7 +2035,7 @@ export function ShynliDeepCityIntentPage({ page }: { page: ShynliDeepCityIntentP
         <div className="mx-auto flex h-16 max-w-7xl items-center justify-between">
           <a href={getShynliDeepPath()} className="flex min-h-11 items-center gap-3" aria-label="Shynli Deep Cleaning home">
             <span className="grid size-10 place-items-center rounded-full bg-[#d7ff4f] text-[#1b1725]">
-              <Sparkles className="size-5" />
+              <TinySparkle className="size-5" />
             </span>
             <span className="leading-none">
               <span className="block text-lg font-black">Shynli</span>
@@ -2068,7 +2079,7 @@ export function ShynliDeepCityIntentPage({ page }: { page: ShynliDeepCityIntentP
               <Button asChild className="h-13 rounded-full bg-[#d7ff4f] px-7 text-base font-black text-[#1b1725] hover:bg-[#c6f040]">
                 <a href={getShynliDeepPath() + "#quote"}>
                   Check price
-                  <ArrowRight />
+                  <TinyArrow />
                 </a>
               </Button>
               <Button asChild variant="outline" className="h-13 rounded-full border-white/30 bg-white/8 px-7 text-base font-black text-white hover:bg-white/14 hover:text-white">
@@ -2089,7 +2100,7 @@ export function ShynliDeepCityIntentPage({ page }: { page: ShynliDeepCityIntentP
               <div className="mt-6 grid gap-2">
                 {section.bullets.map((bullet) => (
                   <div key={bullet} className="flex items-start gap-2 text-sm font-black">
-                    <Check className="mt-0.5 size-4 shrink-0 text-[#b54437]" />
+                    <TinyCheck className="mt-0.5 size-4 shrink-0 text-[#b54437]" />
                     {bullet}
                   </div>
                 ))}
@@ -2158,7 +2169,7 @@ export function ShynliDeepCityIntentPage({ page }: { page: ShynliDeepCityIntentP
             {page.relatedLinks.map(([label, slug]) => (
               <a key={slug} href={getShynliDeepPath(slug)} className="group flex min-h-16 items-center justify-between gap-4 bg-white p-5 text-sm font-black transition-colors hover:bg-[#f7f2e8]">
                 {label}
-                <ArrowRight className="size-4 shrink-0 text-[#b54437] transition-transform group-hover:translate-x-1" />
+                <TinyArrow className="size-4 shrink-0 text-[#b54437] transition-transform group-hover:translate-x-1" />
               </a>
             ))}
           </div>
@@ -2178,7 +2189,7 @@ export function ShynliDeepCityIntentPage({ page }: { page: ShynliDeepCityIntentP
             <div className="grid gap-2">
               {(page.quoteDetails?.bullets ?? ["Room count and bathrooms", "Condition level", "Selected add-ons", "Access notes", "Nearby cities"]).map((item) => (
                 <div key={item} className="flex items-start gap-2 text-base font-black text-[#2d2933]">
-                  <Check className="mt-1 size-4 shrink-0 text-[#b54437]" />
+                  <TinyCheck className="mt-1 size-4 shrink-0 text-[#b54437]" />
                   {item}
                 </div>
               ))}

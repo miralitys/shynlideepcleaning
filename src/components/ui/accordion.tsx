@@ -1,5 +1,4 @@
 import * as React from "react"
-import { ChevronDownIcon } from "lucide-react"
 
 import { cn } from "@/lib/utils"
 
@@ -97,7 +96,9 @@ function AccordionTrigger({
         {...props}
       >
         {children}
-        <ChevronDownIcon className="pointer-events-none size-4 shrink-0 translate-y-0.5 text-muted-foreground transition-transform duration-200" />
+        <span aria-hidden="true" className="pointer-events-none grid size-4 shrink-0 translate-y-0.5 place-items-center text-muted-foreground transition-transform duration-200">
+          v
+        </span>
       </button>
     </h3>
   )
