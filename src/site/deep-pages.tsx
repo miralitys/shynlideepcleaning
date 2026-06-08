@@ -209,7 +209,7 @@ const baseShynliDeepSeoPages: ShynliDeepSeoPageData[] = [
     meta: "Compare deep cleaning add-ons such as fridge, oven, cabinet interiors, interior windows, blinds, doors, baseboards, and basement cleaning.",
     eyebrow: "Add-ons",
     h1: "Deep cleaning add-ons should be named before the visit.",
-    intro: "Add-ons help turn a generic deep clean into the right visit for the home. The important part is naming them before booking, because fridge interiors, oven interiors, cabinet interiors, windows, blinds, and basement work can change the time needed.",
+    intro: "Add-ons help turn a broad deep clean into the right visit for the home. The important part is naming them before booking, because fridge interiors, oven interiors, cabinet interiors, windows, blinds, and basement work can change the time needed.",
     sections: [
       { title: "Kitchen add-ons", copy: "Kitchen add-ons are popular because appliance and cabinet interiors take focused time.", bullets: ["Inside refrigerator", "Inside oven", "Inside cabinets", "Range hood", "Cabinet fronts and handles"] },
       { title: "Detail add-ons", copy: "These extras can make a home feel more reset when dust and buildup have reached beyond the obvious surfaces.", bullets: ["Interior windows", "Blinds", "Doors", "Baseboards", "Wood furniture polishing"] },
@@ -967,7 +967,7 @@ function getDeepCityProfile(city: (typeof cityPages)[number]) {
     accessPattern,
     outcomePattern,
     heading: `A ${city.name} deep clean should be scoped before arrival.`,
-    intro: `${localSignal} homes do not all need the same kind of heavy clean. In ${city.name}, we start by separating normal upkeep from the details that usually need extra time: ${routePattern}. ${routeNote} That makes the quote more useful than a generic booking button, because the cleaner sees the rooms, condition, access details, and add-ons before the visit is held.`,
+    intro: `${localSignal} homes do not all need the same kind of heavy clean. In ${city.name}, we start by separating normal upkeep from the details that usually need extra time: ${routePattern}. ${routeNote} That makes the quote more useful than a quick booking button, because the cleaner sees the rooms, condition, access details, and add-ons before the visit is held.`,
     second: `For ${city.name} customers, the strongest deep-clean plan usually names the priority surfaces first: ${priorityPattern}. Then we confirm ${accessPattern}. ${outcomePattern}`,
     third: `${neighborhoodPattern} ${bookingPattern}`,
     cards: [
@@ -1311,7 +1311,7 @@ function getShynliDeepPath(slug?: string) {
 
 function ShynliDeepFooter({ city }: { city?: (typeof cityPages)[number] }) {
   const guideLinks: [string, string][] = [
-    ["Article guides", "blog"],
+    ["Practical guides", "blog"],
     ["Cost guide", "deep-cleaning-cost"],
     ["Checklist", "deep-cleaning-checklist"],
     ["Add-ons", "deep-cleaning-add-ons"],
@@ -1969,7 +1969,7 @@ export function ShynliDeepCleaningPage({ city }: { city?: (typeof cityPages)[num
           <div>
             <p className="mb-4 text-sm font-black uppercase text-[#8f2f27]">Deep cleaning guides</p>
             <h2 className="text-4xl font-black leading-[0.94] md:text-6xl">
-              Articles for the questions people ask before booking.
+              Guides for the questions people ask before booking.
             </h2>
             <p className="mt-5 text-lg font-bold leading-8 text-[#5e574f]">
               These guides cover the practical decisions that come before a deep clean: timing, where to start, clutter, room order, and how to set expectations with the cleaner.
@@ -2153,12 +2153,12 @@ export function ShynliDeepSeoPage({ page }: { page: ShynliDeepSeoPageData }) {
       <section className="px-4 py-14 md:px-8 md:py-20">
         <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[0.74fr_1.26fr]">
           <div>
-            <p className="mb-4 text-sm font-black uppercase text-[#8f2f27]">Related articles</p>
+            <p className="mb-4 text-sm font-black uppercase text-[#8f2f27]">More practical guides</p>
             <h2 className="text-4xl font-black leading-[0.94] md:text-6xl">
               Real questions behind the service pages.
             </h2>
             <p className="mt-5 text-lg font-bold leading-8 text-[#5e574f]">
-              These article pages answer the practical questions people ask before they are ready to request a deep-cleaning quote.
+              These guides answer the practical questions people ask before they are ready to request a deep-cleaning quote.
             </p>
           </div>
           <div className="grid gap-px overflow-hidden rounded-lg bg-[#d8cbb7] md:grid-cols-3">
@@ -2168,7 +2168,7 @@ export function ShynliDeepSeoPage({ page }: { page: ShynliDeepSeoPageData }) {
                 <h3 className="mt-3 text-xl font-black leading-tight">{article.h1}</h3>
                 <p className="mt-3 text-sm font-bold leading-6 text-[#665f57]">{article.summary}</p>
                 <span className="mt-5 inline-flex items-center gap-2 text-sm font-black text-[#8f2f27]">
-                  Read article
+                  Read guide
                   <TinyArrow className="size-4 transition-transform group-hover:translate-x-1" />
                 </span>
               </a>
@@ -2337,7 +2337,7 @@ export function ShynliDeepBlogPage() {
       "@context": "https://schema.org",
       "@type": "CollectionPage",
       name: "Deep Cleaning Guides",
-      description: "Practical deep cleaning articles from Shynli Deep Cleaning.",
+      description: "Practical deep cleaning guides from Shynli Deep Cleaning.",
       url: `${shinyDeepCanonicalBase}/blog`,
       isPartOf: { "@type": "WebSite", name: "Shynli Deep Cleaning", url: shinyDeepCanonicalBase },
       mainEntity: {
@@ -2353,7 +2353,7 @@ export function ShynliDeepBlogPage() {
     {
       canonicalBaseUrl: shinyDeepCanonicalBase,
       canonicalPath: "/blog",
-      keywords: ["deep cleaning guides", "deep cleaning articles", "deep cleaning questions", "house deep cleaning help", "Shynli Deep Cleaning"],
+      keywords: ["deep cleaning guides", "deep cleaning questions", "house deep cleaning help", "home deep cleaning advice", "Shynli Deep Cleaning"],
     },
   )
 
@@ -2370,7 +2370,7 @@ export function ShynliDeepBlogPage() {
               <span className="mt-1 block text-xs font-black uppercase text-[#d7ff4f]">Deep Cleaning</span>
             </span>
           </a>
-          <nav className="hidden items-center gap-1 text-sm font-black text-white/68 md:flex" aria-label="Deep cleaning article navigation">
+          <nav className="hidden items-center gap-1 text-sm font-black text-white/68 md:flex" aria-label="Deep cleaning guide navigation">
             {[["Home", ""], ["Guides", "blog"], ["Cost", "deep-cleaning-cost"], ["Checklist", "deep-cleaning-checklist"], ["FAQ", "deep-cleaning-faq"]].map(([label, slug]) => (
               <a key={label} href={getShynliDeepPath(slug)} className="flex min-h-11 items-center rounded-full px-4 transition-colors hover:bg-white/10 hover:text-white">
                 {label}
@@ -2391,7 +2391,7 @@ export function ShynliDeepBlogPage() {
         <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(27,23,37,0.98)_0%,rgba(27,23,37,0.88)_48%,rgba(27,23,37,0.54)_100%)]" />
         <div className="relative z-10 mx-auto max-w-7xl">
           <Badge className="mb-6 rounded-full border border-[#d7ff4f]/35 bg-[#d7ff4f]/12 px-4 py-1.5 text-[#d7ff4f] shadow-none hover:bg-[#d7ff4f]/12">
-            Deep cleaning articles
+            Deep cleaning guides
           </Badge>
           <h1 className="max-w-5xl text-[clamp(3.2rem,8vw,8rem)] font-black leading-[0.86] tracking-normal">Guides for the messy questions before a deep clean.</h1>
           <p className="mt-7 max-w-3xl text-xl font-bold leading-8 text-white/76">
@@ -2412,7 +2412,7 @@ export function ShynliDeepBlogPage() {
               <p className="mt-4 text-base font-bold leading-7 text-[#5e574f]">{article.summary}</p>
               <p className="mt-5 text-sm font-bold leading-6 text-[#6c655d]">{article.sourceQuestion}</p>
               <span className="mt-6 inline-flex items-center gap-2 text-sm font-black text-[#8f2f27]">
-                Read article
+                Read guide
                 <TinyArrow className="size-4 transition-transform group-hover:translate-x-1" />
               </span>
             </a>
@@ -2499,7 +2499,7 @@ export function ShynliDeepArticlePage({ page }: { page: ShynliDeepArticlePageDat
               <span className="mt-1 block text-xs font-black uppercase text-[#d7ff4f]">Deep Cleaning</span>
             </span>
           </a>
-          <nav className="hidden items-center gap-1 text-sm font-black text-white/68 md:flex" aria-label="Deep cleaning article navigation">
+          <nav className="hidden items-center gap-1 text-sm font-black text-white/68 md:flex" aria-label="Deep cleaning guide navigation">
             {[["Guides", "blog"], ["Cost", "deep-cleaning-cost"], ["Checklist", "deep-cleaning-checklist"], ["FAQ", "deep-cleaning-faq"]].map(([label, slug]) => (
               <a key={label} href={getShynliDeepPath(slug)} className="flex min-h-11 items-center rounded-full px-4 transition-colors hover:bg-white/10 hover:text-white">
                 {label}
@@ -2573,7 +2573,7 @@ export function ShynliDeepArticlePage({ page }: { page: ShynliDeepArticlePageDat
             <div>
               <p className="mb-4 text-sm font-black uppercase text-[#8f2f27]">Related service pages</p>
               <h2 className="text-4xl font-black leading-[0.94] md:text-6xl">
-                Connect the article to the booking scope.
+                Connect this guide to the booking scope.
               </h2>
               <p className="mt-5 text-lg font-bold leading-8 text-[#5e574f]">
                 These pages help turn the answer into a quote with clearer scope, add-ons, timing, and service boundaries.
@@ -2593,7 +2593,7 @@ export function ShynliDeepArticlePage({ page }: { page: ShynliDeepArticlePageDat
         <section className="bg-[#1b1725] px-4 py-14 text-white md:px-8 md:py-20">
           <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[0.8fr_1.2fr]">
             <div>
-              <p className="mb-4 text-sm font-black uppercase text-[#d7ff4f]">Article FAQ</p>
+              <p className="mb-4 text-sm font-black uppercase text-[#d7ff4f]">Common questions</p>
               <h2 className="text-4xl font-black leading-[0.94] md:text-6xl">
                 Fast answers before you book.
               </h2>
