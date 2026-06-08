@@ -2070,7 +2070,7 @@ export function ShynliDeepSeoPage({ page }: { page: ShynliDeepSeoPageData }) {
             </span>
           </a>
           <nav className="hidden items-center gap-1 text-sm font-black text-white/68 md:flex" aria-label="Deep cleaning guide navigation">
-            {[["Cost", "deep-cleaning-cost"], ["Checklist", "deep-cleaning-checklist"], ["Add-ons", "deep-cleaning-add-ons"], ["FAQ", "deep-cleaning-faq"]].map(([label, slug]) => (
+            {[["Cost", "deep-cleaning-cost"], ["Checklist", "deep-cleaning-checklist"], ["Guides", "blog"], ["Add-ons", "deep-cleaning-add-ons"], ["FAQ", "deep-cleaning-faq"]].map(([label, slug]) => (
               <a key={slug} href={getShynliDeepPath(slug)} className="flex min-h-11 items-center rounded-full px-4 transition-colors hover:bg-white/10 hover:text-white">
                 {label}
               </a>
@@ -2371,7 +2371,7 @@ export function ShynliDeepBlogPage() {
             </span>
           </a>
           <nav className="hidden items-center gap-1 text-sm font-black text-white/68 md:flex" aria-label="Deep cleaning article navigation">
-            {[["Home", ""], ["Cost", "deep-cleaning-cost"], ["Checklist", "deep-cleaning-checklist"], ["FAQ", "deep-cleaning-faq"]].map(([label, slug]) => (
+            {[["Home", ""], ["Guides", "blog"], ["Cost", "deep-cleaning-cost"], ["Checklist", "deep-cleaning-checklist"], ["FAQ", "deep-cleaning-faq"]].map(([label, slug]) => (
               <a key={label} href={getShynliDeepPath(slug)} className="flex min-h-11 items-center rounded-full px-4 transition-colors hover:bg-white/10 hover:text-white">
                 {label}
               </a>
@@ -2690,6 +2690,7 @@ export function ShynliDeepCityIntentPage({ page }: { page: ShynliDeepCityIntentP
               ["City", page.city.slug],
               ["Cost", `${page.city.slug}/deep-cleaning-cost`],
               ["Checklist", `${page.city.slug}/deep-cleaning-checklist`],
+              ["Guides", "blog"],
               ["FAQ", "deep-cleaning-faq"],
             ].map(([label, slug]) => (
               <a key={slug} href={getShynliDeepPath(slug)} className="flex min-h-11 items-center rounded-full px-4 transition-colors hover:bg-white/10 hover:text-white">
