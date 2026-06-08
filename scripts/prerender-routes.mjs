@@ -34,6 +34,7 @@ function applyHead(html, routePath, meta) {
   const canonicalHref = `${canonicalBaseUrl}${canonicalPath === "/" ? "" : canonicalPath}`
   const title = meta?.title ?? "Shynli Deep Cleaning"
   const description = meta?.description ?? "Deep cleaning quotes, checklist details, service areas, add-ons, and booking information from Shynli Deep Cleaning."
+  const keywords = Array.isArray(meta?.options?.keywords) ? meta.options.keywords.join(", ") : meta?.options?.keywords
   const robots = meta?.options?.robots ?? "index,follow"
   const schema = meta?.schema
 
@@ -51,6 +52,16 @@ function applyHead(html, routePath, meta) {
     nextHtml = nextHtml.replace(/<meta\s+name="robots"[^>]*>/i, `<meta name="robots" content="${escapeHtml(robots)}" />`)
   } else {
     nextHtml = nextHtml.replace("</head>", `    <meta name="robots" content="${escapeHtml(robots)}" />\n  </head>`)
+  }
+
+  if (keywords) {
+    if (/<meta\s+name="keywords"[^>]*>/i.test(nextHtml)) {
+      nextHtml = nextHtml.replace(/<meta\s+name="keywords"[^>]*>/i, `<meta name="keywords" content="${escapeHtml(keywords)}" />`)
+    } else {
+      nextHtml = nextHtml.replace("</head>", `    <meta name="keywords" content="${escapeHtml(keywords)}" />\n  </head>`)
+    }
+  } else {
+    nextHtml = nextHtml.replace(/\s*<meta\s+name="keywords"[^>]*>/i, "")
   }
 
   nextHtml = nextHtml.replace(/\s*<script id="page-schema" type="application\/ld\+json">.*?<\/script>/s, "")

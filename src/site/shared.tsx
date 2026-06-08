@@ -577,6 +577,7 @@ export function EstimateCard({
 type SeoMetaOptions = {
   canonicalBaseUrl?: string
   canonicalPath?: string
+  keywords?: string[] | string
   robots?: "index,follow" | "noindex,follow"
 }
 
@@ -641,6 +642,19 @@ export function useSeoMeta(title: string, description: string, schema?: object, 
     }
     descriptionTag.content = normalizeSeoDescription(description)
 
+    let keywordsTag = document.querySelector<HTMLMetaElement>('meta[name="keywords"]')
+    const keywords = Array.isArray(options.keywords) ? options.keywords.join(", ") : options.keywords
+    if (keywords) {
+      if (!keywordsTag) {
+        keywordsTag = document.createElement("meta")
+        keywordsTag.name = "keywords"
+        document.head.appendChild(keywordsTag)
+      }
+      keywordsTag.content = keywords
+    } else if (keywordsTag) {
+      keywordsTag.remove()
+    }
+
     let canonicalTag = document.querySelector<HTMLLinkElement>('link[rel="canonical"]')
     if (!canonicalTag) {
       canonicalTag = document.createElement("link")
@@ -674,7 +688,7 @@ export function useSeoMeta(title: string, description: string, schema?: object, 
     } else if (schemaTag) {
       schemaTag.remove()
     }
-  }, [title, description, schema, options.canonicalBaseUrl, options.canonicalPath, options.robots])
+  }, [title, description, schema, options.canonicalBaseUrl, options.canonicalPath, options.keywords, options.robots])
 }
 
 export function BrandLink() {

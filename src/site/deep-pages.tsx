@@ -562,6 +562,288 @@ export const deepSiteFooterColumns = [
 const deepQuoteConditions = ["Light buildup", "Behind", "Heavy buildup", "Move timing"]
 const deepQuoteAddOns = ["Fridge", "Oven", "Cabinets"]
 const shinyDeepCanonicalBase = "https://shynlideepcleaning.com"
+const deepArticlePublishedDate = "2026-06-08"
+
+export type ShynliDeepArticlePageData = {
+  slug: string
+  title: string
+  meta: string
+  keywords: string[]
+  eyebrow: string
+  h1: string
+  summary: string
+  readTime: string
+  sourceQuestion: string
+  sections: { title: string; copy: string[]; bullets?: string[] }[]
+  faqs: [string, string][]
+  related: [string, string][]
+}
+
+export const shinyDeepArticlePages: ShynliDeepArticlePageData[] = [
+  {
+    slug: "blog/how-often-should-you-deep-clean-your-home",
+    title: "How Often Should You Deep Clean Your Home? | Shynli Deep Cleaning",
+    meta: "A practical guide to how often a home needs deep cleaning, with timing by lifestyle, pets, guests, apartments, and recurring cleaning.",
+    keywords: ["how often should you deep clean your home", "deep cleaning frequency", "how often to deep clean", "house deep cleaning schedule", "deep cleaning service Naperville"],
+    eyebrow: "Deep cleaning schedule",
+    h1: "How often should you deep clean your home?",
+    summary: "Most homes do not need a full deep clean every week. They need regular upkeep plus a deeper reset when buildup, dust, bathroom residue, pet hair, or busy seasons start outrunning the normal routine.",
+    readTime: "7 min read",
+    sourceQuestion: "People ask whether deep cleaning should happen monthly, seasonally, before guests, or only when moving.",
+    sections: [
+      {
+        title: "The short answer",
+        copy: [
+          "For a maintained home, a full deep clean every three to six months is a realistic rhythm. Homes with pets, kids, allergies, frequent guests, or heavy cooking may need smaller deep-clean tasks monthly and a full reset a few times per year.",
+          "The better question is not only how much time has passed. Ask what normal cleaning is no longer catching: sticky cabinet handles, dusty baseboards, bathroom buildup, inside appliance grime, high-touch marks, or corners that always get skipped.",
+        ],
+        bullets: ["Every 1-2 months for heavy-use homes", "Every 3-6 months for maintained family homes", "Seasonally for lighter homes", "Before guests, listing photos, move timing, or recurring service"],
+      },
+      {
+        title: "Signs it is time",
+        copy: [
+          "Deep cleaning is due when the house looks clean at a glance but still feels behind when you look closely. That usually shows up around kitchens, bathrooms, baseboards, trim, doors, vents, and floors near furniture.",
+          "If the regular routine keeps the home livable but never quite reset, a deep clean can create a better baseline. After that, recurring cleaning has a fair chance to maintain the home instead of fighting old buildup every visit.",
+        ],
+        bullets: ["Baseboards and door frames look dusty", "Bathrooms need more than a wipe", "Kitchen surfaces feel sticky", "Guests are coming", "A recurring cleaning plan is about to start"],
+      },
+      {
+        title: "How to avoid one giant clean",
+        copy: [
+          "Many people wait until the whole home feels overwhelming. A calmer approach is to rotate deep-clean tasks: fridge one month, blinds the next, baseboards and doors after that, then a professional visit when the home needs a broader reset.",
+          "If you hire a cleaning service, share the reason for the visit. A home that needs a seasonal reset is different from a home with post-party buildup, move timing, pets, or bathrooms that need extra time.",
+        ],
+      },
+      {
+        title: "What Shynli recommends",
+        copy: [
+          "Start with a deep clean when the home has fallen behind, then move into weekly, biweekly, or monthly maintenance if you want fewer big resets. If you do not want recurring cleaning, plan a seasonal deep clean before the busiest parts of the year.",
+          "For Naperville and Chicago-suburb homes, the most useful quote notes are simple: home size, number of bathrooms, current buildup level, pets, add-ons, and which rooms matter most.",
+        ],
+      },
+    ],
+    faqs: [
+      ["Is monthly deep cleaning too much?", "Not if the home has pets, kids, heavy cooking, allergies, or a lot of traffic. For lighter homes, monthly detail tasks may be enough."],
+      ["Is once a year enough?", "It can be enough for a very maintained home, but many lived-in homes feel better with seasonal or semiannual deep cleaning."],
+      ["Should I deep clean before recurring service?", "Often yes. A first deep clean creates a cleaner baseline so recurring visits are not expected to fix old buildup."],
+      ["Can I split deep cleaning across rooms?", "Yes. If the whole home feels too large, prioritize bathrooms and kitchen first, then edges, dust, and add-ons."],
+    ],
+    related: [["Deep cleaning cost", "deep-cleaning-cost"], ["How long deep cleaning takes", "how-long-does-deep-cleaning-take"], ["Deep cleaning before recurring service", "deep-cleaning-before-recurring-cleaning"]],
+  },
+  {
+    slug: "blog/where-to-start-when-your-house-needs-a-deep-clean",
+    title: "Where To Start When Your House Needs A Deep Clean | Shynli Deep Cleaning",
+    meta: "A simple, non-overwhelming way to start deep cleaning a house that feels behind, with first rooms, priorities, and cleaner-ready steps.",
+    keywords: ["where to start deep cleaning", "house needs a deep clean", "overwhelmed by cleaning", "deep clean house where to begin", "deep cleaning help"],
+    eyebrow: "Overwhelmed start",
+    h1: "Where to start when your house needs a deep clean",
+    summary: "When the whole house feels behind, do not start by trying to clean everything. Start by making the home easier to move through, then choose the rooms that will change daily life the fastest.",
+    readTime: "8 min read",
+    sourceQuestion: "Reddit threads repeatedly ask where to begin when the entire home needs a deep clean and the first step feels impossible.",
+    sections: [
+      {
+        title: "Start with trash, dishes, and floors",
+        copy: [
+          "Before deep cleaning, remove the things that block cleaning. Take out obvious trash, collect dishes, gather laundry, and clear walking paths. This is not the deep clean yet. It is the setup that lets real cleaning happen.",
+          "If you hire a cleaner, this step matters because cleaners can spend the visit on buildup instead of working around piles. The more visible the surfaces are, the more detail work can happen in the scheduled time.",
+        ],
+        bullets: ["Trash first", "Dishes and food items next", "Laundry gathered into one place", "Floors and counters opened enough to clean"],
+      },
+      {
+        title: "Choose the two rooms that matter most",
+        copy: [
+          "For most homes, the kitchen and bathrooms make the biggest difference. They hold moisture, grease, fingerprints, soap residue, odors, and high-touch surfaces. If those rooms improve, the whole house usually feels more under control.",
+          "Bedrooms, living rooms, entries, and basements still matter, but they should not steal all the early energy if the kitchen sink, stovetop, toilet base, shower, or bathroom floor needs attention.",
+        ],
+        bullets: ["Kitchen reset", "Bathroom recovery", "Entry and high-touch areas", "One visible living space if guests are coming"],
+      },
+      {
+        title: "Use one small zone when you are stuck",
+        copy: [
+          "If a full room feels too large, shrink the decision. Clean one counter, one sink, one toilet area, one nightstand, or one floor path. Momentum comes from finishing something real, not from making the perfect plan.",
+          "A professional deep clean works the same way at a larger scale: clear priorities beat vague pressure. Name the zones that would make you feel relieved if they were handled first.",
+        ],
+      },
+      {
+        title: "When to call a service",
+        copy: [
+          "Call a deep cleaning service when the home needs more than a normal maintenance visit, when you are preparing for guests, when the first recurring clean needs a reset, or when you are too overwhelmed to make progress alone.",
+          "You do not need to make the home spotless before a cleaner arrives. You do need to communicate: what rooms matter most, what buildup is heavy, what should be skipped, and whether any add-ons like fridge, oven, cabinets, or blinds matter.",
+        ],
+      },
+    ],
+    faqs: [
+      ["Should I clean before hiring a deep cleaner?", "No. Pick up personal clutter where possible, but the point is to let the cleaner handle the cleaning."],
+      ["What room should I deep clean first?", "Usually the kitchen or bathrooms, because those rooms change how the home feels fastest."],
+      ["What if every room is bad?", "Pick a path, remove trash, clear surfaces, and choose priority rooms. A quote can be built around the most important areas first."],
+      ["Can Shynli prioritize only part of the home?", "Yes. A focused deep clean can prioritize the rooms that matter most when time or budget is limited."],
+    ],
+    related: [["Deep cleaning checklist", "deep-cleaning-checklist"], ["Prepare for deep cleaning", "prepare-for-deep-cleaning"], ["One-time deep cleaning", "one-time-deep-cleaning"]],
+  },
+  {
+    slug: "blog/declutter-before-deep-cleaning",
+    title: "Declutter Before Deep Cleaning: What To Clear First | Shynli Deep Cleaning",
+    meta: "Learn what to declutter before deep cleaning so a cleaner can focus on surfaces, buildup, kitchens, bathrooms, floors, and detail work.",
+    keywords: ["declutter before deep cleaning", "do I declutter before cleaning", "prepare clutter for house cleaner", "deep cleaning cluttered house", "cleaning service preparation"],
+    eyebrow: "Clutter before cleaning",
+    h1: "Declutter before deep cleaning: what to clear first",
+    summary: "Decluttering before a deep clean does not mean organizing your whole life. It means clearing enough personal items so the cleaner can reach the surfaces you actually want cleaned.",
+    readTime: "7 min read",
+    sourceQuestion: "People often ask whether they should declutter first, deep clean first, or try to do both at once.",
+    sections: [
+      {
+        title: "Why clutter changes the result",
+        copy: [
+          "Deep cleaning is surface work: scrubbing, wiping, dusting, vacuuming, mopping, and detail cleaning. Clutter blocks those surfaces. A cleaner can clean around items, but the result will not feel the same as a room with counters, floors, and bathroom surfaces open.",
+          "This is also why organizing and cleaning are different services. A cleaner can straighten small items, but sorting papers, toys, clothes, mail, and sentimental items takes decisions only the homeowner can make.",
+        ],
+        bullets: ["Counters clean better when items are removed", "Floors clean better when paths are open", "Bathrooms clean better when products are grouped", "Bedrooms clean better when clothes are off the floor"],
+      },
+      {
+        title: "The four things to clear first",
+        copy: [
+          "Start with the items that make cleaning physically possible. Remove trash, collect laundry, put dishes in one place, and clear the surfaces that matter most. You do not need perfect closets or drawers before the visit.",
+          "If there is too much to do, choose the rooms that matter most. It is better to clear the kitchen and bathrooms well than to half-clear the whole house and leave the most important rooms hard to clean.",
+        ],
+        bullets: ["Trash", "Laundry", "Dishes and food", "Counters, sinks, floors, and bathroom ledges"],
+      },
+      {
+        title: "What not to worry about",
+        copy: [
+          "Do not spend all your energy pre-cleaning. You do not need to scrub the tub, wipe the baseboards, or dust the blinds before a deep cleaning visit. Those are the tasks you are paying to have handled.",
+          "Also do not hide everything in random cabinets if cabinet interiors are part of the request. If inside cabinets or fridge cleaning matter, say that before booking and leave enough access for the work.",
+        ],
+      },
+      {
+        title: "How to communicate a cluttered home",
+        copy: [
+          "If the home is cluttered, be direct in the quote notes. Say which rooms are clear, which rooms are not, and where you want the team to focus. Honest notes are better than a vague request for a perfect deep clean.",
+          "For a very cluttered home, consider a staged plan: declutter first, then deep clean priority rooms, then schedule another visit for the remaining areas.",
+        ],
+      },
+    ],
+    faqs: [
+      ["Will a cleaner organize my clutter?", "Usually no. Cleaning and organizing are different scopes. The cleaner can work around items, but deep cleaning needs reachable surfaces."],
+      ["How much should I pick up before a deep clean?", "Clear trash, laundry, dishes, counters, floors, and bathroom surfaces as much as possible."],
+      ["Can I still book if the home is cluttered?", "Yes, but share honest notes so the quote and priorities match the real condition."],
+      ["Should I empty the fridge or cabinets?", "Only if interior fridge or cabinet cleaning is part of the selected add-ons."],
+    ],
+    related: [["Prepare for deep cleaning", "prepare-for-deep-cleaning"], ["Deep cleaning add-ons", "deep-cleaning-add-ons"], ["What is not included", "what-is-not-included-in-deep-cleaning"]],
+  },
+  {
+    slug: "blog/room-by-room-deep-cleaning-order",
+    title: "Room-By-Room Deep Cleaning Order: What To Clean First | Shynli Deep Cleaning",
+    meta: "A practical room-by-room deep cleaning order for kitchens, bathrooms, living areas, bedrooms, floors, and final detail checks.",
+    keywords: ["room by room deep cleaning order", "what order to deep clean a house", "deep cleaning order", "clean room by room or task by task", "deep cleaning workflow"],
+    eyebrow: "Cleaning order",
+    h1: "Room-by-room deep cleaning order: what to clean first",
+    summary: "There is no single perfect order, but there is a reliable rule: clean high to low, dry to wet when possible, and finish floors last. For a full-home reset, start with the rooms that carry the most buildup.",
+    readTime: "8 min read",
+    sourceQuestion: "People compare room-by-room cleaning with task-by-task cleaning and ask which sequence actually works in real life.",
+    sections: [
+      {
+        title: "The order that works for most homes",
+        copy: [
+          "Start with the kitchen, then bathrooms, then living areas and bedrooms, then floors and final touch points. This order protects energy for the rooms with grease, moisture, buildup, and high-touch details.",
+          "Within each room, work top to bottom. Dust or wipe high surfaces before counters. Clean counters before floors. Vacuum before mopping. If you mop too early, the floor gets dirty again while the rest of the room is being cleaned.",
+        ],
+        bullets: ["Kitchen", "Bathrooms", "Living spaces and bedrooms", "Dust and detail", "Vacuum and mop floors last"],
+      },
+      {
+        title: "When task-by-task is better",
+        copy: [
+          "Task-by-task can work well for dusting, vacuuming, and mopping across one floor of the home. It reduces tool switching and can feel efficient in a maintained house.",
+          "But for a home that needs a true deep clean, room-by-room is often easier to control. You can finish the kitchen fully, then finish each bathroom, instead of creating half-cleaned zones across the home.",
+        ],
+      },
+      {
+        title: "How a cleaner thinks about sequence",
+        copy: [
+          "A cleaning team usually starts by confirming priorities and access. If bathrooms or kitchen are the reason for the visit, those areas should receive protected time. Optional tasks like inside oven, inside fridge, blinds, and cabinet interiors should be named before the schedule is built.",
+          "The best order also depends on the home: pets, kids, remote-work rooms, sleeping children, stairs, parking, and skipped rooms can all change the practical route.",
+        ],
+      },
+      {
+        title: "A simple deep-cleaning route",
+        copy: [
+          "If you are cleaning yourself, make a room list and stop trying to solve the whole house at once. If you are hiring Shynli, use the quote notes to name which rooms should come first and what outcome would make the visit feel successful.",
+          "A good route is not about perfection. It is about fewer missed details, less backtracking, and a cleaner finish in the rooms that matter most.",
+        ],
+        bullets: ["Confirm priority rooms", "Clear surfaces", "Clean top to bottom", "Leave floors for the end", "Do a final walk-through"],
+      },
+    ],
+    faqs: [
+      ["Should I clean kitchen or bathroom first?", "For most homes, start with the kitchen or the bathroom that needs the most recovery. Those rooms usually decide how clean the home feels."],
+      ["Should floors be cleaned last?", "Yes. Dusting, wiping, and moving through the room can drop debris onto floors."],
+      ["Is room-by-room better than task-by-task?", "Room-by-room is usually better for deep cleaning. Task-by-task can work for maintenance cleaning."],
+      ["Can I tell the cleaning team the order I prefer?", "Yes. Priority rooms and any rooms to skip should be shared before the visit."],
+    ],
+    related: [["Deep cleaning checklist", "deep-cleaning-checklist"], ["Kitchen deep cleaning", "kitchen-deep-cleaning"], ["Bathroom deep cleaning", "bathroom-deep-cleaning"]],
+  },
+  {
+    slug: "blog/deep-cleaning-service-expectations",
+    title: "Deep Cleaning Service Expectations: What To Tell Your Cleaner | Shynli Deep Cleaning",
+    meta: "Set realistic deep cleaning service expectations by naming priorities, add-ons, clutter, timing, surfaces, and what should be confirmed before arrival.",
+    keywords: ["deep cleaning service expectations", "what to tell a deep cleaner", "cleaning service expectations", "deep clean missed spots", "hire deep cleaning service"],
+    eyebrow: "Service expectations",
+    h1: "Deep cleaning service expectations: what to tell your cleaner",
+    summary: "A deep clean goes better when the customer and cleaner agree on the same definition before the visit. Vague expectations create missed details; clear notes create a better appointment.",
+    readTime: "8 min read",
+    sourceQuestion: "Homeowners often ask whether a missed item is normal, whether they expected too much, and what a deep clean should include for the price.",
+    sections: [
+      {
+        title: "Deep clean does not mean everything possible",
+        copy: [
+          "Deep cleaning is heavier than standard cleaning, but it still has boundaries. A realistic deep clean focuses on reachable residential surfaces, kitchens, bathrooms, baseboards, doors, trim, dust, floors, and selected add-ons.",
+          "It does not automatically include organizing, hazardous waste, mold remediation, pest treatment, carpet extraction, exterior windows, heavy furniture moving, or every interior storage area unless those items are clearly quoted.",
+        ],
+        bullets: ["Cleaning is not organizing", "Add-ons should be named", "Hazardous or specialty work needs another provider", "Heavy buildup can change timing"],
+      },
+      {
+        title: "What to tell the cleaner before arrival",
+        copy: [
+          "Write the notes like a person who wants the visit to succeed. Name the rooms that matter most, the surfaces that bother you, the add-ons you want priced, and anything that could slow down access.",
+          "Photos can help when the condition is hard to describe. So can a short priority list: kitchen first, hall bath second, baseboards in common areas, skip the office, separate the dog, use gentle product on stone counters.",
+        ],
+        bullets: ["Priority rooms", "Heavy buildup areas", "Selected add-ons", "Access and parking notes", "Pets and skipped rooms", "Delicate surfaces or product preferences"],
+      },
+      {
+        title: "How to judge the result fairly",
+        copy: [
+          "Judge the visit against the agreed scope, not against an imagined unlimited version of deep cleaning. If oven interior, cabinet interiors, blinds, or basement detail were not selected, they may not be part of the result.",
+          "If something included was missed, contact the company quickly with clear notes and photos when helpful. A good cleaning service should have a practical make-right path for covered checklist items.",
+        ],
+      },
+      {
+        title: "How Shynli scopes the visit",
+        copy: [
+          "Shynli starts with the quote details: ZIP, home size, condition, bathrooms, priority rooms, add-ons, pets, access, and timing. The goal is to avoid surprise expectations at the door.",
+          "That does not make every home identical. It makes the appointment more honest. A small apartment with heavy bathroom buildup can need more detail time than a larger home that is already maintained.",
+        ],
+      },
+    ],
+    faqs: [
+      ["Should I send a checklist to the cleaner?", "Yes, if it is short and specific. A priority list is often more useful than a huge vague checklist."],
+      ["Are missed spots normal after a deep clean?", "They can happen, but included missed items should be reported quickly through the company's follow-up path."],
+      ["Can I ask for inside fridge or oven?", "Yes. Name those add-ons before booking so the time and quote match the request."],
+      ["What is the biggest mistake when hiring a deep cleaner?", "Using the phrase deep clean without naming priorities, add-ons, clutter, timing, and service boundaries."],
+    ],
+    related: [["What is included in deep cleaning", "what-is-included-in-deep-cleaning"], ["What is not included in deep cleaning", "what-is-not-included-in-deep-cleaning"], ["Deep cleaning add-ons", "deep-cleaning-add-ons"]],
+  },
+]
+
+function getDeepArticleRecommendations(sourceSlug?: string) {
+  const bySource: Record<string, string[]> = {
+    "deep-cleaning-cost": ["blog/how-often-should-you-deep-clean-your-home", "blog/deep-cleaning-service-expectations", "blog/where-to-start-when-your-house-needs-a-deep-clean"],
+    "deep-cleaning-checklist": ["blog/room-by-room-deep-cleaning-order", "blog/declutter-before-deep-cleaning", "blog/where-to-start-when-your-house-needs-a-deep-clean"],
+    "prepare-for-deep-cleaning": ["blog/declutter-before-deep-cleaning", "blog/deep-cleaning-service-expectations", "blog/room-by-room-deep-cleaning-order"],
+    "how-long-does-deep-cleaning-take": ["blog/room-by-room-deep-cleaning-order", "blog/how-often-should-you-deep-clean-your-home", "blog/declutter-before-deep-cleaning"],
+    "what-is-included-in-deep-cleaning": ["blog/deep-cleaning-service-expectations", "blog/room-by-room-deep-cleaning-order", "blog/where-to-start-when-your-house-needs-a-deep-clean"],
+    "what-is-not-included-in-deep-cleaning": ["blog/deep-cleaning-service-expectations", "blog/declutter-before-deep-cleaning", "blog/where-to-start-when-your-house-needs-a-deep-clean"],
+  }
+  const slugs = bySource[sourceSlug ?? ""] ?? shinyDeepArticlePages.slice(0, 3).map((page) => page.slug)
+  return slugs.map((slug) => shinyDeepArticlePages.find((page) => page.slug === slug)).filter((page): page is ShynliDeepArticlePageData => Boolean(page))
+}
 
 const deepCityRoutePatterns = [
   "older trim, busy kitchens, and family bathrooms that collect detail work between recurring visits",
@@ -1029,6 +1311,7 @@ function getShynliDeepPath(slug?: string) {
 
 function ShynliDeepFooter({ city }: { city?: (typeof cityPages)[number] }) {
   const guideLinks: [string, string][] = [
+    ["Article guides", "blog"],
     ["Cost guide", "deep-cleaning-cost"],
     ["Checklist", "deep-cleaning-checklist"],
     ["Add-ons", "deep-cleaning-add-ons"],
@@ -1168,6 +1451,7 @@ export function ShynliDeepCleaningPage({ city }: { city?: (typeof cityPages)[num
             {[
               ["Scope", "#scope"],
               ["Checklist", "#checklist"],
+              ["Guides", getShynliDeepPath("blog")],
               ["References", "#references"],
               ["Areas", "#areas"],
               ["Reviews", "#reviews"],
@@ -1680,6 +1964,33 @@ export function ShynliDeepCleaningPage({ city }: { city?: (typeof cityPages)[num
         </div>
       </section>
 
+      <section id="guides" className="bg-[#fffaf0] px-4 py-14 md:px-8 md:py-20">
+        <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[0.72fr_1.28fr]">
+          <div>
+            <p className="mb-4 text-sm font-black uppercase text-[#8f2f27]">Deep cleaning guides</p>
+            <h2 className="text-4xl font-black leading-[0.94] md:text-6xl">
+              Articles for the questions people ask before booking.
+            </h2>
+            <p className="mt-5 text-lg font-bold leading-8 text-[#5e574f]">
+              These guides cover the practical decisions that come before a deep clean: timing, where to start, clutter, room order, and how to set expectations with the cleaner.
+            </p>
+          </div>
+          <div className="grid gap-px overflow-hidden rounded-lg bg-[#d8cbb7] md:grid-cols-2">
+            {shinyDeepArticlePages.map((article) => (
+              <a key={article.slug} href={getShynliDeepPath(article.slug)} className="group bg-white p-6 transition-colors hover:bg-[#f7f2e8]">
+                <p className="text-xs font-black uppercase text-[#8f2f27]">{article.eyebrow}</p>
+                <h3 className="mt-3 text-2xl font-black leading-tight">{article.h1}</h3>
+                <p className="mt-3 text-sm font-bold leading-6 text-[#665f57]">{article.summary}</p>
+                <span className="mt-5 inline-flex items-center gap-2 text-sm font-black text-[#8f2f27]">
+                  Read guide
+                  <TinyArrow className="size-4 transition-transform group-hover:translate-x-1" />
+                </span>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section id="faq" className="bg-[#1b1725] px-4 py-16 text-white md:px-8 md:py-24">
         <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.8fr_1.2fr]">
           <div>
@@ -1840,6 +2151,33 @@ export function ShynliDeepSeoPage({ page }: { page: ShynliDeepSeoPageData }) {
       </section>
 
       <section className="px-4 py-14 md:px-8 md:py-20">
+        <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[0.74fr_1.26fr]">
+          <div>
+            <p className="mb-4 text-sm font-black uppercase text-[#8f2f27]">Related articles</p>
+            <h2 className="text-4xl font-black leading-[0.94] md:text-6xl">
+              Real questions behind the service pages.
+            </h2>
+            <p className="mt-5 text-lg font-bold leading-8 text-[#5e574f]">
+              These article pages answer the practical questions people ask before they are ready to request a deep-cleaning quote.
+            </p>
+          </div>
+          <div className="grid gap-px overflow-hidden rounded-lg bg-[#d8cbb7] md:grid-cols-3">
+            {getDeepArticleRecommendations(page.slug).map((article) => (
+              <a key={article.slug} href={getShynliDeepPath(article.slug)} className="group bg-white p-6 transition-colors hover:bg-[#f7f2e8]">
+                <p className="text-xs font-black uppercase text-[#8f2f27]">{article.eyebrow}</p>
+                <h3 className="mt-3 text-xl font-black leading-tight">{article.h1}</h3>
+                <p className="mt-3 text-sm font-bold leading-6 text-[#665f57]">{article.summary}</p>
+                <span className="mt-5 inline-flex items-center gap-2 text-sm font-black text-[#8f2f27]">
+                  Read article
+                  <TinyArrow className="size-4 transition-transform group-hover:translate-x-1" />
+                </span>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="px-4 py-14 md:px-8 md:py-20">
         <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[0.76fr_1.24fr]">
           <div>
             <p className="mb-4 text-sm font-black uppercase text-[#8f2f27]">How this helps the quote</p>
@@ -1985,6 +2323,309 @@ export function ShynliDeepSeoPage({ page }: { page: ShynliDeepSeoPageData }) {
           </Accordion>
         </div>
       </section>
+
+      <ShynliDeepFooter />
+    </main>
+  )
+}
+
+export function ShynliDeepBlogPage() {
+  useSeoMeta(
+    "Deep Cleaning Guides | Shynli Deep Cleaning",
+    "Practical deep cleaning guides for homeowners comparing timing, clutter, room order, expectations, checklists, and cleaning service quotes.",
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      name: "Deep Cleaning Guides",
+      description: "Practical deep cleaning articles from Shynli Deep Cleaning.",
+      url: `${shinyDeepCanonicalBase}/blog`,
+      isPartOf: { "@type": "WebSite", name: "Shynli Deep Cleaning", url: shinyDeepCanonicalBase },
+      mainEntity: {
+        "@type": "ItemList",
+        itemListElement: shinyDeepArticlePages.map((article, index) => ({
+          "@type": "ListItem",
+          position: index + 1,
+          name: article.h1,
+          url: `${shinyDeepCanonicalBase}/${article.slug}`,
+        })),
+      },
+    },
+    {
+      canonicalBaseUrl: shinyDeepCanonicalBase,
+      canonicalPath: "/blog",
+      keywords: ["deep cleaning guides", "deep cleaning articles", "deep cleaning questions", "house deep cleaning help", "Shynli Deep Cleaning"],
+    },
+  )
+
+  return (
+    <main className="min-h-screen overflow-hidden bg-[#f7f2e8] text-[#1b1725]">
+      <header className="fixed inset-x-0 top-0 z-50 border-b border-white/14 bg-[#1b1725]/72 px-4 text-white backdrop-blur-xl md:px-8">
+        <div className="mx-auto flex h-16 max-w-7xl items-center justify-between">
+          <a href={getShynliDeepPath()} className="flex min-h-11 items-center gap-3">
+            <span className="grid size-10 place-items-center rounded-full bg-[#d7ff4f] text-[#1b1725]">
+              <TinySparkle className="size-5" />
+            </span>
+            <span className="leading-none">
+              <span className="block text-lg font-black">Shynli</span>
+              <span className="mt-1 block text-xs font-black uppercase text-[#d7ff4f]">Deep Cleaning</span>
+            </span>
+          </a>
+          <nav className="hidden items-center gap-1 text-sm font-black text-white/68 md:flex" aria-label="Deep cleaning article navigation">
+            {[["Home", ""], ["Cost", "deep-cleaning-cost"], ["Checklist", "deep-cleaning-checklist"], ["FAQ", "deep-cleaning-faq"]].map(([label, slug]) => (
+              <a key={label} href={getShynliDeepPath(slug)} className="flex min-h-11 items-center rounded-full px-4 transition-colors hover:bg-white/10 hover:text-white">
+                {label}
+              </a>
+            ))}
+          </nav>
+          <Button asChild className="h-11 rounded-full bg-[#d7ff4f] px-5 font-black text-[#1b1725] hover:bg-[#c6f040]">
+            <a href={getShynliDeepPath() + "#quote"}>Get quote</a>
+          </Button>
+        </div>
+      </header>
+
+      <section className="relative overflow-hidden bg-[#1b1725] px-4 pb-16 pt-28 text-white md:px-8 md:pb-20 md:pt-32">
+        <div
+          className="absolute inset-0 scale-[1.02] bg-[url('/cleaner-hero.jpg')] bg-cover bg-[62%_48%] opacity-48 blur-[1px]"
+          aria-hidden="true"
+        />
+        <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(27,23,37,0.98)_0%,rgba(27,23,37,0.88)_48%,rgba(27,23,37,0.54)_100%)]" />
+        <div className="relative z-10 mx-auto max-w-7xl">
+          <Badge className="mb-6 rounded-full border border-[#d7ff4f]/35 bg-[#d7ff4f]/12 px-4 py-1.5 text-[#d7ff4f] shadow-none hover:bg-[#d7ff4f]/12">
+            Deep cleaning articles
+          </Badge>
+          <h1 className="max-w-5xl text-[clamp(3.2rem,8vw,8rem)] font-black leading-[0.86] tracking-normal">Guides for the messy questions before a deep clean.</h1>
+          <p className="mt-7 max-w-3xl text-xl font-bold leading-8 text-white/76">
+            Practical answers for timing, clutter, where to start, room order, and how to set expectations with a cleaning service.
+          </p>
+        </div>
+      </section>
+
+      <section className="px-4 py-14 md:px-8 md:py-20">
+        <div className="mx-auto grid max-w-7xl gap-px overflow-hidden rounded-lg bg-[#d8cbb7] md:grid-cols-2">
+          {shinyDeepArticlePages.map((article) => (
+            <a key={article.slug} href={getShynliDeepPath(article.slug)} className="group bg-white p-6 transition-colors hover:bg-[#f7f2e8] md:p-8">
+              <div className="flex flex-wrap items-center gap-3 text-xs font-black uppercase text-[#8f2f27]">
+                <span>{article.eyebrow}</span>
+                <span className="text-[#5e574f]">{article.readTime}</span>
+              </div>
+              <h2 className="mt-4 text-3xl font-black leading-tight md:text-4xl">{article.h1}</h2>
+              <p className="mt-4 text-base font-bold leading-7 text-[#5e574f]">{article.summary}</p>
+              <p className="mt-5 text-sm font-bold leading-6 text-[#6c655d]">{article.sourceQuestion}</p>
+              <span className="mt-6 inline-flex items-center gap-2 text-sm font-black text-[#8f2f27]">
+                Read article
+                <TinyArrow className="size-4 transition-transform group-hover:translate-x-1" />
+              </span>
+            </a>
+          ))}
+        </div>
+      </section>
+
+      <section className="bg-[#d7ff4f] px-4 py-14 text-[#1b1725] md:px-8 md:py-18">
+        <div className="mx-auto grid max-w-7xl gap-6 md:grid-cols-[1fr_auto] md:items-center">
+          <div>
+            <p className="text-sm font-black uppercase">Need a local quote?</p>
+            <h2 className="mt-3 max-w-4xl text-4xl font-black leading-[0.94] md:text-6xl">
+              Turn the guide into a scoped deep-cleaning visit.
+            </h2>
+          </div>
+          <Button asChild className="h-13 rounded-full bg-[#1b1725] px-7 text-base font-black text-white hover:bg-[#2b2438]">
+            <a href={getShynliDeepPath() + "#quote"}>
+              Check price
+              <TinyArrow />
+            </a>
+          </Button>
+        </div>
+      </section>
+
+      <ShynliDeepFooter />
+    </main>
+  )
+}
+
+export function ShynliDeepArticlePage({ page }: { page: ShynliDeepArticlePageData }) {
+  useSeoMeta(
+    page.title,
+    page.meta,
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          headline: page.h1,
+          description: page.meta,
+          url: `${shinyDeepCanonicalBase}/${page.slug}`,
+          datePublished: deepArticlePublishedDate,
+          dateModified: deepArticlePublishedDate,
+          author: { "@type": "Organization", name: "Shynli Deep Cleaning", url: shinyDeepCanonicalBase },
+          publisher: { "@type": "Organization", name: "Shynli Deep Cleaning", url: shinyDeepCanonicalBase },
+          mainEntityOfPage: `${shinyDeepCanonicalBase}/${page.slug}`,
+          about: { "@type": "Service", name: "Deep cleaning" },
+        },
+        {
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            { "@type": "ListItem", position: 1, name: "Home", item: shinyDeepCanonicalBase },
+            { "@type": "ListItem", position: 2, name: "Deep Cleaning Guides", item: `${shinyDeepCanonicalBase}/blog` },
+            { "@type": "ListItem", position: 3, name: page.h1, item: `${shinyDeepCanonicalBase}/${page.slug}` },
+          ],
+        },
+        {
+          "@type": "FAQPage",
+          mainEntity: page.faqs.map(([question, answer]) => ({
+            "@type": "Question",
+            name: question,
+            acceptedAnswer: { "@type": "Answer", text: answer },
+          })),
+        },
+      ],
+    },
+    {
+      canonicalBaseUrl: shinyDeepCanonicalBase,
+      canonicalPath: `/${page.slug}`,
+      keywords: page.keywords,
+    },
+  )
+
+  return (
+    <main className="min-h-screen overflow-hidden bg-[#f7f2e8] text-[#1b1725]">
+      <header className="fixed inset-x-0 top-0 z-50 border-b border-white/14 bg-[#1b1725]/72 px-4 text-white backdrop-blur-xl md:px-8">
+        <div className="mx-auto flex h-16 max-w-7xl items-center justify-between">
+          <a href={getShynliDeepPath()} className="flex min-h-11 items-center gap-3">
+            <span className="grid size-10 place-items-center rounded-full bg-[#d7ff4f] text-[#1b1725]">
+              <TinySparkle className="size-5" />
+            </span>
+            <span className="leading-none">
+              <span className="block text-lg font-black">Shynli</span>
+              <span className="mt-1 block text-xs font-black uppercase text-[#d7ff4f]">Deep Cleaning</span>
+            </span>
+          </a>
+          <nav className="hidden items-center gap-1 text-sm font-black text-white/68 md:flex" aria-label="Deep cleaning article navigation">
+            {[["Guides", "blog"], ["Cost", "deep-cleaning-cost"], ["Checklist", "deep-cleaning-checklist"], ["FAQ", "deep-cleaning-faq"]].map(([label, slug]) => (
+              <a key={label} href={getShynliDeepPath(slug)} className="flex min-h-11 items-center rounded-full px-4 transition-colors hover:bg-white/10 hover:text-white">
+                {label}
+              </a>
+            ))}
+          </nav>
+          <Button asChild className="h-11 rounded-full bg-[#d7ff4f] px-5 font-black text-[#1b1725] hover:bg-[#c6f040]">
+            <a href={getShynliDeepPath() + "#quote"}>Get quote</a>
+          </Button>
+        </div>
+      </header>
+
+      <article>
+        <section className="relative overflow-hidden bg-[#1b1725] px-4 pb-16 pt-28 text-white md:px-8 md:pb-20 md:pt-32">
+          <div
+            className="absolute inset-0 scale-[1.02] bg-[url('/cleaner-hero.jpg')] bg-cover bg-[62%_48%] opacity-44 blur-[1px]"
+            aria-hidden="true"
+          />
+          <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(27,23,37,0.98)_0%,rgba(27,23,37,0.88)_48%,rgba(27,23,37,0.54)_100%)]" />
+          <div className="relative z-10 mx-auto max-w-7xl">
+            <Badge className="mb-6 rounded-full border border-[#d7ff4f]/35 bg-[#d7ff4f]/12 px-4 py-1.5 text-[#d7ff4f] shadow-none hover:bg-[#d7ff4f]/12">
+              {page.eyebrow}
+            </Badge>
+            <h1 className="max-w-5xl text-[clamp(3rem,7vw,7.4rem)] font-black leading-[0.88] tracking-normal">{page.h1}</h1>
+            <p className="mt-7 max-w-3xl text-xl font-bold leading-8 text-white/76">{page.summary}</p>
+            <div className="mt-6 flex flex-wrap items-center gap-3 text-sm font-black uppercase text-[#d7ff4f]">
+              <span>{page.readTime}</span>
+              <span>Updated {deepArticlePublishedDate}</span>
+            </div>
+          </div>
+        </section>
+
+        <section className="px-4 py-12 md:px-8 md:py-16">
+          <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[0.72fr_1.28fr]">
+            <aside className="lg:sticky lg:top-24 lg:self-start">
+              <div className="rounded-lg border border-[#e1d5c4] bg-white p-6 shadow-sm">
+                <p className="text-sm font-black uppercase text-[#8f2f27]">Quick answer</p>
+                <p className="mt-4 text-lg font-black leading-8 text-[#2d2933]">{page.summary}</p>
+                <p className="mt-5 border-t border-[#ece3d7] pt-4 text-sm font-bold leading-6 text-[#665f57]">{page.sourceQuestion}</p>
+              </div>
+            </aside>
+
+            <div className="grid gap-6">
+              {page.sections.map((section, index) => (
+                <section key={section.title} className="rounded-lg border border-[#e1d5c4] bg-white p-6 shadow-sm md:p-8">
+                  <span className="text-sm font-black text-[#8f2f27]">{String(index + 1).padStart(2, "0")}</span>
+                  <h2 className="mt-3 text-3xl font-black leading-tight md:text-4xl">{section.title}</h2>
+                  <div className="mt-5 grid gap-4 text-base font-bold leading-8 text-[#4f4943]">
+                    {section.copy.map((paragraph) => (
+                      <p key={paragraph}>{paragraph}</p>
+                    ))}
+                  </div>
+                  {section.bullets ? (
+                    <div className="mt-6 grid gap-2">
+                      {section.bullets.map((bullet) => (
+                        <div key={bullet} className="flex items-start gap-2 text-sm font-black">
+                          <TinyCheck className="mt-0.5 size-4 shrink-0 text-[#8f2f27]" />
+                          {bullet}
+                        </div>
+                      ))}
+                    </div>
+                  ) : null}
+                </section>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="bg-[#fffaf0] px-4 py-14 md:px-8 md:py-20">
+          <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[0.74fr_1.26fr]">
+            <div>
+              <p className="mb-4 text-sm font-black uppercase text-[#8f2f27]">Related service pages</p>
+              <h2 className="text-4xl font-black leading-[0.94] md:text-6xl">
+                Connect the article to the booking scope.
+              </h2>
+              <p className="mt-5 text-lg font-bold leading-8 text-[#5e574f]">
+                These pages help turn the answer into a quote with clearer scope, add-ons, timing, and service boundaries.
+              </p>
+            </div>
+            <div className="grid gap-px overflow-hidden rounded-lg bg-[#d8cbb7] md:grid-cols-3">
+              {page.related.map(([label, slug]) => (
+                <a key={slug} href={getShynliDeepPath(slug)} className="group flex min-h-20 items-center justify-between gap-4 bg-white p-5 text-sm font-black transition-colors hover:bg-[#f7f2e8]">
+                  {label}
+                  <TinyArrow className="size-4 shrink-0 text-[#8f2f27] transition-transform group-hover:translate-x-1" />
+                </a>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="bg-[#1b1725] px-4 py-14 text-white md:px-8 md:py-20">
+          <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[0.8fr_1.2fr]">
+            <div>
+              <p className="mb-4 text-sm font-black uppercase text-[#d7ff4f]">Article FAQ</p>
+              <h2 className="text-4xl font-black leading-[0.94] md:text-6xl">
+                Fast answers before you book.
+              </h2>
+            </div>
+            <Accordion type="single" collapsible defaultValue="item-0" className="rounded-lg bg-white px-5 text-[#1b1725]">
+              {page.faqs.map(([question, answer], index) => (
+                <AccordionItem key={question} value={`item-${index}`}>
+                  <AccordionTrigger>{question}</AccordionTrigger>
+                  <AccordionContent>{answer}</AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
+          </div>
+        </section>
+
+        <section className="bg-[#d7ff4f] px-4 py-14 text-[#1b1725] md:px-8 md:py-18">
+          <div className="mx-auto grid max-w-7xl gap-6 md:grid-cols-[1fr_auto] md:items-center">
+            <div>
+              <p className="text-sm font-black uppercase">Ready for a scoped reset?</p>
+              <h2 className="mt-3 max-w-4xl text-4xl font-black leading-[0.94] md:text-6xl">
+                Tell us the rooms, buildup, add-ons, and timing.
+              </h2>
+            </div>
+            <Button asChild className="h-13 rounded-full bg-[#1b1725] px-7 text-base font-black text-white hover:bg-[#2b2438]">
+              <a href={getShynliDeepPath() + "#quote"}>
+                Check price
+                <TinyArrow />
+              </a>
+            </Button>
+          </div>
+        </section>
+      </article>
 
       <ShynliDeepFooter />
     </main>

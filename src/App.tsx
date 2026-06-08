@@ -1,5 +1,5 @@
 import { cityPages } from "@/site/data"
-import { ShynliDeepCityIntentPage, ShynliDeepCleaningPage, ShynliDeepSeoPage, shinyDeepCityIntentPages, shinyDeepSeoPages } from "@/site/deep-pages"
+import { ShynliDeepArticlePage, ShynliDeepBlogPage, ShynliDeepCityIntentPage, ShynliDeepCleaningPage, ShynliDeepSeoPage, shinyDeepArticlePages, shinyDeepCityIntentPages, shinyDeepSeoPages } from "@/site/deep-pages"
 import { Button } from "@/components/ui/button"
 import { buildQuoteUrl, useSeoMeta } from "@/site/shared"
 
@@ -51,6 +51,7 @@ export function App({ path }: AppProps = {}) {
   const currentPath = pathname.replace(/\/$/, "") || "/"
   const domainCityMatch = cityPages.find((city) => currentPath === `/${city.slug}`)
   const domainSeoMatch = shinyDeepSeoPages.find((page) => currentPath === `/${page.slug}`)
+  const domainArticleMatch = shinyDeepArticlePages.find((page) => currentPath === `/${page.slug}`)
   const domainCityIntentMatch = shinyDeepCityIntentPages.find((page) => currentPath === `/${page.slug}`)
 
   if (currentPath === "/") {
@@ -63,6 +64,14 @@ export function App({ path }: AppProps = {}) {
 
   if (domainSeoMatch) {
     return <ShynliDeepSeoPage page={domainSeoMatch} />
+  }
+
+  if (currentPath === "/blog") {
+    return <ShynliDeepBlogPage />
+  }
+
+  if (domainArticleMatch) {
+    return <ShynliDeepArticlePage page={domainArticleMatch} />
   }
 
   if (domainCityIntentMatch) {
