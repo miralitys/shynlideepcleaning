@@ -562,13 +562,14 @@ export const deepSiteFooterColumns = [
 const deepQuoteConditions = ["Light buildup", "Behind", "Heavy buildup", "Move timing"]
 const deepQuoteAddOns = ["Fridge", "Oven", "Cabinets"]
 const shinyDeepCanonicalBase = "https://shynlideepcleaning.com"
-const deepArticlePublishedDate = "2026-06-08"
+const deepArticleDefaultUpdatedDate = "2026-06-08"
 
 export type ShynliDeepArticlePageData = {
   slug: string
   title: string
   meta: string
   keywords: string[]
+  updated: string
   eyebrow: string
   h1: string
   summary: string
@@ -585,6 +586,7 @@ export const shinyDeepArticlePages: ShynliDeepArticlePageData[] = [
     title: "How Often Should You Deep Clean Your Home? | Shynli Deep Cleaning",
     meta: "A practical guide to how often a home needs deep cleaning, with timing by lifestyle, pets, guests, apartments, and recurring cleaning.",
     keywords: ["how often should you deep clean your home", "deep cleaning frequency", "how often to deep clean", "house deep cleaning schedule", "deep cleaning service Naperville"],
+    updated: deepArticleDefaultUpdatedDate,
     eyebrow: "Deep cleaning schedule",
     h1: "How often should you deep clean your home?",
     summary: "Most homes do not need a full deep clean every week. They need regular upkeep plus a deeper reset when buildup, dust, bathroom residue, pet hair, or busy seasons start outrunning the normal routine.",
@@ -635,6 +637,7 @@ export const shinyDeepArticlePages: ShynliDeepArticlePageData[] = [
     title: "Where To Start When Your House Needs A Deep Clean | Shynli Deep Cleaning",
     meta: "A simple, non-overwhelming way to start deep cleaning a house that feels behind, with first rooms, priorities, and cleaner-ready steps.",
     keywords: ["where to start deep cleaning", "house needs a deep clean", "overwhelmed by cleaning", "deep clean house where to begin", "deep cleaning help"],
+    updated: deepArticleDefaultUpdatedDate,
     eyebrow: "Overwhelmed start",
     h1: "Where to start when your house needs a deep clean",
     summary: "When the whole house feels behind, do not start by trying to clean everything. Start by making the home easier to move through, then choose the rooms that will change daily life the fastest.",
@@ -685,6 +688,7 @@ export const shinyDeepArticlePages: ShynliDeepArticlePageData[] = [
     title: "Declutter Before Deep Cleaning: What To Clear First | Shynli Deep Cleaning",
     meta: "Learn what to declutter before deep cleaning so a cleaner can focus on surfaces, buildup, kitchens, bathrooms, floors, and detail work.",
     keywords: ["declutter before deep cleaning", "do I declutter before cleaning", "prepare clutter for house cleaner", "deep cleaning cluttered house", "cleaning service preparation"],
+    updated: deepArticleDefaultUpdatedDate,
     eyebrow: "Clutter before cleaning",
     h1: "Declutter before deep cleaning: what to clear first",
     summary: "Decluttering before a deep clean does not mean organizing your whole life. It means clearing enough personal items so the cleaner can reach the surfaces you actually want cleaned.",
@@ -735,6 +739,7 @@ export const shinyDeepArticlePages: ShynliDeepArticlePageData[] = [
     title: "Room-By-Room Deep Cleaning Order: What To Clean First | Shynli Deep Cleaning",
     meta: "A practical room-by-room deep cleaning order for kitchens, bathrooms, living areas, bedrooms, floors, and final detail checks.",
     keywords: ["room by room deep cleaning order", "what order to deep clean a house", "deep cleaning order", "clean room by room or task by task", "deep cleaning workflow"],
+    updated: deepArticleDefaultUpdatedDate,
     eyebrow: "Cleaning order",
     h1: "Room-by-room deep cleaning order: what to clean first",
     summary: "There is no single perfect order, but there is a reliable rule: clean high to low, dry to wet when possible, and finish floors last. For a full-home reset, start with the rooms that carry the most buildup.",
@@ -785,6 +790,7 @@ export const shinyDeepArticlePages: ShynliDeepArticlePageData[] = [
     title: "Deep Cleaning Service Expectations: What To Tell Your Cleaner | Shynli Deep Cleaning",
     meta: "Set realistic deep cleaning service expectations by naming priorities, add-ons, clutter, timing, surfaces, and what should be confirmed before arrival.",
     keywords: ["deep cleaning service expectations", "what to tell a deep cleaner", "cleaning service expectations", "deep clean missed spots", "hire deep cleaning service"],
+    updated: deepArticleDefaultUpdatedDate,
     eyebrow: "Service expectations",
     h1: "Deep cleaning service expectations: what to tell your cleaner",
     summary: "A deep clean goes better when the customer and cleaner agree on the same definition before the visit. Vague expectations create missed details; clear notes create a better appointment.",
@@ -830,16 +836,286 @@ export const shinyDeepArticlePages: ShynliDeepArticlePageData[] = [
     ],
     related: [["What is included in deep cleaning", "what-is-included-in-deep-cleaning"], ["What is not included in deep cleaning", "what-is-not-included-in-deep-cleaning"], ["Deep cleaning add-ons", "deep-cleaning-add-ons"]],
   },
+  {
+    slug: "blog/can-deep-cleaning-remove-odors",
+    title: "Can Deep Cleaning Remove Odors? | Shynli Deep Cleaning",
+    meta: "Learn when deep cleaning can reduce odors from dust, grease, bathrooms, pets, and trash, and when carpets, moisture, HVAC, smoke, or water damage may need specialty help.",
+    keywords: ["can deep cleaning remove odors", "deep cleaning for house smells", "old house smell cleaning", "pet odor deep cleaning", "musty smell after cleaning"],
+    updated: "2026-06-16",
+    eyebrow: "Odor questions",
+    h1: "Can deep cleaning remove odors?",
+    summary: "Deep cleaning can reduce many everyday odor sources, but it should not be sold as a magic odor treatment. The result depends on where the smell is coming from and whether the source is reachable.",
+    readTime: "8 min read",
+    sourceQuestion: "People often ask why a home still smells after cleaning, especially with pets, old dust, cooking grease, moisture, or guest stays.",
+    sections: [
+      {
+        title: "The honest short answer",
+        copy: [
+          "Deep cleaning helps most when the odor is coming from reachable surfaces: greasy kitchen film, bathroom buildup, trash residue, dusty baseboards, pet hair on floors, or high-touch areas that have not been cleaned in a while.",
+          "It is less predictable when the odor lives inside carpet padding, upholstery, HVAC, old smoke residue, drains, hidden moisture, water damage, or a source the cleaner cannot safely access. In those cases, a deep clean may improve the home but not fully remove the smell.",
+        ],
+        bullets: ["Good fit: dust, hair, grease, bathroom residue, trash points", "Sometimes helps: drains, washable fabrics, light pet traffic", "Different help: carpet extraction, smoke treatment, mold, water damage, HVAC issues"],
+      },
+      {
+        title: "Where smells usually hide",
+        copy: [
+          "A home can look tidy and still smell stale because odor sources collect in layers. Grease sticks around the stove and cabinets. Dust sits on trim, vents, blinds, baseboards, and under furniture edges. Bathrooms hold moisture around tubs, toilets, drains, and floors.",
+          "Pets add another layer: fur, dander, litter areas, food bowls, entry floors, and favorite corners. If those areas are not named before the visit, the cleaner may not know which rooms should receive the most time.",
+        ],
+        bullets: ["Kitchen cabinet fronts and range area", "Bathroom floors, tub edges, toilet bases, and drains", "Pet zones, entry floors, stairs, and corners", "Dusty vents, blinds, baseboards, and sills"],
+      },
+      {
+        title: "How to ask for the right scope",
+        copy: [
+          "Instead of asking for a general odor removal promise, describe the smell and where you notice it. Say whether it is pet odor, musty air, cooking grease, bathroom smell, trash smell, smoke, or an old-house smell. Then name the rooms where it is strongest.",
+          "If the source may be carpet, upholstery, mold, pests, or moisture inside walls, be direct. A residential deep clean can still be useful, but you may also need a specialist for the actual source.",
+        ],
+        bullets: ["Name the odor type", "Name the strongest rooms", "Mention pets, smoking, moisture, or drains", "Choose add-ons only if they affect the source"],
+      },
+      {
+        title: "What Shynli can do",
+        copy: [
+          "Shynli can focus a deep clean around likely surface sources: kitchen grease, bathroom buildup, floors, baseboards, high-touch details, pet-hair areas, trash points, and selected add-ons such as fridge, oven, cabinets, or blinds.",
+          "The cleanest plan is honest: reduce the reachable sources first, then reassess. If the smell remains after surfaces are cleaned, the next step is usually ventilation, carpet or upholstery help, HVAC attention, drain work, or moisture investigation.",
+        ],
+      },
+    ],
+    faqs: [
+      ["Can deep cleaning remove pet odor?", "It can reduce pet odor from reachable surfaces, fur, dander, floors, baseboards, and pet zones. It may not remove odor inside carpet padding or upholstery."],
+      ["Can deep cleaning remove musty smell?", "Sometimes. If the musty smell comes from dust or surface buildup, cleaning can help. If it comes from moisture, water damage, or mold, you need a different kind of help."],
+      ["Should I add carpet cleaning for odor?", "If the smell is in carpet or rugs, carpet extraction is usually separate from a residential deep clean."],
+      ["What should I tell Shynli before booking?", "Tell us the odor type, strongest rooms, pets, moisture concerns, and any add-ons that may affect the source."],
+    ],
+    related: [["Deep cleaning with pets", "deep-cleaning-with-pets"], ["Pet hair deep cleaning", "pet-hair-deep-cleaning"], ["Bathroom deep cleaning", "bathroom-deep-cleaning"]],
+  },
+  {
+    slug: "blog/shower-glass-soap-scum-deep-cleaning",
+    title: "Shower Glass and Soap Scum Deep Cleaning | Shynli Deep Cleaning",
+    meta: "What deep cleaning can do for shower glass, soap scum, hard water marks, grout lines, chrome, and bathroom buildup before you book.",
+    keywords: ["shower glass deep cleaning", "soap scum deep cleaning", "hard water stains shower glass", "bathroom deep cleaning soap scum", "clean shower buildup"],
+    updated: "2026-06-16",
+    eyebrow: "Bathroom buildup",
+    h1: "Shower glass and soap scum deep cleaning",
+    summary: "Shower glass, soap scum, and hard water marks are some of the most common reasons a bathroom still feels dirty after normal cleaning. A good deep clean starts by setting realistic expectations.",
+    readTime: "8 min read",
+    sourceQuestion: "People often ask how to handle shower glass that looks cloudy, white, rough, or streaky even after scrubbing.",
+    sections: [
+      {
+        title: "Why shower glass gets so stubborn",
+        copy: [
+          "Shower buildup is usually a mix of soap residue, body oils, minerals from hard water, product film, moisture, and time. The longer it sits, the more it bonds to glass, tile, chrome, grout, and corners.",
+          "That is why a quick bathroom wipe does not fix it. Deep cleaning gives the cleaner more time to work the shower area, but old etching or mineral damage may not disappear completely.",
+        ],
+        bullets: ["Soap scum and body oils", "Hard water minerals", "Shampoo and product film", "Grout and corner buildup", "Possible glass etching when buildup is old"],
+      },
+      {
+        title: "What a bathroom deep clean should cover",
+        copy: [
+          "For shower glass, the request should name the door or enclosure specifically. For the rest of the bathroom, the cleaner should know whether the priority is tub buildup, grout lines, toilet base, fixtures, vanity fronts, mirrors, floor corners, or ventilation dust.",
+          "If the shower glass is the main concern, say that before booking. It helps the quote protect time for the area instead of treating it as one small line in a whole-house clean.",
+        ],
+        bullets: ["Shower glass and door tracks where reachable", "Tub and tile buildup", "Chrome fixtures and handles", "Toilet base and floor corners", "Vanity fronts and mirrors"],
+      },
+      {
+        title: "What may not fully come off",
+        copy: [
+          "Deep cleaning can remove a lot of surface buildup, but it cannot reverse every mark. Very old hard water deposits, scratches, etched glass, damaged grout, failing caulk, rust, or mineral stains may need specialty products, repair, or replacement.",
+          "This does not mean the clean is wasted. Even when glass is not perfect, the bathroom can still feel much better when the tub, fixtures, floors, toilet base, vanity, and corners are cleaned properly.",
+        ],
+        bullets: ["Etched glass", "Damaged grout or caulk", "Rust and mineral staining", "Mold remediation needs", "Abrasive damage from old products"],
+      },
+      {
+        title: "How to make the visit go better",
+        copy: [
+          "Take a quick photo of the shower and mention hard water, soap scum, or cloudy glass in the quote notes. If you have delicate stone, special fixtures, or a product you do not want used, say that early too.",
+          "A clear request sounds simple: hall bathroom shower glass is the priority, master tub has heavy soap scum, please include toilet bases and floor corners, and use gentle product on natural stone if present.",
+        ],
+      },
+    ],
+    faqs: [
+      ["Can deep cleaning make shower glass clear again?", "Often it can improve the glass a lot, but old etching, scratches, or mineral damage may not fully disappear."],
+      ["Is soap scum included in bathroom deep cleaning?", "Bathroom buildup is part of the deep-cleaning reason, but heavy shower glass should be named so enough time is planned."],
+      ["Can cleaners remove mold in the shower?", "Light surface mildew may be cleaned, but mold treatment or remediation is outside a normal deep-cleaning scope."],
+      ["Should I send a photo?", "Yes. A photo helps set timing and expectations when shower glass or tub buildup is the main issue."],
+    ],
+    related: [["Bathroom deep cleaning", "bathroom-deep-cleaning"], ["Deep cleaning checklist", "deep-cleaning-checklist"], ["What is included in deep cleaning", "what-is-included-in-deep-cleaning"]],
+  },
+  {
+    slug: "blog/kitchen-grease-cabinet-deep-cleaning",
+    title: "Kitchen Grease and Cabinet Deep Cleaning | Shynli Deep Cleaning",
+    meta: "How deep cleaning handles kitchen grease on cabinet fronts, range hoods, backsplashes, appliance edges, and when inside cabinets or oven are add-ons.",
+    keywords: ["kitchen grease deep cleaning", "cabinet grease cleaning", "deep clean greasy kitchen", "stove grease buildup cleaning", "kitchen cabinet deep clean"],
+    updated: "2026-06-16",
+    eyebrow: "Kitchen grease",
+    h1: "Kitchen grease and cabinet deep cleaning",
+    summary: "Greasy kitchens need slower detail work than a normal wipe-down. The right quote should separate cabinet fronts, appliance edges, range areas, oven interiors, and cabinet interiors before the visit starts.",
+    readTime: "8 min read",
+    sourceQuestion: "People frequently ask how to remove sticky kitchen grease from cabinets, range areas, backsplashes, and appliance edges without damaging finishes.",
+    sections: [
+      {
+        title: "Why kitchen grease spreads",
+        copy: [
+          "Grease does not stay only on the stove. It settles on cabinet fronts, handles, backsplash, microwave edges, range hood areas, nearby walls, counters, doors, and sometimes the floor around the cooking zone.",
+          "When that film mixes with dust, it starts feeling sticky. That is the point where a normal maintenance clean often feels too light and a deep clean makes more sense.",
+        ],
+        bullets: ["Cabinet fronts and handles", "Range hood and backsplash", "Stovetop edges and appliance fronts", "Microwave and oven exterior", "Nearby counters, doors, and floor edges"],
+      },
+      {
+        title: "What should be in the kitchen scope",
+        copy: [
+          "A kitchen deep clean should name the cooking zone clearly: stove area, range hood exterior, appliance fronts, cabinet fronts, handles, backsplash, sink detail, counter edges, and floor corners.",
+          "Inside oven, inside fridge, and inside cabinets are usually quoted separately because they take a different kind of time. They should be selected before booking, not discovered after arrival.",
+        ],
+        bullets: ["Core work: exterior cabinet fronts, handles, sink, counters, backsplash, appliance fronts", "Common add-ons: oven interior, fridge interior, cabinet interiors", "Useful notes: wood finish, painted cabinets, heavy grease, delicate surfaces"],
+      },
+      {
+        title: "Be careful with strong products",
+        copy: [
+          "Kitchen grease can tempt people into using harsh combinations. Do not mix cleaning chemicals. Strong products can also dull paint, damage wood finishes, or leave streaks on stainless steel if the surface is not handled carefully.",
+          "If your cabinets are painted, older wood, high-gloss, or already worn, mention that in the quote notes. A cleaner should know when to use a gentler approach rather than aggressive scrubbing.",
+        ],
+        bullets: ["Do not mix chemicals", "Mention painted or delicate cabinets", "Name stainless steel and stone surfaces", "Avoid aggressive scrubbing on damaged finishes"],
+      },
+      {
+        title: "How Shynli plans a greasy kitchen",
+        copy: [
+          "Shynli can build the visit around the kitchen when that is the main problem. The best request says whether the goal is cabinet fronts, range area, backsplash, oven interior, fridge interior, cabinet interiors, or a broader whole-home reset.",
+          "If the kitchen is very greasy, it is better to protect time for that room than to promise a perfect whole-house result in a rushed appointment.",
+        ],
+      },
+    ],
+    faqs: [
+      ["Are cabinet fronts included in a deep clean?", "Cabinet fronts are usually part of kitchen deep-cleaning detail, but heavy grease should be named so timing is realistic."],
+      ["Are cabinet interiors included?", "Cabinet interiors are usually an add-on unless your quote includes them."],
+      ["Is oven cleaning included?", "Oven interior cleaning is usually a separate add-on. The oven exterior and surrounding area are different from the inside of the oven."],
+      ["Can deep cleaning remove years of grease?", "It can improve a greasy kitchen, but very old buildup, damaged finishes, or delicate surfaces may limit how aggressive the cleaning can be."],
+    ],
+    related: [["Kitchen deep cleaning", "kitchen-deep-cleaning"], ["Cabinet cleaning with deep cleaning", "cabinet-cleaning-with-deep-cleaning"], ["Oven cleaning with deep cleaning", "oven-cleaning-with-deep-cleaning"]],
+  },
+  {
+    slug: "blog/do-you-need-deep-cleaning-every-two-weeks",
+    title: "Do You Need Deep Cleaning Every Two Weeks? | Shynli Deep Cleaning",
+    meta: "Most homes do not need a full deep clean every two weeks. Learn when biweekly maintenance is enough and when detail tasks should rotate.",
+    keywords: ["deep cleaning every two weeks", "biweekly deep cleaning", "deep cleaning vs recurring cleaning", "maintenance clean after deep clean", "how often deep clean service"],
+    updated: "2026-06-16",
+    eyebrow: "Cleaning cadence",
+    h1: "Do you need deep cleaning every two weeks?",
+    summary: "Most homes do not need a full deep clean every two weeks. They need a strong reset first, then recurring maintenance plus rotating detail tasks when the home starts falling behind again.",
+    readTime: "7 min read",
+    sourceQuestion: "People ask whether biweekly visits should be full deep cleans, especially when starting recurring service after a home has fallen behind.",
+    sections: [
+      {
+        title: "Usually, no",
+        copy: [
+          "A full deep clean every two weeks is more than most maintained homes need. If the home is cleaned regularly, biweekly service should usually maintain kitchens, bathrooms, floors, dust, trash, and high-touch areas.",
+          "The deeper work can rotate: baseboards this visit, blinds another visit, oven or fridge as an add-on, cabinet fronts when the kitchen starts feeling sticky, and bathrooms when buildup returns.",
+        ],
+        bullets: ["Start with one deeper reset if needed", "Use biweekly visits for maintenance", "Rotate detail tasks", "Add appliance or cabinet interiors when they matter"],
+      },
+      {
+        title: "When biweekly deep work makes sense",
+        copy: [
+          "Some homes do need heavier recurring detail: many pets, heavy cooking, kids, allergies, high traffic, multiple bathrooms, or a home that is recovering from a long period without cleaning.",
+          "Even then, it is usually better to define the tasks instead of calling every visit a deep clean. That keeps the scope fair and helps the cleaner know what to protect time for.",
+        ],
+        bullets: ["Heavy cooking", "Pets and fur", "Large families", "Allergy-sensitive homes", "Bathrooms that build up quickly"],
+      },
+      {
+        title: "How recurring should follow a deep clean",
+        copy: [
+          "The first deep clean should create the baseline. After that, recurring service should keep the home from sliding back. If recurring visits are expected to fix months of old buildup every time, the scope is mismatched.",
+          "A better plan is to separate maintenance from detail. Maintenance keeps the home livable and presentable. Detail tasks get scheduled when they are due.",
+        ],
+      },
+      {
+        title: "How to ask for the right plan",
+        copy: [
+          "Use normal words: we need a first deep clean, then biweekly maintenance. Please rotate baseboards, cabinet fronts, blinds, and appliance add-ons as needed. Bathrooms and kitchen are the priority.",
+          "That request is much easier to quote than asking for a deep clean every two weeks without saying what actually needs deeper attention.",
+        ],
+      },
+    ],
+    faqs: [
+      ["Is biweekly deep cleaning too much?", "For many homes, yes. Biweekly maintenance after an initial deep clean is usually the better fit."],
+      ["Can I rotate deep-cleaning tasks?", "Yes. Rotating baseboards, blinds, cabinets, appliances, and bathroom detail is often more practical than repeating a full deep clean every visit."],
+      ["When should I book another full deep clean?", "Book another full reset when normal recurring visits are no longer keeping up with buildup, dust, kitchen grease, or bathroom residue."],
+      ["What should I ask Shynli for?", "Ask for a first deep clean if the home is behind, then a recurring cadence with priority rooms and rotating detail tasks."],
+    ],
+    related: [["Deep cleaning before recurring service", "deep-cleaning-before-recurring-cleaning"], ["How often should you deep clean your home", "blog/how-often-should-you-deep-clean-your-home"], ["Deep cleaning cost", "deep-cleaning-cost"]],
+  },
+  {
+    slug: "blog/first-deep-clean-progress-not-perfection",
+    title: "First Deep Clean: Progress, Not Perfection | Shynli Deep Cleaning",
+    meta: "A first deep clean removes buildup and creates a better baseline, but heavy homes may need priorities, add-ons, or follow-up visits.",
+    keywords: ["first deep clean expectations", "initial deep cleaning expectations", "first cleaning progress not perfection", "deep clean heavy buildup", "deep cleaning realistic results"],
+    updated: "2026-06-16",
+    eyebrow: "First clean expectations",
+    h1: "First deep clean: progress, not perfection",
+    summary: "A first deep clean should make the home feel meaningfully better, but a heavily behind home may need priorities, add-ons, and sometimes more than one visit to reach the result people imagine.",
+    readTime: "8 min read",
+    sourceQuestion: "Homeowners and cleaners both ask how to handle the first visit when the home has months or years of buildup and expectations are high.",
+    sections: [
+      {
+        title: "Why the first visit is different",
+        copy: [
+          "The first deep clean often uncovers work that will not be repeated every time: old bathroom buildup, kitchen grease, dusty trim, pet hair in corners, marks around doors, and floors that need a slower pass.",
+          "That first visit is not just a bigger maintenance clean. It is a baseline reset. Once the baseline is better, future recurring visits have a fair chance to maintain the home.",
+        ],
+        bullets: ["Old bathroom buildup", "Kitchen grease and sticky handles", "Dusty baseboards, vents, and trim", "Pet hair and traffic paths", "Skipped rooms and hidden corners"],
+      },
+      {
+        title: "What progress looks like",
+        copy: [
+          "Progress means the most important rooms feel noticeably cleaner, the surfaces are more reachable, the kitchen and bathrooms look recovered, and the home has a better starting point for maintenance.",
+          "It may not mean every stain, mineral mark, old grease layer, wall mark, damaged grout, carpet odor, or neglected storage area is completely solved in one appointment.",
+        ],
+        bullets: ["Cleaner kitchens and bathrooms", "More reachable surfaces", "Less dust on edges and trim", "Better floors and high-touch areas", "Clearer next steps for remaining work"],
+      },
+      {
+        title: "How to protect the result",
+        copy: [
+          "Before the visit, name the rooms that matter most. If everything matters equally, the cleaner has to spread time thinly. If bathrooms and kitchen decide whether the visit feels successful, say that.",
+          "Choose add-ons intentionally. Inside oven, inside fridge, inside cabinets, blinds, interior windows, or basement detail can make a big difference, but they need to be planned into the quote.",
+        ],
+        bullets: ["Pick top priority rooms", "Name heavy buildup honestly", "Choose add-ons before booking", "Mention pets, clutter, access, and delicate surfaces"],
+      },
+      {
+        title: "When a second visit is smarter",
+        copy: [
+          "If the home is very behind, a staged plan can be better than one overstuffed appointment. First reset kitchens, bathrooms, floors, and high-touch areas. Then schedule remaining detail: cabinets, blinds, windows, basement, or appliance interiors.",
+          "This is not lowering the standard. It is matching the work to the actual home so the cleaner can do careful work instead of rushing every corner.",
+        ],
+      },
+    ],
+    faqs: [
+      ["Should a first deep clean make the home perfect?", "No. It should make the home meaningfully better and create a cleaner baseline. Heavy buildup may need priorities or a second visit."],
+      ["How do I avoid disappointment?", "Name the top priority rooms, heavy buildup, add-ons, clutter, pets, access notes, and what result matters most."],
+      ["Is a second visit normal?", "For very behind homes, yes. A staged plan can be more realistic than forcing every detail into one visit."],
+      ["What should happen after the first deep clean?", "Move into recurring maintenance or schedule rotating detail tasks so the home does not fall behind again."],
+    ],
+    related: [["One-time deep cleaning", "one-time-deep-cleaning"], ["Deep cleaning before recurring service", "deep-cleaning-before-recurring-cleaning"], ["Deep cleaning service expectations", "blog/deep-cleaning-service-expectations"]],
+  },
 ]
 
 function getDeepArticleRecommendations(sourceSlug?: string) {
   const bySource: Record<string, string[]> = {
-    "deep-cleaning-cost": ["blog/how-often-should-you-deep-clean-your-home", "blog/deep-cleaning-service-expectations", "blog/where-to-start-when-your-house-needs-a-deep-clean"],
-    "deep-cleaning-checklist": ["blog/room-by-room-deep-cleaning-order", "blog/declutter-before-deep-cleaning", "blog/where-to-start-when-your-house-needs-a-deep-clean"],
-    "prepare-for-deep-cleaning": ["blog/declutter-before-deep-cleaning", "blog/deep-cleaning-service-expectations", "blog/room-by-room-deep-cleaning-order"],
-    "how-long-does-deep-cleaning-take": ["blog/room-by-room-deep-cleaning-order", "blog/how-often-should-you-deep-clean-your-home", "blog/declutter-before-deep-cleaning"],
-    "what-is-included-in-deep-cleaning": ["blog/deep-cleaning-service-expectations", "blog/room-by-room-deep-cleaning-order", "blog/where-to-start-when-your-house-needs-a-deep-clean"],
-    "what-is-not-included-in-deep-cleaning": ["blog/deep-cleaning-service-expectations", "blog/declutter-before-deep-cleaning", "blog/where-to-start-when-your-house-needs-a-deep-clean"],
+    "deep-cleaning-cost": ["blog/do-you-need-deep-cleaning-every-two-weeks", "blog/how-often-should-you-deep-clean-your-home", "blog/deep-cleaning-service-expectations"],
+    "deep-cleaning-checklist": ["blog/shower-glass-soap-scum-deep-cleaning", "blog/kitchen-grease-cabinet-deep-cleaning", "blog/room-by-room-deep-cleaning-order"],
+    "deep-cleaning-add-ons": ["blog/kitchen-grease-cabinet-deep-cleaning", "blog/shower-glass-soap-scum-deep-cleaning", "blog/deep-cleaning-service-expectations"],
+    "prepare-for-deep-cleaning": ["blog/first-deep-clean-progress-not-perfection", "blog/declutter-before-deep-cleaning", "blog/deep-cleaning-service-expectations"],
+    "how-long-does-deep-cleaning-take": ["blog/first-deep-clean-progress-not-perfection", "blog/room-by-room-deep-cleaning-order", "blog/do-you-need-deep-cleaning-every-two-weeks"],
+    "what-is-included-in-deep-cleaning": ["blog/shower-glass-soap-scum-deep-cleaning", "blog/kitchen-grease-cabinet-deep-cleaning", "blog/deep-cleaning-service-expectations"],
+    "what-is-not-included-in-deep-cleaning": ["blog/can-deep-cleaning-remove-odors", "blog/deep-cleaning-service-expectations", "blog/declutter-before-deep-cleaning"],
+    "standard-cleaning-vs-deep-cleaning": ["blog/do-you-need-deep-cleaning-every-two-weeks", "blog/how-often-should-you-deep-clean-your-home", "blog/first-deep-clean-progress-not-perfection"],
+    "deep-cleaning-before-recurring-cleaning": ["blog/do-you-need-deep-cleaning-every-two-weeks", "blog/first-deep-clean-progress-not-perfection", "blog/how-often-should-you-deep-clean-your-home"],
+    "one-time-deep-cleaning": ["blog/first-deep-clean-progress-not-perfection", "blog/where-to-start-when-your-house-needs-a-deep-clean", "blog/deep-cleaning-service-expectations"],
+    "deep-cleaning-faq": ["blog/do-you-need-deep-cleaning-every-two-weeks", "blog/first-deep-clean-progress-not-perfection", "blog/deep-cleaning-service-expectations"],
+    "kitchen-deep-cleaning": ["blog/kitchen-grease-cabinet-deep-cleaning", "blog/room-by-room-deep-cleaning-order", "blog/deep-cleaning-service-expectations"],
+    "cabinet-cleaning-with-deep-cleaning": ["blog/kitchen-grease-cabinet-deep-cleaning", "blog/deep-cleaning-service-expectations", "blog/room-by-room-deep-cleaning-order"],
+    "oven-cleaning-with-deep-cleaning": ["blog/kitchen-grease-cabinet-deep-cleaning", "blog/room-by-room-deep-cleaning-order", "blog/deep-cleaning-service-expectations"],
+    "bathroom-deep-cleaning": ["blog/shower-glass-soap-scum-deep-cleaning", "blog/can-deep-cleaning-remove-odors", "blog/room-by-room-deep-cleaning-order"],
+    "pet-hair-deep-cleaning": ["blog/can-deep-cleaning-remove-odors", "blog/how-often-should-you-deep-clean-your-home", "blog/first-deep-clean-progress-not-perfection"],
+    "deep-cleaning-with-pets": ["blog/can-deep-cleaning-remove-odors", "blog/how-often-should-you-deep-clean-your-home", "blog/declutter-before-deep-cleaning"],
   }
   const slugs = bySource[sourceSlug ?? ""] ?? shinyDeepArticlePages.slice(0, 3).map((page) => page.slug)
   return slugs.map((slug) => shinyDeepArticlePages.find((page) => page.slug === slug)).filter((page): page is ShynliDeepArticlePageData => Boolean(page))
@@ -1972,7 +2248,7 @@ export function ShynliDeepCleaningPage({ city }: { city?: (typeof cityPages)[num
               Guides for the questions people ask before booking.
             </h2>
             <p className="mt-5 text-lg font-bold leading-8 text-[#5e574f]">
-              These guides cover the practical decisions that come before a deep clean: timing, where to start, clutter, room order, and how to set expectations with the cleaner.
+              These guides cover the practical decisions that come before a deep clean: odors, shower buildup, kitchen grease, timing, where to start, clutter, first visits, and service expectations.
             </p>
           </div>
           <div className="grid gap-px overflow-hidden rounded-lg bg-[#d8cbb7] md:grid-cols-2">
@@ -2332,12 +2608,12 @@ export function ShynliDeepSeoPage({ page }: { page: ShynliDeepSeoPageData }) {
 export function ShynliDeepBlogPage() {
   useSeoMeta(
     "Deep Cleaning Guides | Shynli Deep Cleaning",
-    "Practical deep cleaning guides for homeowners comparing timing, clutter, room order, expectations, checklists, and cleaning service quotes.",
+    "Practical deep cleaning guides for homeowners comparing odors, shower buildup, kitchen grease, timing, clutter, first-clean expectations, and service quotes.",
     {
       "@context": "https://schema.org",
       "@type": "CollectionPage",
       name: "Deep Cleaning Guides",
-      description: "Practical deep cleaning guides from Shynli Deep Cleaning.",
+      description: "Practical deep cleaning guides about odors, bathroom buildup, kitchen grease, timing, clutter, and realistic service expectations.",
       url: `${shinyDeepCanonicalBase}/blog`,
       isPartOf: { "@type": "WebSite", name: "Shynli Deep Cleaning", url: shinyDeepCanonicalBase },
       mainEntity: {
@@ -2353,7 +2629,7 @@ export function ShynliDeepBlogPage() {
     {
       canonicalBaseUrl: shinyDeepCanonicalBase,
       canonicalPath: "/blog",
-      keywords: ["deep cleaning guides", "deep cleaning questions", "house deep cleaning help", "home deep cleaning advice", "Shynli Deep Cleaning"],
+      keywords: ["deep cleaning guides", "deep cleaning questions", "house deep cleaning help", "home deep cleaning advice", "deep cleaning odors", "shower glass deep cleaning", "kitchen grease deep cleaning", "Shynli Deep Cleaning"],
     },
   )
 
@@ -2395,7 +2671,7 @@ export function ShynliDeepBlogPage() {
           </Badge>
           <h1 className="max-w-5xl text-[clamp(3.2rem,8vw,8rem)] font-black leading-[0.86] tracking-normal">Guides for the messy questions before a deep clean.</h1>
           <p className="mt-7 max-w-3xl text-xl font-bold leading-8 text-white/76">
-            Practical answers for timing, clutter, where to start, room order, and how to set expectations with a cleaning service.
+            Practical answers for odors, bathroom buildup, kitchen grease, timing, clutter, first visits, and how to set expectations with a cleaning service.
           </p>
         </div>
       </section>
@@ -2454,8 +2730,8 @@ export function ShynliDeepArticlePage({ page }: { page: ShynliDeepArticlePageDat
           headline: page.h1,
           description: page.meta,
           url: `${shinyDeepCanonicalBase}/${page.slug}`,
-          datePublished: deepArticlePublishedDate,
-          dateModified: deepArticlePublishedDate,
+          datePublished: page.updated,
+          dateModified: page.updated,
           author: { "@type": "Organization", name: "Shynli Deep Cleaning", url: shinyDeepCanonicalBase },
           publisher: { "@type": "Organization", name: "Shynli Deep Cleaning", url: shinyDeepCanonicalBase },
           mainEntityOfPage: `${shinyDeepCanonicalBase}/${page.slug}`,
@@ -2527,7 +2803,7 @@ export function ShynliDeepArticlePage({ page }: { page: ShynliDeepArticlePageDat
             <p className="mt-7 max-w-3xl text-xl font-bold leading-8 text-white/76">{page.summary}</p>
             <div className="mt-6 flex flex-wrap items-center gap-3 text-sm font-black uppercase text-[#d7ff4f]">
               <span>{page.readTime}</span>
-              <span>Updated {deepArticlePublishedDate}</span>
+              <span>Updated {page.updated}</span>
             </div>
           </div>
         </section>
