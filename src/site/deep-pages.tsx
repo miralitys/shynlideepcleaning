@@ -642,7 +642,7 @@ export const shinyDeepArticlePages: ShynliDeepArticlePageData[] = [
     h1: "Where to start when your house needs a deep clean",
     summary: "When the whole house feels behind, do not start by trying to clean everything. Start by making the home easier to move through, then choose the rooms that will change daily life the fastest.",
     readTime: "8 min read",
-    sourceQuestion: "Reddit threads repeatedly ask where to begin when the entire home needs a deep clean and the first step feels impossible.",
+    sourceQuestion: "People repeatedly ask where to begin when the entire home needs a deep clean and the first step feels impossible.",
     sections: [
       {
         title: "Start with trash, dishes, and floors",
@@ -1095,27 +1095,287 @@ export const shinyDeepArticlePages: ShynliDeepArticlePageData[] = [
     ],
     related: [["One-time deep cleaning", "one-time-deep-cleaning"], ["Deep cleaning before recurring service", "deep-cleaning-before-recurring-cleaning"], ["Deep cleaning service expectations", "blog/deep-cleaning-service-expectations"]],
   },
+  {
+    slug: "blog/why-dust-comes-back-after-deep-cleaning",
+    title: "Why Dust Comes Back After Deep Cleaning | Shynli Deep Cleaning",
+    meta: "Learn why dust comes back after cleaning, what a deep clean can reset, and what to check when a home feels dusty again quickly.",
+    keywords: ["dust comes back after cleaning", "why is my house so dusty", "deep cleaning dust", "reduce dust after deep cleaning", "dusty home cleaning"],
+    updated: "2026-06-20",
+    eyebrow: "Dust reset",
+    h1: "Why does dust come back after deep cleaning?",
+    summary: "Dust can return quickly even after a good clean because the source is often bigger than one surface. A deep clean helps most when it resets reachable dust traps and gives the home a better maintenance baseline.",
+    readTime: "8 min read",
+    sourceQuestion: "People often ask why dust appears again a day or two after cleaning, especially in bedrooms, older homes, pet homes, and rooms with blinds or vents.",
+    sections: [
+      {
+        title: "The short answer",
+        copy: [
+          "Dust comes back quickly when it is still being released from textiles, vents, pets, open windows, cluttered shelves, blinds, ceiling fans, baseboards, and rooms that have not been detailed in a while.",
+          "A deep clean can remove a lot of settled dust from reachable surfaces. It cannot stop dust from existing. The goal is to reduce the old layer, clean the places that keep redistributing it, and make regular maintenance easier afterward.",
+        ],
+        bullets: ["Clean dust traps, not just tabletops", "Name blinds, fans, vents, and baseboards before booking", "Expect maintenance after the reset", "Look beyond cleaning if dust returns immediately"],
+      },
+      {
+        title: "Where dust hides",
+        copy: [
+          "The obvious dust is usually the last layer people see. The hidden layer sits on ceiling fan blades, window sills, blinds, door trim, baseboards, vent faces, lamp shades, furniture edges, under beds, and floors near traffic paths.",
+          "If those areas are skipped, the room can look clean for a moment and then feel dusty again as air moves through the home.",
+        ],
+        bullets: ["Ceiling fans and light fixtures", "Blinds, sills, and window edges", "Baseboards, doors, and trim", "Vent covers and nearby walls", "Under beds and furniture edges"],
+      },
+      {
+        title: "What deep cleaning can realistically do",
+        copy: [
+          "A good deep clean should focus on reachable dust collection points and the rooms where dust bothers you most. For many homes, that means bedrooms, living rooms, stairs, entries, and pet areas.",
+          "If you have allergies, HVAC concerns, construction dust, damaged filters, carpet problems, or heavy fabric buildup, cleaning may only be one part of the answer. Those issues may need HVAC, carpet, or maintenance help beyond a normal residential deep clean.",
+        ],
+      },
+      {
+        title: "How to ask for the right visit",
+        copy: [
+          "Do not just say the house is dusty. Say where the dust returns first: master bedroom blinds, ceiling fans, baseboards, vent covers, pet rooms, or under furniture. That lets the quote protect time for the details that actually change the result.",
+          "For Chicago-area homes, seasonal changes can make this worse. Spring pollen, winter indoor air, pets, and open windows can all change how quickly the home feels dusty again.",
+        ],
+      },
+    ],
+    faqs: [
+      ["Can deep cleaning stop dust from coming back?", "No cleaning can stop dust completely, but deep cleaning can reduce old buildup on reachable surfaces and make regular maintenance more effective."],
+      ["Should ceiling fans and blinds be named before booking?", "Yes. Fans and heavy blinds can change timing, so they should be named clearly before the visit."],
+      ["Why is my bedroom dusty right after cleaning?", "Bedrooms often have textiles, bedding, vents, blinds, and under-bed dust that keep redistributing particles."],
+      ["When is dust not just a cleaning issue?", "If dust returns immediately, consider filters, HVAC, carpets, renovation dust, open windows, or other sources beyond surface cleaning."],
+    ],
+    related: [["Blinds cleaning with deep cleaning", "blinds-cleaning-with-deep-cleaning"], ["Baseboard cleaning", "baseboard-cleaning"], ["Deep cleaning after renovation dust", "deep-cleaning-after-renovation-dust"]],
+  },
+  {
+    slug: "blog/guest-ready-deep-cleaning-priorities",
+    title: "Guest-Ready Deep Cleaning Priorities | Shynli Deep Cleaning",
+    meta: "A practical guide to what to deep clean before guests arrive, including bathrooms, kitchen, entry areas, guest rooms, floors, and high-touch details.",
+    keywords: ["deep cleaning before guests", "guest ready deep clean", "clean house before guests", "pre guest cleaning service", "deep clean before family visits"],
+    updated: "2026-06-20",
+    eyebrow: "Guest-ready plan",
+    h1: "Guest-ready deep cleaning: what should you prioritize first?",
+    summary: "Before guests arrive, the best deep clean is not the biggest possible checklist. It is the clean that protects the rooms people will actually use and the details that make the home feel comfortable.",
+    readTime: "7 min read",
+    sourceQuestion: "People ask what they should clean first when guests are coming soon and the whole home cannot receive equal attention.",
+    sections: [
+      {
+        title: "Start with guest experience",
+        copy: [
+          "If guests are coming, start with bathrooms, kitchen surfaces, entry floors, guest sleeping areas, living spaces, and the path people will walk through. Those rooms decide how the home feels.",
+          "This is different from trying to deep clean every drawer, closet, and storage area. A guest-ready clean should be practical, timed, and honest about what matters before arrival.",
+        ],
+        bullets: ["Guest bathroom and powder room", "Kitchen counters, sink, and appliance fronts", "Entry, stairs, and main floors", "Guest bedroom or sleeping area", "High-touch doors, switches, and handles"],
+      },
+      {
+        title: "Details guests notice",
+        copy: [
+          "Guests may not inspect every corner, but they notice cloudy mirrors, bathroom buildup, sticky kitchen handles, pet hair, entry dust, overflowing trash, and floors that feel gritty.",
+          "If time is limited, focus on visible comfort first. Save hidden storage, basement detail, and low-priority rooms for another visit unless those spaces will be used.",
+        ],
+      },
+      {
+        title: "When add-ons make sense",
+        copy: [
+          "Add-ons are worth considering when they affect hosting: inside fridge before a family stay, oven interior before holiday cooking, interior windows before a daytime gathering, or blinds when a guest room feels dusty.",
+          "Name these before booking. Adding them at the door can force the cleaner to trade time away from bathrooms, kitchen, or floors.",
+        ],
+        bullets: ["Fridge interior before overnight guests", "Oven interior before holiday meals", "Interior windows for bright living rooms", "Blinds in guest bedrooms", "Extra bathroom detail before family visits"],
+      },
+      {
+        title: "A simple request to send",
+        copy: [
+          "A strong request sounds like this: guests arrive Friday; please prioritize the hall bath, kitchen, entry, living room, stairs, and guest room. Add fridge interior if timing allows, but bathrooms and floors matter most.",
+          "That kind of note helps the cleaning visit match the real reason you are booking.",
+        ],
+      },
+    ],
+    faqs: [
+      ["Should I deep clean the whole house before guests?", "Not always. Prioritize guest-facing rooms first, then add hidden or lower-use rooms only if time and budget allow."],
+      ["What is the most important room before guests?", "Bathrooms usually matter first, followed by kitchen surfaces, entry areas, floors, and sleeping spaces guests will use."],
+      ["Should I add fridge or oven cleaning?", "Add them when guests will use those areas or when hosting meals makes them part of the experience."],
+      ["How should I explain the deadline?", "Tell the cleaner when guests arrive and which rooms must be finished first."],
+    ],
+    related: [["Deep cleaning before guests", "deep-cleaning-before-guests"], ["Deep cleaning before holidays", "deep-cleaning-before-holidays"], ["Room-by-room deep cleaning order", "blog/room-by-room-deep-cleaning-order"]],
+  },
+  {
+    slug: "blog/deep-cleaning-after-illness",
+    title: "Deep Cleaning After Illness | Shynli Deep Cleaning",
+    meta: "How to reset a home after illness with high-touch surfaces, bathrooms, trash, bedding preparation, floors, and realistic cleaning boundaries.",
+    keywords: ["deep cleaning after illness", "cleaning after being sick", "disinfect house after sickness", "post illness cleaning", "sanitize high touch surfaces"],
+    updated: "2026-06-20",
+    eyebrow: "Post-illness reset",
+    h1: "Deep cleaning after illness: what should you reset first?",
+    summary: "After someone has been sick, the home usually needs a practical reset: high-touch areas, bathrooms, trash points, floors, and the rooms that carried the most stress. Cleaning helps the home feel livable again, but it should not be treated as medical infection control.",
+    readTime: "8 min read",
+    sourceQuestion: "People ask how to clean after sickness without turning the whole home into an overwhelming project.",
+    sections: [
+      {
+        title: "The practical short answer",
+        copy: [
+          "Start with high-touch surfaces, bathrooms, bedrooms used during illness, trash areas, kitchen touchpoints, floors, and laundry preparation. Those are the places that usually make the home feel stale after a sick week.",
+          "Use disinfectants according to the product label when you handle that work yourself. A residential cleaning visit can help reset reachable surfaces, but health-specific disinfection questions should follow product directions and current health guidance.",
+        ],
+        bullets: ["Door handles, switches, rails, and remotes", "Bathroom sinks, toilets, counters, and floors", "Bedroom surfaces and bedside areas", "Trash points and kitchen handles", "Floors in the main traffic path"],
+      },
+      {
+        title: "What to tell the cleaning company",
+        copy: [
+          "Be clear if the request follows illness. The cleaner should know which rooms were used most, whether trash is already bagged, whether bedding needs to be avoided or prepared separately, and whether anyone in the home is still sick.",
+          "If anyone is actively ill, rescheduling may be the right answer. A cleaning appointment should not put workers into a situation that was not disclosed.",
+        ],
+      },
+      {
+        title: "Where deep cleaning helps",
+        copy: [
+          "Deep cleaning can help with the feeling of a reset: bathroom recovery, floors, dust, trash residue, kitchen surfaces, high-touch areas, and rooms that were neglected while the household was sick.",
+          "It can also help after the home fell behind because nobody had energy to clean. That is a normal reason to ask for help.",
+        ],
+        bullets: ["Bathrooms that need recovery", "Kitchen counters, sink, and handles", "Bedroom dust and bedside surfaces", "Floors and high-touch paths", "Trash and stale surface residue"],
+      },
+      {
+        title: "What is outside a normal deep clean",
+        copy: [
+          "A normal residential deep clean is not mold remediation, biohazard cleanup, medical-grade disinfection, pest treatment, or carpet extraction. If the situation involves bodily fluids, hazardous waste, severe contamination, or specialty infection-control needs, ask for the right specialty service.",
+          "Clear boundaries protect everyone and make the visit more useful.",
+        ],
+      },
+    ],
+    faqs: [
+      ["Can Shynli deep clean after someone was sick?", "A post-illness reset may be possible when the situation is disclosed, the home is safe to enter, and the work stays within normal residential cleaning scope."],
+      ["Is this medical-grade disinfection?", "No. Residential deep cleaning can address reachable surfaces, but medical-grade infection control or biohazard cleanup is a different service."],
+      ["What should I do before cleaners arrive?", "Bag trash, share room priorities, disclose recent illness, separate pets, and avoid scheduling while someone is actively sick if possible."],
+      ["Should bedding be included?", "Laundry and bedding handling should be discussed before the visit. Some homes prefer to strip beds or handle laundry separately."],
+    ],
+    related: [["What is not included in deep cleaning", "what-is-not-included-in-deep-cleaning"], ["Deep cleaning service expectations", "blog/deep-cleaning-service-expectations"], ["One-time deep cleaning", "one-time-deep-cleaning"]],
+  },
+  {
+    slug: "blog/baseboards-blinds-and-fans-deep-cleaning",
+    title: "Baseboards, Blinds, And Fans Deep Cleaning | Shynli Deep Cleaning",
+    meta: "Why baseboards, blinds, and ceiling fans change deep cleaning time, what to include in the quote, and how to avoid rushed detail work.",
+    keywords: ["baseboard deep cleaning", "blind cleaning deep clean", "ceiling fan dust cleaning", "detail cleaning service", "deep cleaning trim and blinds"],
+    updated: "2026-06-20",
+    eyebrow: "Detail areas",
+    h1: "Baseboards, blinds, and fans: why detail areas change a deep clean.",
+    summary: "Baseboards, blinds, and ceiling fans are small in theory and time-heavy in real life. If they matter to the result, they should be named before the appointment is priced.",
+    readTime: "8 min read",
+    sourceQuestion: "People ask whether detailed areas are included and why a cleaner may need more time when the home has dusty trim, blinds, or fan blades.",
+    sections: [
+      {
+        title: "Why these details matter",
+        copy: [
+          "A room can have clean counters and floors but still feel unfinished if the baseboards, blinds, fan blades, door trim, and sills are dusty. These details sit at the edges of the room, which is exactly why they are easy to ignore during normal cleaning.",
+          "They also take slower hand work. One dusty blind or ceiling fan is simple. A whole house of them changes the schedule.",
+        ],
+        bullets: ["Baseboards and trim collect edge dust", "Blinds hold dust on many small slats", "Fans redistribute dust when turned on", "Door frames and sills affect first impressions"],
+      },
+      {
+        title: "What is usually included",
+        copy: [
+          "Baseboards and trim are often part of the deep-cleaning core. Heavy blinds, many ceiling fans, tall fixtures, delicate shades, or anything requiring unsafe reach may need separate timing or may fall outside the normal scope.",
+          "The safest approach is to name the areas that matter instead of assuming every detail in every room can be handled inside a standard appointment.",
+        ],
+      },
+      {
+        title: "How to prioritize",
+        copy: [
+          "If time is limited, choose the rooms where detail dust changes the result: bedrooms, living rooms, entry areas, stairs, guest rooms, and rooms with strong natural light.",
+          "For a first deep clean, it may be smarter to reset bathrooms, kitchen, floors, and high-touch areas first, then schedule blinds or fans as a detail focus.",
+        ],
+        bullets: ["Guest rooms and bedrooms", "Living rooms with bright windows", "Entry stairs and hallway trim", "Fans that run often", "Rooms where dust returns quickly"],
+      },
+      {
+        title: "What to put in the quote notes",
+        copy: [
+          "A helpful note says: please include main-floor baseboards, living room blinds, and two reachable ceiling fans. Skip basement blinds. Kitchen and bathrooms are still the priority.",
+          "That note is better than asking for every detail everywhere, because it tells the cleaner how to protect the outcome that matters most.",
+        ],
+      },
+    ],
+    faqs: [
+      ["Are baseboards included in deep cleaning?", "Baseboards are usually part of the deep-cleaning core, but heavy buildup or every-room detail should be named so timing is realistic."],
+      ["Are blinds included?", "Light attention may be possible, but heavy blind cleaning often needs extra time and should be quoted clearly."],
+      ["Can ceiling fans be cleaned?", "Reachable ceiling fans can often be included when named. Tall or unsafe reach may be outside the normal scope."],
+      ["Why do these details cost more time?", "They require slower hand work across many small surfaces, especially when dust has built up for a long time."],
+    ],
+    related: [["Baseboard cleaning", "baseboard-cleaning"], ["Blinds cleaning with deep cleaning", "blinds-cleaning-with-deep-cleaning"], ["What is included in deep cleaning", "what-is-included-in-deep-cleaning"]],
+  },
+  {
+    slug: "blog/what-to-do-before-professional-deep-cleaning",
+    title: "What To Do Before Professional Deep Cleaning | Shynli Deep Cleaning",
+    meta: "What to do before professional deep cleaning: access notes, priorities, pets, fragile surfaces, clutter, add-ons, and what not to pre-clean.",
+    keywords: ["what to do before professional deep cleaning", "prepare for deep cleaning service", "before house cleaners arrive", "deep cleaning preparation", "get ready for deep cleaners"],
+    updated: "2026-06-20",
+    eyebrow: "Before cleaners arrive",
+    h1: "What should you do before professional deep cleaning?",
+    summary: "You do not need to clean the house before the cleaners arrive. You do need to make the visit easier to plan: access, priorities, pets, fragile surfaces, add-ons, and anything the team should avoid.",
+    readTime: "7 min read",
+    sourceQuestion: "People ask whether they should clean before a cleaner comes, what is helpful, and what wastes their energy before a professional deep clean.",
+    sections: [
+      {
+        title: "Do not pre-clean the job",
+        copy: [
+          "Do not scrub the shower, wipe the baseboards, or clean the oven just to look prepared. That is the work you are hiring for. Pre-cleaning the actual scope can waste your energy and make the quote less honest.",
+          "The useful preparation is removing avoidable friction: clutter that blocks surfaces, unclear entry, loose pet plans, missing priority notes, and surprise add-ons.",
+        ],
+        bullets: ["Do not scrub what you are paying to clean", "Do clear obvious clutter when possible", "Do share access details", "Do name the rooms that matter most"],
+      },
+      {
+        title: "Give the cleaner a clean path",
+        copy: [
+          "Pick up laundry, dishes, toys, personal items, and paperwork where you can. The point is not perfection. The point is giving the cleaner reachable counters, floors, sinks, tubs, and furniture edges.",
+          "If a room is too cluttered to clean well, say that before the visit so expectations stay realistic.",
+        ],
+      },
+      {
+        title: "Confirm access and boundaries",
+        copy: [
+          "Before the appointment, confirm parking, entry, lockbox or gate details, alarm notes, pet separation, rooms to skip, and any surfaces that need special care.",
+          "Also choose add-ons early: oven interior, fridge interior, cabinet interiors, interior windows, blinds, basement areas, or heavy detail work. Those tasks can change the time needed.",
+        ],
+        bullets: ["Parking and entry", "Pets and rooms to skip", "Fragile or special surfaces", "Priority rooms", "Add-ons selected before arrival"],
+      },
+      {
+        title: "Send one clear priority list",
+        copy: [
+          "A short list beats a giant checklist. Say: kitchen and hall bath first; main-floor baseboards if time allows; skip the office; dog will be in the basement; use gentle product on stone counters.",
+          "That gives the visit direction without micromanaging the cleaner.",
+        ],
+      },
+    ],
+    faqs: [
+      ["Should I clean before the cleaners arrive?", "No. Do not pre-clean the actual job. Pick up personal clutter and share notes so surfaces are reachable."],
+      ["What should I move before a deep clean?", "Move small personal items, laundry, dishes, toys, and paperwork when possible. Heavy furniture is not expected."],
+      ["Should I leave a checklist?", "Leave a short priority list. It is more useful than a long list that treats every task as equally important."],
+      ["When should I mention pets or special surfaces?", "Before booking or before arrival. Pet plans and delicate surfaces can affect products, access, and timing."],
+    ],
+    related: [["Prepare for deep cleaning", "prepare-for-deep-cleaning"], ["Declutter before deep cleaning", "blog/declutter-before-deep-cleaning"], ["Deep cleaning service expectations", "blog/deep-cleaning-service-expectations"]],
+  },
 ]
 
 function getDeepArticleRecommendations(sourceSlug?: string) {
   const bySource: Record<string, string[]> = {
-    "deep-cleaning-cost": ["blog/do-you-need-deep-cleaning-every-two-weeks", "blog/how-often-should-you-deep-clean-your-home", "blog/deep-cleaning-service-expectations"],
-    "deep-cleaning-checklist": ["blog/shower-glass-soap-scum-deep-cleaning", "blog/kitchen-grease-cabinet-deep-cleaning", "blog/room-by-room-deep-cleaning-order"],
-    "deep-cleaning-add-ons": ["blog/kitchen-grease-cabinet-deep-cleaning", "blog/shower-glass-soap-scum-deep-cleaning", "blog/deep-cleaning-service-expectations"],
-    "prepare-for-deep-cleaning": ["blog/first-deep-clean-progress-not-perfection", "blog/declutter-before-deep-cleaning", "blog/deep-cleaning-service-expectations"],
+    "deep-cleaning-cost": ["blog/do-you-need-deep-cleaning-every-two-weeks", "blog/how-often-should-you-deep-clean-your-home", "blog/what-to-do-before-professional-deep-cleaning"],
+    "deep-cleaning-checklist": ["blog/baseboards-blinds-and-fans-deep-cleaning", "blog/shower-glass-soap-scum-deep-cleaning", "blog/kitchen-grease-cabinet-deep-cleaning"],
+    "deep-cleaning-add-ons": ["blog/baseboards-blinds-and-fans-deep-cleaning", "blog/kitchen-grease-cabinet-deep-cleaning", "blog/shower-glass-soap-scum-deep-cleaning"],
+    "prepare-for-deep-cleaning": ["blog/what-to-do-before-professional-deep-cleaning", "blog/declutter-before-deep-cleaning", "blog/deep-cleaning-service-expectations"],
     "how-long-does-deep-cleaning-take": ["blog/first-deep-clean-progress-not-perfection", "blog/room-by-room-deep-cleaning-order", "blog/do-you-need-deep-cleaning-every-two-weeks"],
-    "what-is-included-in-deep-cleaning": ["blog/shower-glass-soap-scum-deep-cleaning", "blog/kitchen-grease-cabinet-deep-cleaning", "blog/deep-cleaning-service-expectations"],
-    "what-is-not-included-in-deep-cleaning": ["blog/can-deep-cleaning-remove-odors", "blog/deep-cleaning-service-expectations", "blog/declutter-before-deep-cleaning"],
+    "what-is-included-in-deep-cleaning": ["blog/baseboards-blinds-and-fans-deep-cleaning", "blog/shower-glass-soap-scum-deep-cleaning", "blog/kitchen-grease-cabinet-deep-cleaning"],
+    "what-is-not-included-in-deep-cleaning": ["blog/deep-cleaning-after-illness", "blog/can-deep-cleaning-remove-odors", "blog/deep-cleaning-service-expectations"],
     "standard-cleaning-vs-deep-cleaning": ["blog/do-you-need-deep-cleaning-every-two-weeks", "blog/how-often-should-you-deep-clean-your-home", "blog/first-deep-clean-progress-not-perfection"],
     "deep-cleaning-before-recurring-cleaning": ["blog/do-you-need-deep-cleaning-every-two-weeks", "blog/first-deep-clean-progress-not-perfection", "blog/how-often-should-you-deep-clean-your-home"],
-    "one-time-deep-cleaning": ["blog/first-deep-clean-progress-not-perfection", "blog/where-to-start-when-your-house-needs-a-deep-clean", "blog/deep-cleaning-service-expectations"],
-    "deep-cleaning-faq": ["blog/do-you-need-deep-cleaning-every-two-weeks", "blog/first-deep-clean-progress-not-perfection", "blog/deep-cleaning-service-expectations"],
+    "one-time-deep-cleaning": ["blog/what-to-do-before-professional-deep-cleaning", "blog/first-deep-clean-progress-not-perfection", "blog/where-to-start-when-your-house-needs-a-deep-clean"],
+    "deep-cleaning-faq": ["blog/deep-cleaning-after-illness", "blog/why-dust-comes-back-after-deep-cleaning", "blog/what-to-do-before-professional-deep-cleaning"],
     "kitchen-deep-cleaning": ["blog/kitchen-grease-cabinet-deep-cleaning", "blog/room-by-room-deep-cleaning-order", "blog/deep-cleaning-service-expectations"],
     "cabinet-cleaning-with-deep-cleaning": ["blog/kitchen-grease-cabinet-deep-cleaning", "blog/deep-cleaning-service-expectations", "blog/room-by-room-deep-cleaning-order"],
     "oven-cleaning-with-deep-cleaning": ["blog/kitchen-grease-cabinet-deep-cleaning", "blog/room-by-room-deep-cleaning-order", "blog/deep-cleaning-service-expectations"],
     "bathroom-deep-cleaning": ["blog/shower-glass-soap-scum-deep-cleaning", "blog/can-deep-cleaning-remove-odors", "blog/room-by-room-deep-cleaning-order"],
-    "pet-hair-deep-cleaning": ["blog/can-deep-cleaning-remove-odors", "blog/how-often-should-you-deep-clean-your-home", "blog/first-deep-clean-progress-not-perfection"],
-    "deep-cleaning-with-pets": ["blog/can-deep-cleaning-remove-odors", "blog/how-often-should-you-deep-clean-your-home", "blog/declutter-before-deep-cleaning"],
+    "baseboard-cleaning": ["blog/baseboards-blinds-and-fans-deep-cleaning", "blog/why-dust-comes-back-after-deep-cleaning", "blog/deep-cleaning-service-expectations"],
+    "blinds-cleaning-with-deep-cleaning": ["blog/baseboards-blinds-and-fans-deep-cleaning", "blog/why-dust-comes-back-after-deep-cleaning", "blog/deep-cleaning-service-expectations"],
+    "deep-cleaning-before-guests": ["blog/guest-ready-deep-cleaning-priorities", "blog/room-by-room-deep-cleaning-order", "blog/what-to-do-before-professional-deep-cleaning"],
+    "deep-cleaning-before-holidays": ["blog/guest-ready-deep-cleaning-priorities", "blog/kitchen-grease-cabinet-deep-cleaning", "blog/what-to-do-before-professional-deep-cleaning"],
+    "deep-cleaning-after-renovation-dust": ["blog/why-dust-comes-back-after-deep-cleaning", "blog/baseboards-blinds-and-fans-deep-cleaning", "blog/first-deep-clean-progress-not-perfection"],
+    "pet-hair-deep-cleaning": ["blog/why-dust-comes-back-after-deep-cleaning", "blog/can-deep-cleaning-remove-odors", "blog/how-often-should-you-deep-clean-your-home"],
+    "deep-cleaning-with-pets": ["blog/why-dust-comes-back-after-deep-cleaning", "blog/can-deep-cleaning-remove-odors", "blog/declutter-before-deep-cleaning"],
   }
   const slugs = bySource[sourceSlug ?? ""] ?? shinyDeepArticlePages.slice(0, 3).map((page) => page.slug)
   return slugs.map((slug) => shinyDeepArticlePages.find((page) => page.slug === slug)).filter((page): page is ShynliDeepArticlePageData => Boolean(page))
@@ -2608,12 +2868,12 @@ export function ShynliDeepSeoPage({ page }: { page: ShynliDeepSeoPageData }) {
 export function ShynliDeepBlogPage() {
   useSeoMeta(
     "Deep Cleaning Guides | Shynli Deep Cleaning",
-    "Practical deep cleaning guides for homeowners comparing odors, shower buildup, kitchen grease, timing, clutter, first-clean expectations, and service quotes.",
+    "Practical deep cleaning guides for homeowners comparing dust, guest-ready cleaning, post-illness resets, detail areas, preparation, odors, buildup, timing, and service quotes.",
     {
       "@context": "https://schema.org",
       "@type": "CollectionPage",
       name: "Deep Cleaning Guides",
-      description: "Practical deep cleaning guides about odors, bathroom buildup, kitchen grease, timing, clutter, and realistic service expectations.",
+      description: "Practical deep cleaning guides about dust, guest-ready cleaning, post-illness resets, baseboards, blinds, fans, preparation, odors, buildup, and realistic service expectations.",
       url: `${shinyDeepCanonicalBase}/blog`,
       isPartOf: { "@type": "WebSite", name: "Shynli Deep Cleaning", url: shinyDeepCanonicalBase },
       mainEntity: {
@@ -2629,7 +2889,7 @@ export function ShynliDeepBlogPage() {
     {
       canonicalBaseUrl: shinyDeepCanonicalBase,
       canonicalPath: "/blog",
-      keywords: ["deep cleaning guides", "deep cleaning questions", "house deep cleaning help", "home deep cleaning advice", "deep cleaning odors", "shower glass deep cleaning", "kitchen grease deep cleaning", "Shynli Deep Cleaning"],
+      keywords: ["deep cleaning guides", "deep cleaning questions", "house deep cleaning help", "home deep cleaning advice", "dust after cleaning", "deep cleaning before guests", "deep cleaning after illness", "baseboard deep cleaning", "Shynli Deep Cleaning"],
     },
   )
 
@@ -2671,7 +2931,7 @@ export function ShynliDeepBlogPage() {
           </Badge>
           <h1 className="max-w-5xl text-[clamp(3.2rem,8vw,8rem)] font-black leading-[0.86] tracking-normal">Guides for the messy questions before a deep clean.</h1>
           <p className="mt-7 max-w-3xl text-xl font-bold leading-8 text-white/76">
-            Practical answers for odors, bathroom buildup, kitchen grease, timing, clutter, first visits, and how to set expectations with a cleaning service.
+            Practical answers for dust that keeps returning, guest-ready priorities, post-illness resets, baseboards, blinds, fans, odors, buildup, timing, and how to set expectations with a cleaning service.
           </p>
         </div>
       </section>
