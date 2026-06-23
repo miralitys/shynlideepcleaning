@@ -1350,32 +1350,290 @@ export const shinyDeepArticlePages: ShynliDeepArticlePageData[] = [
     ],
     related: [["Prepare for deep cleaning", "prepare-for-deep-cleaning"], ["Declutter before deep cleaning", "blog/declutter-before-deep-cleaning"], ["Deep cleaning service expectations", "blog/deep-cleaning-service-expectations"]],
   },
+  {
+    slug: "blog/tile-and-grout-deep-cleaning-expectations",
+    title: "Tile And Grout Deep Cleaning Expectations | Shynli Deep Cleaning",
+    meta: "What deep cleaning can realistically do for tile floors, grout lines, bathroom tile, kitchen floors, old staining, damaged grout, and quote expectations.",
+    keywords: ["tile and grout deep cleaning", "grout deep cleaning", "clean grout lines", "deep clean tile floors", "bathroom tile cleaning"],
+    updated: "2026-06-23",
+    eyebrow: "Tile and grout",
+    h1: "Tile and grout deep cleaning: what can actually improve?",
+    summary: "Deep cleaning can make many tile floors and grout lines look better, especially when the problem is surface soil, mop residue, bathroom buildup, or kitchen traffic. It cannot repair damaged grout, permanent staining, missing sealant, or etched stone.",
+    readTime: "8 min read",
+    sourceQuestion: "People ask whether dirty grout can be fixed by a deep clean or whether it needs restoration, resealing, or repair.",
+    sections: [
+      {
+        title: "The short answer",
+        copy: [
+          "Tile and grout can improve during a deep clean when the buildup is sitting on the surface: dirt in traffic paths, sticky mop residue, bathroom film, kitchen soil, or dust packed into floor edges.",
+          "The result depends on age, material, sealant, prior products, and whether the grout is stained or damaged. A cleaner can scrub and detail reachable lines, but restoration-level whitening or resealing is a different scope.",
+        ],
+        bullets: ["Surface soil can often improve", "Old stains may remain", "Damaged grout is not repaired by cleaning", "Natural stone needs special care"],
+      },
+      {
+        title: "Where grout gets dirty fastest",
+        copy: [
+          "In Chicago-suburb homes, grout usually gets worst around kitchen work paths, bathroom floors, mudroom entries, laundry rooms, and the edges where mops leave dirty water behind.",
+          "If grout is the main reason for booking, say that before the quote. A whole kitchen or several bathrooms of grout detail can change the time needed more than people expect.",
+        ],
+        bullets: ["Kitchen floor traffic paths", "Bathroom floor corners", "Laundry and mudroom entries", "Tile near tubs and showers", "Edges beside cabinets and toilets"],
+      },
+      {
+        title: "What to ask before booking",
+        copy: [
+          "Ask whether the visit includes tile floor detail, bathroom tile attention, or only standard mopping. Those are not the same thing. A normal mop pass will not do much for grout lines that need hand work.",
+          "Share photos when the grout is a priority. Photos help separate a realistic deep-cleaning request from a tile restoration request.",
+        ],
+      },
+      {
+        title: "When cleaning is not enough",
+        copy: [
+          "If grout is cracked, missing, deeply stained, or unsealed, cleaning may make it cleaner without making it look new. If natural stone is involved, the wrong product can create damage instead of a better result.",
+          "A good quote should be honest about that boundary before the appointment is treated like a guaranteed floor transformation.",
+        ],
+      },
+    ],
+    faqs: [
+      ["Can deep cleaning make grout white again?", "Sometimes it can brighten grout, but old staining, damaged grout, missing sealant, or discoloration may need specialty restoration."],
+      ["Is grout cleaning included in every deep clean?", "Light tile floor attention may be included, but heavy grout detail should be named before booking so time is realistic."],
+      ["Can cleaners use any product on tile?", "No. Natural stone, old grout, and delicate finishes need care. Share surface notes before the visit."],
+      ["Should I send photos?", "Yes. Photos help the quote separate ordinary buildup from damage or restoration work."],
+    ],
+    related: [["Bathroom deep cleaning", "bathroom-deep-cleaning"], ["Deep cleaning checklist", "deep-cleaning-checklist"], ["What is not included in deep cleaning", "what-is-not-included-in-deep-cleaning"]],
+  },
+  {
+    slug: "blog/walls-doors-and-trim-deep-cleaning",
+    title: "Walls, Doors, And Trim Deep Cleaning | Shynli Deep Cleaning",
+    meta: "How to set expectations for wall spot cleaning, fingerprints on doors, trim marks, scuffs, paint risk, heavy wall washing, and deep-cleaning quote notes.",
+    keywords: ["wall spot cleaning deep clean", "clean fingerprints from doors", "trim deep cleaning", "door and wall marks cleaning", "deep clean walls doors trim"],
+    updated: "2026-06-23",
+    eyebrow: "Walls and trim",
+    h1: "Walls, doors, and trim: what belongs in a deep clean?",
+    summary: "A deep clean can often help with dusty trim, fingerprints around doors, switch plates, reachable smudges, and baseboard edges. Full wall washing, paint correction, heavy scuffs, and damaged finishes need a clearer boundary.",
+    readTime: "8 min read",
+    sourceQuestion: "People ask whether wall marks, fingerprints, door grime, and trim detail are part of deep cleaning or a separate task.",
+    sections: [
+      {
+        title: "The practical answer",
+        copy: [
+          "Doors, trim, switch plates, and reachable spot marks are reasonable deep-cleaning details when they are named in the scope. They are especially common in homes with kids, pets, stairs, mudrooms, and busy hallway traffic.",
+          "Full wall washing is different. Walls can streak, paint can dull, texture can change, and aggressive products can leave shiny patches. That is why wall work should be discussed instead of assumed.",
+        ],
+        bullets: ["Door handles and edges", "Switch plates and high-touch marks", "Baseboards and trim", "Reachable spot cleaning", "Heavy wall washing as a separate discussion"],
+      },
+      {
+        title: "Where marks usually collect",
+        copy: [
+          "The most useful areas to name are stair walls, hallway doors, bedroom doors, mudroom doors, pantry doors, bathroom trim, and the spots around light switches.",
+          "If the home has flat paint, older paint, or previous patching, tell the cleaner. A gentler approach may be safer than trying to remove every mark in one visit.",
+        ],
+        bullets: ["Stair rails and nearby walls", "Kids' room doors", "Bathroom door edges", "Kitchen and pantry handles", "Mudroom and garage-entry trim"],
+      },
+      {
+        title: "What cleaning cannot promise",
+        copy: [
+          "Cleaning can remove some dust, oils, fingerprints, and light residue. It cannot promise to remove paint transfer, dents, nail holes, permanent scuffs, smoke staining, water damage, or marks that are inside the paint finish.",
+          "That boundary is not an excuse. It is how the visit stays honest and avoids making a surface worse.",
+        ],
+      },
+      {
+        title: "How to write the quote note",
+        copy: [
+          "A strong request sounds like this: please include fingerprints around the main-floor doors, stair trim, switch plates, and visible hallway smudges. Do not do full wall washing without confirming first.",
+          "That gives the cleaner enough direction to help without turning the appointment into risky paint work.",
+        ],
+      },
+    ],
+    faqs: [
+      ["Does deep cleaning include walls?", "Light spot cleaning may be discussed, but full wall washing is usually separate and depends on paint and surface condition."],
+      ["Can cleaners remove fingerprints from doors?", "Often yes, especially around handles and edges, but delicate paint or old finishes should be mentioned first."],
+      ["Can deep cleaning fix scuffs?", "Some light marks may improve. Paint damage, dents, and permanent scuffs are not repaired by cleaning."],
+      ["Should I list every wall?", "No. Name the most visible doors, trim, and high-touch areas so the visit stays focused."],
+    ],
+    related: [["Baseboard cleaning", "baseboard-cleaning"], ["What is included in deep cleaning", "what-is-included-in-deep-cleaning"], ["What is not included in deep cleaning", "what-is-not-included-in-deep-cleaning"]],
+  },
+  {
+    slug: "blog/moving-furniture-and-appliances-during-deep-cleaning",
+    title: "Moving Furniture And Appliances During Deep Cleaning | Shynli Deep Cleaning",
+    meta: "Understand when light furniture moving is reasonable, why heavy furniture and appliance moving may be limited, and how to prepare for cleaning behind or under items.",
+    keywords: ["move furniture during deep cleaning", "clean behind appliances deep clean", "deep cleaning under furniture", "appliance moving cleaning service", "furniture moving cleaner boundaries"],
+    updated: "2026-06-23",
+    eyebrow: "Access and lifting",
+    h1: "Should cleaners move furniture and appliances during deep cleaning?",
+    summary: "Deep cleaning can include reachable edges and areas under light, safe-to-move items, but heavy furniture, refrigerators, stoves, beds, and large appliances should not be assumed. If behind-appliance or under-furniture cleaning matters, plan access before the visit.",
+    readTime: "8 min read",
+    sourceQuestion: "People ask whether a deep clean means moving furniture, pulling appliances out, and cleaning every hidden floor area.",
+    sections: [
+      {
+        title: "The short answer",
+        copy: [
+          "A cleaning team may shift small, safe items when it is practical, but deep cleaning is not a moving service. Heavy lifting can damage floors, appliances, walls, or the cleaner, and it may be restricted by insurance or safety rules.",
+          "The clean can still improve edges, baseboards, visible floor lines, and reachable dust. The hidden areas behind heavy furniture or appliances need access planned ahead.",
+        ],
+        bullets: ["Small movable items may be workable", "Heavy furniture is not assumed", "Large appliances should be planned separately", "Customer-provided access changes the result"],
+      },
+      {
+        title: "What to move before the visit",
+        copy: [
+          "If you want an area cleaned behind a sofa, bed, fridge, stove, washer, or dryer, move it before the appointment when safe. Do not wait for the cleaner to discover that the result depends on lifting heavy items.",
+          "For appliances, also consider utilities, hoses, floor protection, and whether the item can be moved safely without a technician.",
+        ],
+        bullets: ["Small floor items", "Light chairs or baskets", "Items blocking baseboards", "Appliances only if safely moved in advance", "Fragile decor and personal items"],
+      },
+      {
+        title: "How this changes the quote",
+        copy: [
+          "Cleaning behind and under furniture can turn a normal deep clean into a detail-heavy visit. One sofa is different from a whole house of beds, bookcases, appliances, storage bins, and basement furniture.",
+          "Use priority language. Say which hidden areas matter most instead of expecting every covered area to be reached.",
+        ],
+      },
+      {
+        title: "A better request",
+        copy: [
+          "A useful note says: we moved the living room sofa and two bedroom nightstands; please clean those floor edges. Do not move the fridge or heavy bed. Main priority is still kitchen and bathrooms.",
+          "That protects the cleaner's time and keeps the appointment realistic.",
+        ],
+      },
+    ],
+    faqs: [
+      ["Do cleaners move furniture during a deep clean?", "They may move small safe items, but heavy furniture is not assumed and should be discussed before booking."],
+      ["Will cleaners pull out the fridge or stove?", "Do not assume that. Large appliance moving may be outside the cleaning scope unless safe access is prepared and agreed in advance."],
+      ["Can cleaners clean under beds?", "Reachable areas can often be vacuumed, but moving heavy beds or storage is usually not part of normal scope."],
+      ["How should I prepare hidden areas?", "Move safe items before the visit, clear floor access, and name the hidden areas that matter most."],
+    ],
+    related: [["Prepare for deep cleaning", "prepare-for-deep-cleaning"], ["What is not included in deep cleaning", "what-is-not-included-in-deep-cleaning"], ["Deep cleaning service expectations", "blog/deep-cleaning-service-expectations"]],
+  },
+  {
+    slug: "blog/deep-cleaning-empty-house-before-moving-in",
+    title: "Deep Cleaning An Empty House Before Moving In | Shynli Deep Cleaning",
+    meta: "A practical move-in deep cleaning guide for empty homes: kitchens, bathrooms, cabinets, closets, appliances, floors, vents, access, and what to do before furniture arrives.",
+    keywords: ["deep cleaning empty house before moving in", "move in deep cleaning", "clean house before moving in", "empty house deep clean", "new home deep cleaning"],
+    updated: "2026-06-23",
+    eyebrow: "Move-in reset",
+    h1: "Deep cleaning an empty house before moving in: what matters most?",
+    summary: "The best time to deep clean a new home is before furniture arrives. Empty rooms make cabinets, closets, appliance areas, baseboards, floors, vents, and bathroom corners easier to reach, but the visit still needs priorities and clear add-ons.",
+    readTime: "8 min read",
+    sourceQuestion: "People buying or renting a new place ask what to deep clean before moving in and what should happen before furniture blocks access.",
+    sections: [
+      {
+        title: "Start before the furniture arrives",
+        copy: [
+          "An empty home gives the cleaning team better access. Floors, baseboards, closets, cabinet fronts, cabinet interiors, appliances, and bathroom corners are easier to handle before boxes and furniture fill the rooms.",
+          "That does not mean every hidden task is automatically included. Inside appliances, cabinet interiors, closets, and heavy detail should still be selected and timed before the visit.",
+        ],
+        bullets: ["Kitchen and bathrooms first", "Cabinets and drawers before storage", "Closets before clothes", "Floors before rugs and furniture", "Appliance add-ons before use"],
+      },
+      {
+        title: "The highest-value areas",
+        copy: [
+          "Focus on the parts you will touch immediately: kitchen storage, fridge, oven if selected, bathroom sinks and toilets, shower or tub areas, closet shelves, pantry shelves, switches, handles, and floors.",
+          "If the previous owner had pets, heavy cooking, smoke, long vacancy, or visible grime, say that in the quote notes.",
+        ],
+        bullets: ["Kitchen cabinets and pantry shelves", "Bathroom fixtures and floors", "Closets and storage ledges", "Door handles and switches", "Entry floors and stairs"],
+      },
+      {
+        title: "What may need another provider",
+        copy: [
+          "A move-in deep clean is not pest treatment, carpet extraction, duct cleaning, mold remediation, odor remediation, or repair work. Those needs can exist in the same house, but they are not the same service.",
+          "If you suspect pests, moisture, smoke damage, or carpet contamination, solve that before or alongside cleaning instead of expecting a normal deep clean to fix it.",
+        ],
+      },
+      {
+        title: "How to schedule it",
+        copy: [
+          "Schedule the clean after closing or access handoff and before the moving truck. Confirm utilities, water, power, parking, lockbox or door code, and whether any contractors will still be working.",
+          "A clean home before move-in feels better because you are not unpacking into someone else's residue.",
+        ],
+      },
+    ],
+    faqs: [
+      ["Should I deep clean before moving in?", "Yes, when possible. Empty rooms make kitchens, bathrooms, closets, cabinets, floors, and baseboards easier to reach."],
+      ["Are cabinet interiors included?", "They should be selected or confirmed before booking because they add time."],
+      ["Should cleaners come before or after movers?", "Before movers is usually better if you have access and utilities are on."],
+      ["Can this remove old-house smell?", "It may reduce surface sources, but moisture, smoke, carpet, HVAC, or pest issues may need specialty help."],
+    ],
+    related: [["Move-out cleaning vs deep cleaning", "move-out-cleaning-vs-deep-cleaning"], ["Deep cleaning add-ons", "deep-cleaning-add-ons"], ["What is not included in deep cleaning", "what-is-not-included-in-deep-cleaning"]],
+  },
+  {
+    slug: "blog/laundry-room-mudroom-and-entryway-deep-cleaning",
+    title: "Laundry Room, Mudroom, And Entryway Deep Cleaning | Shynli Deep Cleaning",
+    meta: "How deep cleaning handles laundry rooms, mudrooms, entryways, garage-entry floors, pet traffic, lint dust, shoe grime, washer and dryer areas, and quote priorities.",
+    keywords: ["laundry room deep cleaning", "mudroom deep cleaning", "entryway deep cleaning", "clean washer dryer area", "garage entry cleaning"],
+    updated: "2026-06-23",
+    eyebrow: "Utility zones",
+    h1: "Laundry rooms, mudrooms, and entryways: the deep-cleaning zones people forget.",
+    summary: "Laundry rooms, mudrooms, and entryways often make a home feel dirty even when kitchens and bathrooms are handled. These areas collect lint, shoe soil, pet hair, salt, dust, dropped items, and grime around doors, trim, machines, and floor edges.",
+    readTime: "7 min read",
+    sourceQuestion: "People ask why a home still feels gritty or dusty after cleaning, and utility zones are often part of the answer.",
+    sections: [
+      {
+        title: "Why these rooms matter",
+        copy: [
+          "Entryways, mudrooms, and laundry rooms sit where outside dirt meets indoor surfaces. In Illinois homes, winter salt, wet shoes, pet traffic, sports gear, laundry lint, and garage-entry dust can build up quickly.",
+          "A deep clean should not forget these zones if they are part of the daily path through the home.",
+        ],
+        bullets: ["Garage-entry floors", "Laundry lint and dust", "Shoe grime and salt", "Pet bowls and pet traffic", "Door trim and switch plates"],
+      },
+      {
+        title: "What can be included",
+        copy: [
+          "Useful tasks include wiping reachable washer and dryer exteriors, cleaning nearby counters or shelves, dusting lint-prone surfaces, wiping door trim, vacuuming or mopping floor edges, and cleaning high-touch handles.",
+          "Moving machines, cleaning dryer vents, plumbing work, or pulling apart appliances is not normal residential deep-cleaning scope.",
+        ],
+        bullets: ["Washer and dryer exteriors", "Laundry counters and reachable shelves", "Door frames and handles", "Floor edges and baseboards", "Mudroom bench or cubby surfaces"],
+      },
+      {
+        title: "How to prioritize",
+        copy: [
+          "If the home has limited cleaning time, handle kitchen and bathrooms first. Then add the entry or laundry area if it affects daily comfort or guest arrival.",
+          "For families, pet owners, and homes with attached garages, these areas can be worth naming because they are easy to overlook in a broad whole-home request.",
+        ],
+      },
+      {
+        title: "What to put in the notes",
+        copy: [
+          "Say: please include garage-entry floor edges, laundry machine exteriors, mudroom bench, door trim, and pet bowl area. Do not move the washer or dryer.",
+          "That is clearer than simply asking for a deep clean and hoping the utility spaces receive enough time.",
+        ],
+      },
+    ],
+    faqs: [
+      ["Are laundry rooms included in deep cleaning?", "They can be included when named, especially floors, machine exteriors, counters, shelves, handles, and reachable dust."],
+      ["Will cleaners move the washer or dryer?", "No, not as a normal expectation. Moving appliances should be discussed separately and may be outside scope."],
+      ["Should entryways be prioritized?", "Yes, if shoe grime, pet traffic, salt, or garage dust makes the home feel dirty quickly."],
+      ["Can cleaners clean dryer vents?", "Dryer vent cleaning is a specialty maintenance task, not a normal deep-cleaning item."],
+    ],
+    related: [["Deep cleaning checklist", "deep-cleaning-checklist"], ["Pet hair deep cleaning", "pet-hair-deep-cleaning"], ["What is not included in deep cleaning", "what-is-not-included-in-deep-cleaning"]],
+  },
 ]
 
 function getDeepArticleRecommendations(sourceSlug?: string) {
   const bySource: Record<string, string[]> = {
     "deep-cleaning-cost": ["blog/do-you-need-deep-cleaning-every-two-weeks", "blog/how-often-should-you-deep-clean-your-home", "blog/what-to-do-before-professional-deep-cleaning"],
-    "deep-cleaning-checklist": ["blog/baseboards-blinds-and-fans-deep-cleaning", "blog/shower-glass-soap-scum-deep-cleaning", "blog/kitchen-grease-cabinet-deep-cleaning"],
-    "deep-cleaning-add-ons": ["blog/baseboards-blinds-and-fans-deep-cleaning", "blog/kitchen-grease-cabinet-deep-cleaning", "blog/shower-glass-soap-scum-deep-cleaning"],
-    "prepare-for-deep-cleaning": ["blog/what-to-do-before-professional-deep-cleaning", "blog/declutter-before-deep-cleaning", "blog/deep-cleaning-service-expectations"],
+    "deep-cleaning-checklist": ["blog/tile-and-grout-deep-cleaning-expectations", "blog/laundry-room-mudroom-and-entryway-deep-cleaning", "blog/baseboards-blinds-and-fans-deep-cleaning"],
+    "deep-cleaning-add-ons": ["blog/moving-furniture-and-appliances-during-deep-cleaning", "blog/baseboards-blinds-and-fans-deep-cleaning", "blog/kitchen-grease-cabinet-deep-cleaning"],
+    "prepare-for-deep-cleaning": ["blog/moving-furniture-and-appliances-during-deep-cleaning", "blog/what-to-do-before-professional-deep-cleaning", "blog/declutter-before-deep-cleaning"],
     "how-long-does-deep-cleaning-take": ["blog/first-deep-clean-progress-not-perfection", "blog/room-by-room-deep-cleaning-order", "blog/do-you-need-deep-cleaning-every-two-weeks"],
-    "what-is-included-in-deep-cleaning": ["blog/baseboards-blinds-and-fans-deep-cleaning", "blog/shower-glass-soap-scum-deep-cleaning", "blog/kitchen-grease-cabinet-deep-cleaning"],
-    "what-is-not-included-in-deep-cleaning": ["blog/deep-cleaning-after-illness", "blog/can-deep-cleaning-remove-odors", "blog/deep-cleaning-service-expectations"],
+    "what-is-included-in-deep-cleaning": ["blog/walls-doors-and-trim-deep-cleaning", "blog/tile-and-grout-deep-cleaning-expectations", "blog/baseboards-blinds-and-fans-deep-cleaning"],
+    "what-is-not-included-in-deep-cleaning": ["blog/moving-furniture-and-appliances-during-deep-cleaning", "blog/tile-and-grout-deep-cleaning-expectations", "blog/deep-cleaning-after-illness"],
     "standard-cleaning-vs-deep-cleaning": ["blog/do-you-need-deep-cleaning-every-two-weeks", "blog/how-often-should-you-deep-clean-your-home", "blog/first-deep-clean-progress-not-perfection"],
     "deep-cleaning-before-recurring-cleaning": ["blog/do-you-need-deep-cleaning-every-two-weeks", "blog/first-deep-clean-progress-not-perfection", "blog/how-often-should-you-deep-clean-your-home"],
-    "one-time-deep-cleaning": ["blog/what-to-do-before-professional-deep-cleaning", "blog/first-deep-clean-progress-not-perfection", "blog/where-to-start-when-your-house-needs-a-deep-clean"],
-    "deep-cleaning-faq": ["blog/deep-cleaning-after-illness", "blog/why-dust-comes-back-after-deep-cleaning", "blog/what-to-do-before-professional-deep-cleaning"],
+    "one-time-deep-cleaning": ["blog/deep-cleaning-empty-house-before-moving-in", "blog/what-to-do-before-professional-deep-cleaning", "blog/first-deep-clean-progress-not-perfection"],
+    "deep-cleaning-faq": ["blog/moving-furniture-and-appliances-during-deep-cleaning", "blog/walls-doors-and-trim-deep-cleaning", "blog/deep-cleaning-after-illness"],
     "kitchen-deep-cleaning": ["blog/kitchen-grease-cabinet-deep-cleaning", "blog/room-by-room-deep-cleaning-order", "blog/deep-cleaning-service-expectations"],
     "cabinet-cleaning-with-deep-cleaning": ["blog/kitchen-grease-cabinet-deep-cleaning", "blog/deep-cleaning-service-expectations", "blog/room-by-room-deep-cleaning-order"],
     "oven-cleaning-with-deep-cleaning": ["blog/kitchen-grease-cabinet-deep-cleaning", "blog/room-by-room-deep-cleaning-order", "blog/deep-cleaning-service-expectations"],
-    "bathroom-deep-cleaning": ["blog/shower-glass-soap-scum-deep-cleaning", "blog/can-deep-cleaning-remove-odors", "blog/room-by-room-deep-cleaning-order"],
-    "baseboard-cleaning": ["blog/baseboards-blinds-and-fans-deep-cleaning", "blog/why-dust-comes-back-after-deep-cleaning", "blog/deep-cleaning-service-expectations"],
+    "bathroom-deep-cleaning": ["blog/tile-and-grout-deep-cleaning-expectations", "blog/shower-glass-soap-scum-deep-cleaning", "blog/can-deep-cleaning-remove-odors"],
+    "baseboard-cleaning": ["blog/walls-doors-and-trim-deep-cleaning", "blog/baseboards-blinds-and-fans-deep-cleaning", "blog/why-dust-comes-back-after-deep-cleaning"],
     "blinds-cleaning-with-deep-cleaning": ["blog/baseboards-blinds-and-fans-deep-cleaning", "blog/why-dust-comes-back-after-deep-cleaning", "blog/deep-cleaning-service-expectations"],
     "deep-cleaning-before-guests": ["blog/guest-ready-deep-cleaning-priorities", "blog/room-by-room-deep-cleaning-order", "blog/what-to-do-before-professional-deep-cleaning"],
     "deep-cleaning-before-holidays": ["blog/guest-ready-deep-cleaning-priorities", "blog/kitchen-grease-cabinet-deep-cleaning", "blog/what-to-do-before-professional-deep-cleaning"],
     "deep-cleaning-after-renovation-dust": ["blog/why-dust-comes-back-after-deep-cleaning", "blog/baseboards-blinds-and-fans-deep-cleaning", "blog/first-deep-clean-progress-not-perfection"],
     "pet-hair-deep-cleaning": ["blog/why-dust-comes-back-after-deep-cleaning", "blog/can-deep-cleaning-remove-odors", "blog/how-often-should-you-deep-clean-your-home"],
-    "deep-cleaning-with-pets": ["blog/why-dust-comes-back-after-deep-cleaning", "blog/can-deep-cleaning-remove-odors", "blog/declutter-before-deep-cleaning"],
+    "deep-cleaning-with-pets": ["blog/laundry-room-mudroom-and-entryway-deep-cleaning", "blog/why-dust-comes-back-after-deep-cleaning", "blog/can-deep-cleaning-remove-odors"],
+    "move-in-deep-cleaning": ["blog/deep-cleaning-empty-house-before-moving-in", "blog/moving-furniture-and-appliances-during-deep-cleaning", "blog/tile-and-grout-deep-cleaning-expectations"],
+    "house-deep-cleaning": ["blog/walls-doors-and-trim-deep-cleaning", "blog/laundry-room-mudroom-and-entryway-deep-cleaning", "blog/tile-and-grout-deep-cleaning-expectations"],
+    "apartment-deep-cleaning": ["blog/deep-cleaning-empty-house-before-moving-in", "blog/walls-doors-and-trim-deep-cleaning", "blog/what-to-do-before-professional-deep-cleaning"],
   }
   const slugs = bySource[sourceSlug ?? ""] ?? shinyDeepArticlePages.slice(0, 3).map((page) => page.slug)
   return slugs.map((slug) => shinyDeepArticlePages.find((page) => page.slug === slug)).filter((page): page is ShynliDeepArticlePageData => Boolean(page))
@@ -2508,7 +2766,7 @@ export function ShynliDeepCleaningPage({ city }: { city?: (typeof cityPages)[num
               Guides for the questions people ask before booking.
             </h2>
             <p className="mt-5 text-lg font-bold leading-8 text-[#5e574f]">
-              These guides cover the practical decisions that come before a deep clean: odors, shower buildup, kitchen grease, timing, where to start, clutter, first visits, and service expectations.
+              These guides cover the practical decisions that come before a deep clean: grout, walls, furniture access, move-in resets, entryways, odors, buildup, timing, and service expectations.
             </p>
           </div>
           <div className="grid gap-px overflow-hidden rounded-lg bg-[#d8cbb7] md:grid-cols-2">
@@ -2868,12 +3126,12 @@ export function ShynliDeepSeoPage({ page }: { page: ShynliDeepSeoPageData }) {
 export function ShynliDeepBlogPage() {
   useSeoMeta(
     "Deep Cleaning Guides | Shynli Deep Cleaning",
-    "Practical deep cleaning guides for homeowners comparing dust, guest-ready cleaning, post-illness resets, detail areas, preparation, odors, buildup, timing, and service quotes.",
+    "Practical deep cleaning guides for homeowners comparing grout, walls, furniture access, move-in resets, entryways, dust, odors, buildup, timing, and service quotes.",
     {
       "@context": "https://schema.org",
       "@type": "CollectionPage",
       name: "Deep Cleaning Guides",
-      description: "Practical deep cleaning guides about dust, guest-ready cleaning, post-illness resets, baseboards, blinds, fans, preparation, odors, buildup, and realistic service expectations.",
+      description: "Practical deep cleaning guides about grout, wall marks, furniture access, move-in resets, utility zones, dust, odors, buildup, and realistic service expectations.",
       url: `${shinyDeepCanonicalBase}/blog`,
       isPartOf: { "@type": "WebSite", name: "Shynli Deep Cleaning", url: shinyDeepCanonicalBase },
       mainEntity: {
@@ -2889,7 +3147,7 @@ export function ShynliDeepBlogPage() {
     {
       canonicalBaseUrl: shinyDeepCanonicalBase,
       canonicalPath: "/blog",
-      keywords: ["deep cleaning guides", "deep cleaning questions", "house deep cleaning help", "home deep cleaning advice", "dust after cleaning", "deep cleaning before guests", "deep cleaning after illness", "baseboard deep cleaning", "Shynli Deep Cleaning"],
+      keywords: ["deep cleaning guides", "deep cleaning questions", "house deep cleaning help", "home deep cleaning advice", "grout deep cleaning", "wall spot cleaning", "move in deep cleaning", "deep cleaning under furniture", "Shynli Deep Cleaning"],
     },
   )
 
@@ -2931,7 +3189,7 @@ export function ShynliDeepBlogPage() {
           </Badge>
           <h1 className="max-w-5xl text-[clamp(3.2rem,8vw,8rem)] font-black leading-[0.86] tracking-normal">Guides for the messy questions before a deep clean.</h1>
           <p className="mt-7 max-w-3xl text-xl font-bold leading-8 text-white/76">
-            Practical answers for dust that keeps returning, guest-ready priorities, post-illness resets, baseboards, blinds, fans, odors, buildup, timing, and how to set expectations with a cleaning service.
+            Practical answers for grout, walls, doors, furniture access, move-in resets, utility zones, dust, odors, buildup, timing, and how to set expectations with a cleaning service.
           </p>
         </div>
       </section>
