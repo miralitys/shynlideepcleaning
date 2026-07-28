@@ -34,6 +34,11 @@ export const moveStartingPrice = "$197"
 export const googleRatingValue = "5.0"
 export const googleReviewCount = "44"
 export const googleReviewsUrl = "https://www.google.com/maps/place/?q=place_id:ChIJw5zPGN2Y-GMRTHBrFh1rKYE"
+export const googleWriteReviewUrl = "https://search.google.com/local/writereview?placeid=ChIJw5zPGN2Y-GMRTHBrFh1rKYE"
+
+/** Вторая точка. Отзывов пока нет, поэтому её страница ведёт на профиль, а не на счётчик. */
+export const auroraReviewsUrl = "https://www.google.com/maps/place/?q=place_id:ChIJVVxikfWRpGsR0dq_V92NDks"
+export const auroraWriteReviewUrl = "https://search.google.com/local/writereview?placeid=ChIJVVxikfWRpGsR0dq_V92NDks"
 
 export const deepSiteProof = [
   ["Price before pressure", "Start with ZIP, home size, condition, and add-ons before you commit to a visit."],
@@ -80,27 +85,32 @@ export const deepSiteCompetitorMoves = [
   ["Local follow-up", "If an included checklist item is missed, the customer has a clear path to reach support."],
 ]
 
+/**
+ * Настоящие отзывы из профиля Google, скопированы дословно.
+ * Ничего не сочинять: если нужен новый отзыв, взять его из профиля
+ * по ссылке googleReviewsUrl и перенести текст как есть.
+ */
 export const deepSiteReviews = [
   {
-    name: "Maya R.",
-    initial: "M",
-    place: "Naperville",
-    service: "Kitchen and bath deep clean",
-    copy: "The quote made it clear what was included before anyone came over. The kitchen edges and shower buildup were the biggest difference.",
+    name: "Lina Gonzales",
+    initial: "L",
+    meta: "Verified Google review",
+    service: "Move-out cleaning",
+    copy: "Had a really great experience with Shynli for my move-out cleaning. They did an amazing job!! the kitchen and fridge were spotless and looked like new. Everything felt super clean and ready for the next tenant. They were on time, professional, and easy to communicate with. Definitely recommend!",
   },
   {
-    name: "Daniel K.",
-    initial: "D",
-    place: "Aurora",
-    service: "First clean before recurring",
-    copy: "I liked seeing the add-ons upfront. We added the oven and cabinets, and the visit felt planned instead of rushed.",
-  },
-  {
-    name: "Priya S.",
-    initial: "P",
-    place: "Plainfield",
+    name: "Nataliia Regush",
+    initial: "N",
+    meta: "Verified Google review",
     service: "Whole-home reset",
-    copy: "The cleaner focused on the details I usually avoid: baseboards, fixtures, corners, and bathroom buildup. It felt like a reset.",
+    copy: "Honestly, I didn't expect such a high level of service. The team was super friendly, quick, and incredibly thorough. Every corner was cleaned perfectly. It feels like a brand-new place now. Highly recommend!",
+  },
+  {
+    name: "Munisa Toshboeva",
+    initial: "M",
+    meta: "Verified Google review",
+    service: "Move-out cleaning",
+    copy: "We used Shynli Cleaning Service for our move-out cleaning and it was a big relief. The team was on time, worked fast, and left the apartment in great condition. I highly recommend them for anyone who needs cleaning help.",
   },
 ]
 
@@ -2769,7 +2779,7 @@ export function ShynliDeepCleaningPage({ city }: { city?: (typeof cityPages)[num
                     </span>
                     <div>
                       <h3 className="text-base font-black leading-tight">{review.name}</h3>
-                      <p className="mt-1 text-xs font-bold text-[#6c655d]">{review.place} customer</p>
+                      <p className="mt-1 text-xs font-bold text-[#6c655d]">{review.meta}</p>
                     </div>
                   </div>
                   <span className="rounded-full bg-[#f1f3f4] px-2.5 py-1 text-xs font-black text-[#5f6368]">Local</span>
@@ -2782,6 +2792,26 @@ export function ShynliDeepCleaningPage({ city }: { city?: (typeof cityPages)[num
                 <p className="mt-5 border-t border-[#ece3d7] pt-4 text-sm font-black text-[#6c655d]">{review.service}</p>
               </article>
             ))}
+          </div>
+          <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-3">
+            <a
+              href={cityName === "Aurora" ? auroraReviewsUrl : googleReviewsUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-base font-black text-[#1976a3] underline decoration-[#1976a3]/40 underline-offset-4 hover:decoration-[#1976a3]"
+            >
+              {cityName === "Aurora"
+                ? "See the Aurora location on Google"
+                : `Read all ${googleReviewCount} reviews on Google`}
+            </a>
+            <a
+              href={cityName === "Aurora" ? auroraWriteReviewUrl : googleWriteReviewUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-base font-bold text-[#6c655d] underline decoration-[#6c655d]/30 underline-offset-4 hover:decoration-[#6c655d]"
+            >
+              Leave a review
+            </a>
           </div>
         </div>
       </section>
