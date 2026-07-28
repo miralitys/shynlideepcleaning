@@ -24,6 +24,17 @@ function StarRating() {
   return <span aria-hidden="true" className="text-sm leading-none tracking-normal">★★★★★</span>
 }
 
+/**
+ * Опубликованные стартовые цены и данные профиля Google.
+ * Правятся здесь, в одном месте. Цены совпадают с servicePlans в data.ts.
+ * Рейтинг и число отзывов сверять с профилем время от времени, они растут.
+ */
+export const deepStartingPrice = "$152"
+export const moveStartingPrice = "$197"
+export const googleRatingValue = "5.0"
+export const googleReviewCount = "44"
+export const googleReviewsUrl = "https://www.google.com/maps/place/?q=place_id:ChIJw5zPGN2Y-GMRTHBrFh1rKYE"
+
 export const deepSiteProof = [
   ["Price before pressure", "Start with ZIP, home size, condition, and add-ons before you commit to a visit."],
   ["Checklist visible", "See why deep cleaning takes more time than a standard maintenance clean."],
@@ -135,11 +146,13 @@ const baseShynliDeepSeoPages: ShynliDeepSeoPageData[] = [
     h1: "Deep cleaning cost depends on time, buildup, and add-ons.",
     intro: "Deep cleaning costs more than standard maintenance cleaning because the visit is built around catch-up work: bathroom buildup, kitchen residue, baseboards, doors, trim, fixtures, and rooms that need more time. A useful quote should explain the home size, current condition, selected add-ons, access notes, and timing before the appointment is held.",
     sections: [
+      { title: "Starting points", copy: "These are the published starting points before the home details are confirmed. They are a floor, not a final number, and the quote can go up with size, buildup, and add-ons.", bullets: ["Deep cleaning starts at $152 per visit", "Move-in and move-out deep cleaning starts at $197 per visit", "No card is needed to see an estimate"] },
       { title: "Main price factors", copy: "The biggest pricing signals are the number of rooms, number of bathrooms, condition, and whether the home needs a catch-up reset or a lighter first visit.", bullets: ["Bedrooms and bathrooms", "Kitchen and bathroom buildup", "Pets, clutter, and access", "Parking, elevator, gate, or lockbox notes"] },
       { title: "Add-ons that change time", copy: "Some deep-clean tasks need extra time and should be selected before booking rather than discovered at the door.", bullets: ["Inside fridge", "Inside oven", "Inside cabinets", "Interior windows", "Blinds", "Basement cleaning"] },
       { title: "How to get a clearer quote", copy: "A better estimate starts with honest condition notes, not just square footage.", bullets: ["Choose light, behind, or heavy buildup", "Name priority rooms", "List appliance or cabinet interiors", "Share access and pet notes"] },
     ],
     faqs: [
+      ["How much does deep cleaning cost?", "Deep cleaning starts at $152 per visit. The final number depends on home size, buildup, bathrooms, add-ons, and access, so the estimate is confirmed before the appointment is held."],
       ["Why is deep cleaning more expensive?", "It usually needs more time for buildup, edges, fixtures, baseboards, kitchens, bathrooms, and high-touch details."],
       ["Can two homes with the same size cost different amounts?", "Yes. Condition, clutter, bathrooms, pets, add-ons, and access can change the time needed."],
       ["Are fridge and oven included?", "They are quoted extras unless the estimate specifically includes them."],
@@ -2293,6 +2306,21 @@ export function ShynliDeepCleaningPage({ city }: { city?: (typeof cityPages)[num
                 <a href="#scope">See scope</a>
               </Button>
             </div>
+            <p className="mt-7 text-xl font-black leading-snug">
+              Deep cleaning from {deepStartingPrice} per visit.
+              <span className="mt-1 block text-base font-medium text-white/70">
+                Final price depends on home size, condition, add-ons, and access.
+              </span>
+            </p>
+            <a
+              href={googleReviewsUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-5 inline-flex items-center gap-2 text-base font-black text-[#d7ff4f] underline decoration-[#d7ff4f]/40 underline-offset-4 hover:decoration-[#d7ff4f]"
+            >
+              <StarRating />
+              {googleRatingValue} from {googleReviewCount} Google reviews
+            </a>
           </div>
 
           <div className="self-end pb-4 md:pb-10">
